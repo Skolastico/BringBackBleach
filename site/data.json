@@ -30,7 +30,7 @@
     "beforeAlt": "EP007 action-and-effects validation crop processed by the DVD05 candidate",
     "afterAlt": "The same EP007 validation crop processed by the rejected DVD07 candidate",
     "beforeLabel": "Before · DVD05",
-    "afterLabel": "After · DVD07 rejected",
+    "afterLabel": "After · DVD07",
     "caption": "EP007 action and effects · same frame and crop · static review"
   }
 }
