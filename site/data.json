@@ -3,7 +3,7 @@
   "date": "2026-10-30",
   "dispatchLabel": "A test we decided not to use",
   "title": "More detail on paper. Almost the same picture.",
-  "summary": "Our latest attempt recovered more tiny detail in a test image, but side-by-side review found no clear visual improvement. It also fell short of our rule for protecting the main drawing, so we are keeping the previous version for now.",
+  "summary": "Our latest attempt recovered more tiny detail in a test image, but side-by-side review found no clear visual improvement. It also missed our preset target for improving the larger shapes, so we are keeping the previous version for now.",
   "problem": "The original DVD picture can look soft. Restoring texture is useful only if faces, outlines and motion still look right. A score can improve even when a person cannot see a worthwhile change.",
   "response": "We compared two versions of the same action frame and rejected the newer attempt. We are now looking for better matched scenes before another small experiment.",
   "beforeDetail": "Before: the previous experimental version. It already keeps this action frame close to the version used for review. Look at the character's clothing, outlines and the effect behind him.",
