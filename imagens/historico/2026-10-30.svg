@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650" role="img" aria-labelledby="title desc">
+  <title id="title">BringBackBleach — registo de progresso, 30 de outubro de 2026</title>
+  <desc id="desc">A primeira de quatro etapas está concluída e a segunda está em curso. Redução medida do erro na validação: 47,21 por cento em textura fina, 42,40 por cento em textura intermédia, e estrutura baixa praticamente estável.</desc>
+  <rect width="1100" height="650" rx="28" fill="#101722"/>
+  <text x="56" y="66" fill="#f3f5f7" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700">BringBackBleach</text>
+  <text x="56" y="101" fill="#aab6c4" font-family="Segoe UI, Arial, sans-serif" font-size="17">Registo de progresso · 30 out 2026</text>
+  <rect x="56" y="130" width="988" height="190" rx="18" fill="#192432" stroke="#2b3a4c"/>
+  <text x="84" y="170" fill="#f3f5f7" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">Etapas deste ciclo de investigação</text>
+  <text x="84" y="198" fill="#aab6c4" font-family="Segoe UI, Arial, sans-serif" font-size="15">Etapa 1 concluída · etapa 2 em curso · 2 seguintes por fazer</text>
+  <rect x="84" y="220" width="220" height="20" rx="10" fill="#63d7b0"/>
+  <rect x="316" y="220" width="220" height="20" rx="10" fill="#f4bd62"/>
+  <rect x="548" y="220" width="220" height="20" rx="10" fill="#344253"/>
+  <rect x="780" y="220" width="220" height="20" rx="10" fill="#344253"/>
+  <text x="84" y="268" fill="#dce5ec" font-family="Segoe UI, Arial, sans-serif" font-size="14">Diagnóstico</text>
+  <text x="316" y="268" fill="#dce5ec" font-family="Segoe UI, Arial, sans-serif" font-size="14">Rever exemplos</text>
+  <text x="548" y="268" fill="#aab6c4" font-family="Segoe UI, Arial, sans-serif" font-size="14">Experiência</text>
+  <text x="780" y="268" fill="#aab6c4" font-family="Segoe UI, Arial, sans-serif" font-size="14">Revisão final</text>
+  <text x="84" y="296" fill="#aab6c4" font-family="Segoe UI, Arial, sans-serif" font-size="13">A barra representa etapas do ciclo, não a percentagem de conclusão do projeto.</text>
+  <text x="56" y="371" fill="#f3f5f7" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">Erro médio por escala de detalhe</text>
+  <text x="56" y="398" fill="#aab6c4" font-family="Segoe UI, Arial, sans-serif" font-size="15">Redução medida na validação consultada, face à base da comparação · escala até 50%</text>
+  <text x="56" y="448" fill="#dce5ec" font-family="Segoe UI, Arial, sans-serif" font-size="17">Textura fina</text>
+  <rect x="250" y="427" width="590" height="28" rx="14" fill="#263545"/>
+  <rect x="250" y="427" width="557" height="28" rx="14" fill="#59c7e8"/>
+  <text x="866" y="449" fill="#f3f5f7" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">47,21%</text>
+  <text x="56" y="504" fill="#dce5ec" font-family="Segoe UI, Arial, sans-serif" font-size="17">Textura intermédia</text>
+  <rect x="250" y="483" width="590" height="28" rx="14" fill="#263545"/>
+  <rect x="250" y="483" width="500" height="28" rx="14" fill="#8a9cff"/>
+  <text x="866" y="505" fill="#f3f5f7" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">42,40%</text>
+  <text x="56" y="560" fill="#dce5ec" font-family="Segoe UI, Arial, sans-serif" font-size="17">Estrutura baixa</text>
+  <rect x="250" y="539" width="590" height="28" rx="14" fill="#263545"/>
+  <line x1="250" y1="553" x2="840" y2="553" stroke="#8e9aa7" stroke-width="3"/>
+  <text x="866" y="561" fill="#f3f5f7" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">−0,33% · estável</text>
+  <text x="56" y="615" fill="#aab6c4" font-family="Segoe UI, Arial, sans-serif" font-size="14">Medidas técnicas, não percentagens de melhoria visual. A validação já foi consultada durante o desenvolvimento.</text>
+</svg>
