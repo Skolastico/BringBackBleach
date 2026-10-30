@@ -1,32 +1,18 @@
 # BringBackBleach — image progress journal
 
-A small public diary about an independent project exploring how to improve the image in Bleach DVD/480p sources and problematic Blu-ray releases while preserving the original frame timing.
+An independent visual diary about improving the picture in older Bleach releases while preserving the drawing and original frame timing.
 
-**Read the latest dispatch:** [Estado.md](Estado.md)  
-**Open the visual journal:** [GitHub Pages](https://skolastico.github.io/BringBackBleach/)  
-**Browse the dated progress graphic:** [Progress image](imagens/progresso.svg)
+**[Read the latest diary entry](Estado.md)** · **[Explore the image comparisons](https://skolastico.github.io/BringBackBleach/)** · **[See the review cycle](imagens/progresso.svg)**
 
-The diary is written in English for readers who do not need specialist image-processing knowledge. Each update explains what changed, what problem is still open, how it is being addressed, and what the next review will check.
+## Latest update · 30 October 2026
 
-## Latest result — 30 October 2026
+A newer image test measured better on tiny detail, but its enlarged action frame showed no clear visual gain. It missed our target for improving the larger shapes, so the previous experimental version remains our reference. We are now looking for better matched scenes.
 
-The selective DVD07 test lowered measured fine-detail error by 14.40% across nine validation regions, including 15.52% on one EP007 action/effects sample. Reviewers saw no clear visible gain over DVD05. DVD07 reached only 0.82% structural gain, below the preset 5% target, so it was not promoted. DVD05 remains the strongest experimental candidate.
+On the website, drag the line directly across the featured image or click it for a larger view. Every reviewed pair is kept in the image diary when a new one takes its place. Older comparisons from a separate experiment have their own archive.
 
-The current cycle is at **stage 2 of 4**: choosing new, better-matched scenes. The progress bar tracks those review steps; it is not a percentage of the whole project.
+The progress marker shows the current **four-step review cycle**, not a percentage of the entire project. The diary explains the problem, what the pictures show, our response and the next step in plain English.
 
-## About the image comparisons
+This public repository contains short reports and selected image crops. It does not publish full episodes, video clips, training material or model files.
 
-The latest dispatch uses a reviewed same-frame comparison between DVD05 and the rejected DVD07 candidate on an EP007 action/effects sample. Drag the curtain directly across the image or open it for a larger view. Three additional EP008/v7 pairs remain clearly labelled as archive examples. A new pair is published only after the same frame and crop have been reviewed.
-
-## What the measurements mean
-
-Error measurements describe differences between selected image regions and a comparison target. They are not a rating of how much better a picture looks. The validation regions in the reports have already been consulted during development, so they are not blind tests.
-
-A still-image review cannot certify frame-to-frame stability or flicker. Results are experimental and do not approve processing the entire series.
-
-## Scope
-
-This public diary contains short written reports, progress graphics and selected image crops. It does not contain complete episodes, clips, training data, model weights, logs, credentials or source project code.
-
-*Bleach and its images belong to their respective rights holders. This is an independent project and is not affiliated with them.*
+*Bleach and its images belong to their respective rights holders. This independent project is not affiliated with them.*
 

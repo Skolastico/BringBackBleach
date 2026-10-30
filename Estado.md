@@ -1,65 +1,43 @@
 # BringBackBleach Image Journal
 
-*Daily notes on making Bleach frames clearer while keeping the drawing, texture and original timing intact.*
+*Daily notes on improving Bleach's older picture while keeping its original drawing and timing.*
 
-## 30 October 2026 — The detail score improved. The picture still looked much the same.
+## 30 October 2026 — More detail on paper. Almost the same picture.
 
-The latest selective DVD07 test lowered measured fine-detail error by **14.40% across nine validation regions**. On one EP007 action-and-effects sample, the error moved from **0.0008194 to 0.0006923** (15.52% lower). Reviewers still saw no clear visual gain in the enlarged comparison. The average masked structural gain was **0.82%**, below the preset **5%** target, so DVD07 was not promoted. DVD05 remains the strongest experimental candidate.
+The newest image test did better in a computer measurement of tiny detail. When we put it beside the previous experimental version, reviewers could not see a clear improvement. The newer test also missed a separate target for the larger shapes in the picture. We decided not to use it. The previous version remains our reference while we look for better scenes to study.
 
-### What changed in the image?
+### The image, before and after
 
-**Before — DVD05:** The same enlarged EP007 action-and-effects crop measured 0.0008194 fine-detail error. The picture was already close to the comparison target in the review board.
+[Open the comparison on the website](https://skolastico.github.io/BringBackBleach/#latest) and drag the line across the frame. Both sides show the **same moment from episode 7, with the same crop**.
 
-**After — DVD07:** The same crop measured 0.0006923, a 15.52% reduction in fine-detail error. The board shows DVD05 and DVD07 nearly indistinguishable at this size, with no clear visual gain. This is a measurement change, not a 15.52% visual improvement.
+**Before — previous version:** Look at the character's clothes, the edges of his body and the effect behind him. This version already looked close to the image used for review.
 
-The website now shows small, equal-size crops from this reviewed EP007 frame so readers can move the curtain between DVD05 and DVD07. The three EP008 examples remain clearly marked as archive images from an earlier v7 test; they are not DVD07 results.
+**After — new test:** A computer found less mismatch in the finest details, but the enlarged pictures look nearly the same. We could not point to a clear visual improvement in this frame.
 
-### The problem and our response
+The measurement of tiny detail improved by about **14% across nine reviewed areas**. That percentage describes a comparison against an image target; it does **not** mean the picture looks 14% better. For the larger shapes, our target was at least **5%** improvement; this test reached **under 1%**. Those two checks, together with the visual review, explain why we kept the previous version.
 
-| What is difficult | What we are doing |
+### What is difficult, and what we are doing
+
+| What we found | Our response |
 | --- | --- |
-| A better detail score may not make a visible difference. | Keep the image review next to the measurement. Do not promote a candidate on the score alone. |
-| DVD07 changed the picture too little to justify a new version. | The masked structural gain was 0.82%, below the preset 5% minimum. Keep DVD07 for diagnosis and retain DVD05 as the reference. |
-| The next round needs better examples of action and effects. | Find new, well-matched scenes in episodes EP001–EP006. Keep EP007 reserved for validation. |
-| One still cannot tell us whether motion is stable. | Check frame timing and frame-to-frame consistency before making any claim about a full episode or flicker. |
+| Older DVD footage can look soft, but extra texture is only useful when the picture still looks natural. | Compare enlarged images alongside measurements, rather than choosing by a score alone. |
+| The latest test changed the action frame too little to justify using it. | Keep the previous experimental version and record the rejected test here. |
+| We need more varied, well-matched action and effects scenes. | Search episodes 1–6 for suitable pairs. Keep episode 7 aside to check future work. |
+| A still frame cannot reveal unstable motion. | Review consecutive frames before making claims about movement or an entire episode. |
 
-### This review in plain numbers
+### Where we are
 
-- **200** training steps and **800** sample presentations.
-- **13** training targets.
-- Fine-detail error fell **14.40%** across nine validation regions.
-- On the EP007 action/effects sample, fine-detail error moved **0.0008194 → 0.0006923** (15.52% lower than DVD05).
-- Structural gain was **0.82%**, below the **5%** target. DVD07 was rejected.
-- Five training boards were reviewed. The differences were subtle; no new large drawing distortion was observed.
-- Validation scenes had already been seen during development. This was not a blind test, and it did not check continuous playback.
-
-### Progress through this review cycle
-
-**Stage 2 of 4 is in progress.** We are finding new scenes that can answer a better question. The stages below describe this review cycle, not a percentage of the whole project.
-
-1. Identify where image detail is being lost — complete.
-2. Choose fresh scenes for review — in progress.
-3. Run one limited experiment, if the scenes justify it — pending.
-4. Review image and motion before making a decision — pending.
+The current review cycle is at **step 2 of 4: finding better scenes**. This is the progress of one cycle of work, not a claim that the whole series is half finished. A new image pair will become the featured comparison when it has been reviewed; this pair will stay in the site's image diary.
 
 ### Next dispatch
 
-Locate new narrative scenes with usable matches between the available DVD and upscale material in EP001–EP006. EP007 remains reserved for validation. Only after the images have been reviewed and suitable regions are found will a new, limited experiment be considered.
+We will report which new scenes are suitable and what they show. If none are suitable, we will say so. Another small experiment will only follow once there is a good reason to run it.
 
-### What this result does not show
+The pictured scenes were already used during development. This was a still-image review, not an unseen test or a check of continuous playback.
 
-- It does not prove that every fine detail is original film grain or that missing detail can be recovered with certainty.
-- It does not establish a clear visual improvement over DVD05.
-- It does not certify continuous motion, flicker, or complete-episode processing.
-- DVD07 is not promoted and must not be described as the new project model.
+## Earlier image examples
 
-## Earlier candidate reference — DVD05
+The site's separate episode 8 gallery shows three comparisons from an older enlargement experiment. They are preserved as historical examples and do not show the result described above.
 
-An earlier DVD05 comparison measured 47.21% lower fine-detail error and 42.40% lower mid-size-detail error across 24 regions. Larger structure changed by −0.33%. The validation regions had already been consulted during development. These measurements are not visual grades and do not mean that the picture looks 47% better.
-
-## Archived frame comparisons
-
-The website contains three small, same-frame comparisons from an earlier EP008 test with model v7 at 2×. They are labelled as archive examples. They help readers inspect the curtain interaction and see the kind of detail this journal discusses; they do not demonstrate the result of DVD07 or approve DVD05.
-
-This repository does not publish full episodes, video clips, training data or model weights. Bleach and its frames belong to their respective rights holders. This independent research project is not affiliated with them.
+*Bleach and its images belong to their respective rights holders. This independent project is not affiliated with them.*
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#11111a">
+    <meta name="theme-color" content="#0b0d0e">
     <meta name="description" content="A daily visual journal following the image restoration work on Bleach, with plain-English notes and carefully labelled frame comparisons.">
     <title>BringBackBleach — Image Journal</title>
     <script>
@@ -12,8 +12,8 @@
         if (savedTheme === "light" || savedTheme === "dark") document.documentElement.dataset.theme = savedTheme;
       } catch {}
     </script>
-    <link rel="stylesheet" href="./styles.css?v=2026-10-30-5">
-    <script src="./app.js?v=2026-10-30-5" defer></script>
+    <link rel="stylesheet" href="./styles.css?v=2026-10-30-6">
+    <script src="./app.js?v=2026-10-30-6" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to journal</a>
@@ -21,7 +21,7 @@
     <header class="site-header">
       <a class="wordmark" href="#top" aria-label="BringBackBleach Image Journal home">
         <span class="wordmark-mark">B<span>B</span></span>
-        <span class="wordmark-caption">Image journal</span>
+        <span class="wordmark-caption">Bleach image journal</span>
       </a>
       <nav aria-label="Main navigation">
         <a href="#latest">Latest dispatch</a>
@@ -39,38 +39,38 @@
       <section class="dispatch-section" id="top" aria-labelledby="dispatch-title">
         <article class="dispatch-story" id="latest">
           <div class="story-rule" aria-hidden="true"><span></span><span></span><span></span></div>
-          <h1 id="dispatch-title">The detail score improved. The picture still looked much the same.</h1>
+          <h1 id="dispatch-title">More detail on paper. Almost the same picture.</h1>
           <p class="story-meta">
             <span class="edition-mark" aria-hidden="true"></span>
             <span>Daily image journal</span>
             <span class="meta-separator" aria-hidden="true">/</span>
             <time id="dispatch-date" datetime="2026-10-30">30 October 2026</time>
             <span class="meta-separator" aria-hidden="true">/</span>
-            <span id="dispatch-label">DVD07 · review complete</span>
+            <span id="dispatch-label">A test we decided not to use</span>
           </p>
-          <p class="story-lede" id="dispatch-summary">A selective test lowered the fine-detail error score, but reviewers could not see a clear gain in the action frame. Its structural result missed the preset target, so DVD07 was not promoted.</p>
+          <p class="story-lede" id="dispatch-summary">Our latest attempt recovered more tiny detail in a test image, but side-by-side review found no clear visual improvement. It also fell short of our rule for protecting the main drawing, so we are keeping the previous version for now.</p>
 
           <div class="story-copy">
-            <p id="dispatch-problem">The project is trying to recover useful image detail without changing the larger drawing. In this round, the fine-detail measure moved, but the structural gain was too small to pass the agreed review gate.</p>
-            <p id="dispatch-response">DVD05 remains the strongest candidate. The next step is to find new, well-matched scenes before considering another limited experiment.</p>
+            <p id="dispatch-problem">The original DVD picture can look soft. Restoring texture is useful only if faces, outlines and motion still look right. A score can improve even when a person cannot see a worthwhile change.</p>
+            <p id="dispatch-response">We compared two versions of the same action frame and rejected the newer attempt. We are now looking for better matched scenes before another small experiment.</p>
           </div>
 
           <div class="image-reading" aria-labelledby="image-reading-title">
             <h2 id="image-reading-title">The image, before and after</h2>
             <dl class="before-after-notes">
               <div>
-                <dt>Before · DVD05 candidate</dt>
-                <dd id="before-detail">DVD05 entered the review as the strongest candidate. In the same EP007 action-and-effects crop, fine-detail error was 0.0008194. The enlarged frame already looked close to the comparison target.</dd>
+                <dt>Before · previous version</dt>
+                <dd id="before-detail">The previous experimental version already keeps this action frame close to the version used for review. Look at the character's clothing, outlines and the effect behind him.</dd>
               </div>
               <div>
-                <dt>After · DVD07 test</dt>
-                <dd id="after-detail">DVD07 lowered the score to 0.0006923, a 15.52% change. The enlarged review still showed no clear visible gain; the masked structure result improved just 0.82%, below the 5% gate.</dd>
+                <dt>After · newer test</dt>
+                <dd id="after-detail">The computer measured less tiny-detail mismatch, but reviewers could not identify a clear improvement in this enlarged frame. The change to the main drawing was too small to meet our preset target.</dd>
               </div>
             </dl>
-            <p class="detail-method" id="detail-method">This is a static action-and-effects validation crop already seen during development. Fine-detail error measures a small-scale mismatch against a historical proxy target; it is not a viewer score or proof of authentic film grain.</p>
+            <p class="detail-method" id="detail-method">Both pictures come from the same frame. This is a still-image review; it cannot tell us whether the result looks stable in motion.</p>
           </div>
 
-          <p class="evidence-note" id="image-note">The image pair is a small, same-frame crop from the reviewed EP007 action-and-effects validation scene. The gallery below contains separate EP008 archive examples from an earlier v7 test.</p>
+          <p class="evidence-note" id="image-note">These are two versions of the same frame and crop. The newer test was rejected. Move the curtain yourself; the subtle difference is exactly why a score alone did not decide the result.</p>
           <a class="story-link" href="https://github.com/Skolastico/BringBackBleach/blob/main/Estado.md">Read the full progress diary <span aria-hidden="true">↗</span></a>
         </article>
 
@@ -82,26 +82,26 @@
           <section class="current-image-section" id="current-image-section" aria-label="Latest reviewed frame comparison">
             <div class="current-image-copy">
               <p class="section-index">Latest reviewed frame</p>
-              <p id="current-image-detail">DVD05 and the rejected DVD07 candidate are shown at the same size from the same EP007 validation crop. No clear visible gain was found.</p>
+              <p id="current-image-detail">The same action frame, treated by the earlier version and the rejected new test. The review found no clear visible gain.</p>
             </div>
             <figure class="comparison-figure current-comparison">
               <div class="comparison-frame" id="current-frame" data-preview="current" style="--split: 50%" role="group" tabindex="0" aria-label="Before and after image comparison. Press Enter to open a larger view.">
-                <img class="comparison-image" id="current-before-image" src="./assets/diario/2026-10-30-dvd05-before.png" alt="EP007 action-and-effects validation crop processed by the DVD05 candidate">
+                <img class="comparison-image" id="current-before-image" src="./assets/diario/2026-10-30-dvd05-before.png" alt="Episode 7 action frame treated by the previous experimental version">
                 <div class="after-window">
-                  <img class="comparison-image" id="current-after-image" src="./assets/diario/2026-10-30-dvd07-after.png" alt="The same EP007 validation crop processed by the rejected DVD07 candidate">
+                  <img class="comparison-image" id="current-after-image" src="./assets/diario/2026-10-30-dvd07-after.png" alt="The same Episode 7 action frame treated by the rejected new test">
                 </div>
-                <span class="image-label image-label-before" id="current-before-label">Before · DVD05</span>
-                <span class="image-label image-label-after" id="current-after-label">After · DVD07</span>
+                <span class="image-label image-label-before" id="current-before-label">Previous version</span>
+                <span class="image-label image-label-after" id="current-after-label">New test</span>
                 <span class="wipe-line" aria-hidden="true"></span>
                 <button class="wipe-handle" type="button" role="slider" aria-label="Move the comparison curtain" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5 3 12l5 7M16 5l5 7-5 7" /></svg>
                 </button>
               </div>
-              <figcaption class="comparison-caption"><span id="current-image-caption">EP007 action and effects · same frame and crop · static review</span><span>Drag the line across the image, or open the frame for a closer look.</span></figcaption>
+              <figcaption class="comparison-caption"><span id="current-image-caption">Episode 7 · same frame and crop · newer test rejected</span><span>Drag the line across the image, or open the frame for a closer look.</span></figcaption>
             </figure>
           </section>
           <div class="register-stamp" aria-hidden="true">BB<br><span>REVIEW</span></div>
-          <h2 id="cycle-title">Find new scenes that can answer a better question.</h2>
+          <h2 id="cycle-title">Finding better scenes for the next comparison.</h2>
           <p class="register-kicker">Current research cycle</p>
           <div class="cycle-count"><strong id="stage-index">02</strong><span>of</span><span id="stage-total">04</span></div>
           <div class="stage-track" id="stage-progress" role="progressbar" aria-label="Current research cycle progress" aria-valuemin="0" aria-valuemax="4" aria-valuenow="2">
@@ -110,7 +110,7 @@
             <span class="stage-segment"></span>
             <span class="stage-segment"></span>
           </div>
-          <p class="register-note" id="stage-note">DVD07 was not promoted. New scene selection is the next step.</p>
+          <p class="register-note" id="stage-note">The latest test was rejected. We are choosing new scenes before trying again.</p>
           <p class="cycle-caveat">This marker tracks one review cycle, not the whole project.</p>
         </aside>
       </section>
@@ -135,30 +135,36 @@
         <dl class="issue-ledger">
           <div class="issue-row">
             <dt>Fine detail can improve on paper without looking different.</dt>
-            <dd>Keep the visual review alongside the measurement. DVD07 stays experimental because its action sample showed no clear visible gain.</dd>
+            <dd>Compare the pictures at full size before deciding whether a new version is worth keeping. This test showed no clear visual gain.</dd>
           </div>
           <div class="issue-row">
-            <dt>Small structural changes are not enough to justify a new candidate.</dt>
-            <dd>The structural gate was set at 5%. DVD07 reached 0.82%, so the existing DVD05 candidate remains the reference.</dd>
+            <dt>The main drawing needs to stay reliable.</dt>
+            <dd>The new test missed our preset target for the larger shapes. We kept the previous experimental version.</dd>
           </div>
           <div class="issue-row">
             <dt>There are too few well-matched action and effects scenes.</dt>
-            <dd>Look for new paired scenes in EP001–EP006; keep EP007 out of new training and reserved for validation.</dd>
+            <dd>Find fresh pairs from episodes 1–6. Keep episode 7 aside to check future work on a scene the new training has not used.</dd>
           </div>
           <div class="issue-row">
             <dt>A still image cannot confirm stable motion.</dt>
-            <dd>Review timing and frame-to-frame consistency before making any claim about a full episode or flicker.</dd>
+            <dd>Review the image across consecutive frames before making any claim about stable motion or a complete episode.</dd>
           </div>
         </dl>
       </section>
 
-      <section class="archive-section" id="frame-archive" aria-labelledby="archive-title">
+      <section class="journal-archive" id="frame-archive" aria-labelledby="journal-archive-title">
+        <div class="section-lead"><h2 id="journal-archive-title">Every comparison stays in the journal.</h2></div>
+        <p>When a new reviewed image becomes the featured comparison, earlier pairs remain here. Open any entry to inspect its before and after images at a larger size.</p>
+        <div class="journal-history" id="journal-history"></div>
+      </section>
+
+      <section class="archive-section" aria-labelledby="archive-title">
         <div class="archive-heading">
           <div>
-            <h2 id="archive-title">A frame archive from the previous v7 test.</h2>
-            <p class="section-index">Earlier visual example · not today's result</p>
+            <h2 id="archive-title">Earlier experiments.</h2>
+            <p class="section-index">Older pictures · separate from today's result</p>
           </div>
-          <p>These EP008 comparisons were reviewed earlier in development. They show how the curtain works; they do not show DVD07.</p>
+          <p>These episode 8 examples came from an earlier enlargement experiment. They show a different comparison from the current action frame.</p>
         </div>
 
         <div class="archive-layout">
@@ -171,19 +177,19 @@
 
             <figure class="comparison-figure">
               <div class="comparison-frame" id="comparison-frame" data-preview="dialogue" style="--split: 50%" role="group" tabindex="0" aria-label="Before and after image comparison. Press Enter to open a larger view.">
-                <img class="comparison-image" id="before-image" src="./assets/ep008-dialogo-fonte-576p.png" alt="EP008 source frame at 576p, showing a conversation outdoors">
+                <img class="comparison-image" id="before-image" src="./assets/ep008-dialogo-fonte-576p.png" alt="Original Episode 8 frame showing a conversation outdoors">
                 <div class="after-window">
-                  <img class="comparison-image" id="after-image" src="./assets/ep008-dialogo-v7-2x.png" alt="The same EP008 frame enlarged by the earlier v7 model at 2×">
+                  <img class="comparison-image" id="after-image" src="./assets/ep008-dialogo-v7-2x.png" alt="The same frame enlarged by an earlier experimental version">
                 </div>
-                <span class="image-label image-label-before">Before · 576p source</span>
-                <span class="image-label image-label-after">After · earlier v7 · 2×</span>
+                <span class="image-label image-label-before">Original frame</span>
+                <span class="image-label image-label-after">Earlier test</span>
                 <span class="wipe-line" aria-hidden="true"></span>
                 <button class="wipe-handle" type="button" role="slider" aria-label="Move the comparison curtain" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5 3 12l5 7M16 5l5 7-5 7" /></svg>
                 </button>
               </div>
               <figcaption class="comparison-caption">
-                <span id="scene-caption">EP008 · outdoor dialogue</span>
+                <span id="scene-caption">Episode 8 · outdoor dialogue</span>
                 <span>Drag the line over the picture to compare. Click the image to open a larger view.</span>
               </figcaption>
             </figure>
@@ -192,41 +198,13 @@
           <aside class="archive-aside">
             <h3>Same frame. Two versions.</h3>
             <span class="archive-mark">ARCHIVE</span>
-            <p id="archive-description">The source frame is 774 × 576 pixels. The earlier v7 output is 1548 × 1152. The comparison is an already-reviewed example, not a blind test or approval of the current candidate.</p>
+            <p id="archive-description">The left side is an older source frame. The right side shows how an earlier experimental version enlarged it. This example does not show today's test.</p>
             <a class="story-link" href="https://github.com/Skolastico/BringBackBleach/blob/main/Estado.md">Read the dated reports <span aria-hidden="true">↗</span></a>
           </aside>
         </div>
       </section>
 
-      <section class="previous-results" aria-labelledby="previous-title">
-        <div class="previous-intro">
-          <h2 id="previous-title">The current reference is still experimental.</h2>
-          <p class="section-index">Earlier measurement · DVD05</p>
-          <p>DVD05 remains the strongest candidate from earlier work. These figures describe measured error in regions used during development, not a visual grade. The validation regions were already seen; this was not a blind test.</p>
-        </div>
-        <div class="metrics" aria-label="Earlier measured error changes for candidate DVD05">
-          <div class="metrics-heading">
-            <h3>Average error change in 24 regions</h3>
-            <p>Lower error against the comparison target · not a percentage of visual improvement</p>
-          </div>
-          <div class="metric-row">
-            <span class="metric-name">Fine detail</span>
-            <span class="metric-track"><span class="metric-fill fine-fill" id="fine-bar"></span></span>
-            <strong id="fine-value">47.21%</strong>
-          </div>
-          <div class="metric-row">
-            <span class="metric-name">Mid-size detail</span>
-            <span class="metric-track"><span class="metric-fill mid-fill" id="mid-bar"></span></span>
-            <strong id="mid-value">42.40%</strong>
-          </div>
-          <div class="metric-row">
-            <span class="metric-name">Larger structure</span>
-            <span class="metric-track metric-track-neutral"><span class="metric-marker"></span></span>
-            <strong id="structure-value">−0.33%</strong>
-          </div>
-          <p class="metric-note" id="metric-note">DVD05 measurements across 24 regions; the eight validation regions had already been consulted during development.</p>
-        </div>
-      </section>
+
     </main>
 
     <dialog class="comparison-modal" id="comparison-modal" aria-labelledby="modal-scene-caption">
@@ -234,19 +212,19 @@
         <div class="modal-header">
           <div>
             <p class="modal-overline">Frame comparison</p>
-            <p class="modal-scene-caption" id="modal-scene-caption">EP008 · outdoor dialogue</p>
+            <p class="modal-scene-caption" id="modal-scene-caption">Episode 8 · outdoor dialogue</p>
           </div>
           <button class="modal-close" id="modal-close" type="button" aria-label="Close enlarged comparison">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
           </button>
         </div>
         <div class="comparison-frame modal-frame" id="modal-frame" style="--split: 50%" role="group" aria-label="Enlarged before and after comparison">
-          <img class="comparison-image" id="modal-before-image" src="./assets/diario/2026-10-30-dvd05-before.png" alt="EP007 action-and-effects validation crop processed by the DVD05 candidate">
+          <img class="comparison-image" id="modal-before-image" src="./assets/diario/2026-10-30-dvd05-before.png" alt="Episode 7 action frame treated by the previous experimental version">
           <div class="after-window">
-            <img class="comparison-image" id="modal-after-image" src="./assets/diario/2026-10-30-dvd07-after.png" alt="The same EP007 validation crop processed by the rejected DVD07 candidate">
+            <img class="comparison-image" id="modal-after-image" src="./assets/diario/2026-10-30-dvd07-after.png" alt="The same frame treated by the rejected new test">
           </div>
-          <span class="image-label image-label-before">Before · DVD05</span>
-          <span class="image-label image-label-after">After · DVD07</span>
+          <span class="image-label image-label-before">Previous version</span>
+          <span class="image-label image-label-after">New test</span>
           <span class="wipe-line" aria-hidden="true"></span>
           <button class="wipe-handle" type="button" role="slider" aria-label="Move the comparison curtain" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5 3 12l5 7M16 5l5 7-5 7" /></svg>
@@ -266,4 +244,5 @@
     </footer>
   </body>
 </html>
+
 

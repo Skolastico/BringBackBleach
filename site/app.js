@@ -1,24 +1,24 @@
 const archiveScenes = {
   dialogue: {
-    label: "EP008 · outdoor dialogue",
+    label: "Episode 8 · outdoor dialogue",
     before: "./assets/ep008-dialogo-fonte-576p.png",
     after: "./assets/ep008-dialogo-v7-2x.png",
-    beforeAlt: "EP008 source frame at 576p, showing a conversation outdoors",
-    afterAlt: "The same EP008 frame enlarged by the earlier v7 model at 2×"
+    beforeAlt: "Original Episode 8 frame showing a conversation outdoors",
+    afterAlt: "The same frame enlarged by an earlier experimental version"
   },
   rain: {
-    label: "EP008 · rain, light and haze",
+    label: "Episode 8 · rain, light and haze",
     before: "./assets/ep008-chuva-fonte-576p.png",
     after: "./assets/ep008-chuva-v7-2x.png",
-    beforeAlt: "EP008 source frame at 576p, a night scene with rain and lights",
-    afterAlt: "The same night scene enlarged by the earlier v7 model at 2×"
+    beforeAlt: "Original Episode 8 night scene with rain and lights",
+    afterAlt: "The same night scene enlarged by an earlier experimental version"
   },
   action: {
-    label: "EP008 · action with a sword",
+    label: "Episode 8 · action with a sword",
     before: "./assets/ep008-acao-fonte-576p.png",
     after: "./assets/ep008-acao-v7-2x.png",
-    beforeAlt: "EP008 source frame at 576p, an action scene with a sword",
-    afterAlt: "The same action frame enlarged by the earlier v7 model at 2×"
+    beforeAlt: "Original Episode 8 action scene with a sword",
+    afterAlt: "The same action frame enlarged by an earlier experimental version"
   }
 };
 
@@ -147,8 +147,8 @@ document.querySelector("#comparison-frame").addEventListener("click", (event) =>
   const scene = archiveScenes[key];
   openModal({
     ...scene,
-    beforeLabel: "Before · 576p source",
-    afterLabel: "After · earlier v7 · 2×"
+    beforeLabel: "Original frame",
+    afterLabel: "Earlier test"
   }, scene.label, document.querySelector("#comparison-frame"));
 });
 
@@ -201,18 +201,15 @@ function applyTheme(theme, save = false) {
   themeToggle.setAttribute("aria-pressed", String(isDark));
   themeToggle.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
   themeLabel.textContent = isDark ? "Light" : "Dark";
-  themeColor.content = isDark ? "#11111a" : "#f4f5f8";
+  themeColor.content = isDark ? "#0b0d0e" : "#f5f2ec";
   if (save) {
     try { localStorage.setItem("bringbackbleach-theme", theme); } catch {}
   }
 }
 
-applyTheme(getSavedTheme() || (systemTheme.matches ? "dark" : "light"));
+applyTheme(getSavedTheme() || "dark");
 themeToggle.addEventListener("click", () => {
   applyTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark", true);
-});
-systemTheme.addEventListener("change", (event) => {
-  if (!getSavedTheme()) applyTheme(event.matches ? "dark" : "light");
 });
 
 function formatPercent(value) {
@@ -249,6 +246,45 @@ function loadDailyImage(imageDetail) {
   document.querySelector("#current-before-label").textContent = currentImageRecord.beforeLabel;
   document.querySelector("#current-after-label").textContent = currentImageRecord.afterLabel;
   section.hidden = false;
+}
+
+function loadImageHistory(entries) {
+  const container = document.querySelector("#journal-history");
+  if (!Array.isArray(entries)) return;
+  const safePath = (path) => typeof path === "string" && path.startsWith("./assets/diario/") && !path.includes("..");
+  container.replaceChildren();
+  entries.filter((entry) => safePath(entry.before) && safePath(entry.after) && /^\d{4}-\d{2}-\d{2}$/.test(entry.date)).forEach((entry) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "history-entry";
+    const before = document.createElement("img");
+    before.src = entry.before;
+    before.alt = entry.beforeAlt || "Earlier version of a reviewed frame";
+    before.loading = "lazy";
+    const after = document.createElement("img");
+    after.src = entry.after;
+    after.alt = entry.afterAlt || "Newer version of the same reviewed frame";
+    after.loading = "lazy";
+    const images = document.createElement("span");
+    images.className = "history-images";
+    images.append(before, after);
+    const date = document.createElement("span");
+    date.className = "history-date";
+    date.textContent = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(entry.date + "T12:00:00Z"));
+    const title = document.createElement("strong");
+    title.textContent = entry.title || "Reviewed image comparison";
+    const summary = document.createElement("span");
+    summary.className = "history-summary";
+    summary.textContent = entry.summary || "Open the same-frame comparison.";
+    button.append(images, date, title, summary);
+    button.addEventListener("click", () => openModal({
+      before: entry.before, after: entry.after,
+      beforeAlt: before.alt, afterAlt: after.alt,
+      beforeLabel: entry.beforeLabel || "Previous version",
+      afterLabel: entry.afterLabel || "New test"
+    }, entry.caption || entry.title || "Reviewed comparison", button));
+    container.append(button);
+  });
 }
 
 async function loadLatestState() {
@@ -290,20 +326,13 @@ async function loadLatestState() {
       segment.hidden = step > data.stageTotal;
     });
 
-    if (data.metrics) {
-      document.querySelector("#fine-value").textContent = formatPercent(data.metrics.fine);
-      document.querySelector("#mid-value").textContent = formatPercent(data.metrics.intermediate);
-      document.querySelector("#structure-value").textContent = (data.metrics.structure < 0 ? "−" : "") + formatPercent(Math.abs(data.metrics.structure));
-      document.querySelector("#fine-bar").style.width = Math.min(100, Math.abs(data.metrics.fine)) + "%";
-      document.querySelector("#mid-bar").style.width = Math.min(100, Math.abs(data.metrics.intermediate)) + "%";
-      setText("#metric-note", data.metricNote);
-    }
-
     loadDailyImage(data.imageDetail);
+    loadImageHistory(data.imageHistory);
   } catch {
     // Keep the complete static article readable if the status data is unavailable.
   }
 }
 
 loadLatestState();
+
 

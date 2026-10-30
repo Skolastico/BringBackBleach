@@ -2,24 +2,24 @@
 name: BringBackBleach Image Journal
 description: An evidence-led daily visual journal of image restoration.
 colors:
-  paper: "#11111a"
-  surface: "#181823"
-  surface-raised: "#20202d"
-  ink: "#f1efe9"
-  soft-ink: "#d4d2d8"
-  muted: "#aaa8b5"
-  quiet: "#858391"
-  line: "#383746"
-  line-strong: "#555367"
-  indigo: "#a4a8dc"
-  indigo-deep: "#7176b5"
-  red: "#e25355"
-  red-dark: "#b63845"
-  paper-light: "#f4f5f8"
+  paper: "#0b0d0e"
+  surface: "#151819"
+  surface-raised: "#1c2021"
+  ink: "#f4f0e7"
+  soft-ink: "#d9d5cb"
+  muted: "#aaa79e"
+  quiet: "#878980"
+  line: "#383b3b"
+  line-strong: "#555b59"
+  indigo: "#f4f0e7"
+  indigo-deep: "#e36b32"
+  red: "#df4b35"
+  red-dark: "#b63a2b"
+  paper-light: "#f5f2ec"
   white: "#fff"
-  control-border: "#555367"
-  metric-track: "#30303f"
-  metric-mid: "#a4a8dc"
+  control-border: "#555b59"
+  metric-track: "#303433"
+  metric-mid: "#f4f0e7"
 typography:
   display:
     fontFamily: 'Georgia, "Times New Roman", serif'
@@ -72,13 +72,13 @@ components:
 
 **Creative North Star: "The Frame Inspection Field Report."**
 
-The site is an independent image-review desk: a current dated report leads with the decision, then places image notes and their limits beside the visual evidence. The interface borrows from original anime frame annotations and monochrome reproduction marks, using cold ink-and-paper contrast, spiritual indigo, and one restrained red review signal. The interface design is original and uses no official logos or promotional art. Small, clearly labelled crops of series frames appear only as research comparisons.
+The site is an independent image-review desk: a current dated report leads with the decision, then places image notes and their limits beside the visual evidence. The interface borrows from original anime frame annotations and monochrome reproduction marks, using cold ink-and-paper contrast, warm white and orange blade marks, and one restrained red review signal. The interface design is original and uses no official logos or promotional art. Small, clearly labelled crops of series frames appear only as research comparisons.
 
 The movable divider is the signature. A compact field register and numbered review cycle carry the same inspection language through the rest of the journal, while the short English dispatches keep the work legible to general readers.
 
 **Key Characteristics:**
 - Daily news-style reports lead with the result and its limits.
-- Cold ink, paper, indigo, and a restrained red review mark define the palette.
+- Black ink, bone white, orange slashes, and a restrained red review mark define the palette.
 - Straight rules, frame labels, and numbered stages make evidence provenance easy to scan.
 - The image curtain and enlarged comparison keep the reviewed frame at the centre.
 
@@ -102,7 +102,7 @@ The dark theme is the base palette; CSS custom properties remap the same roles f
 - **Cool Paper and White**: Light mode uses cool near-white surfaces; white remains the curtain line and text on dark labels.
 - **Metric Track**: A quiet neutral rail keeps measured values distinct from result copy.
 
-Light mode remaps the active CSS variables to paper #f4f5f8, surface #fbfbfd, raised surface #e8e9ef, ink #171722, soft ink #363541, muted #5a5966, quiet #686571, line #c9cbd4, strong line #9e9fac, indigo #424878, deep indigo #363d70, red #b73143, deep red #9c2637, control border #999aa6, metric track #d0d2da, and metric mid #565c93. The unchanged paper-light value is #f4f5f8 and white remains #fff.
+Light mode remaps the active CSS variables to paper #f5f2ec, surface #fbfbfd, raised surface #e8e3d9, ink #151716, soft ink #303432, muted #5b605b, quiet #666b65, line #c9c9c0, strong line #a1a49b, indigo #262b28, deep indigo #bc4d28, red #b63a2b, deep red #9c3125, control border #999aa6, metric track #d4d4ca, and metric mid #747a72. The unchanged paper-light value is #f5f2ec and white remains #fff.
 
 ### Named Rules
 **The One Active Mark Rule.** Red marks current review, selection, focus, and the curtain grip; keep it out of broad decorative fills.
@@ -127,9 +127,9 @@ Light mode remaps the active CSS variables to paper #f4f5f8, surface #fbfbfd, ra
 
 ## Layout
 
-The header, main content, and footer share a centered page measure of min(1220px, viewport width minus 72px). The opening dispatch uses a wider story column beside a register column, with a flexible 34–64px gap. The base columns are minmax(0, 1.15fr) and minmax(320px, 0.85fr). The register's top rule and one-pixel indigo edge make it read like a separate field note without turning it into a card.
+The header, main content, and footer share a centered page measure of min(1220px, viewport width minus 72px). The opening dispatch uses a wider story column beside a register column, with a flexible 34–64px gap. The base columns are minmax(0, 1.15fr) and minmax(320px, 0.85fr). The register's top rule and one-pixel orange edge make it read like a separate field note without turning it into a card.
 
-The optional current-image detail is a single-column, ruled insert between the dispatch and review cycle. The four review stages run as equal columns with vertical separators. Archive comparisons place the image beside scene context, and the earlier-results section pairs explanatory copy with a compact metric rail. The comparison frame keeps a 774:576 aspect ratio.
+The optional current-image detail is a single-column, ruled insert between the dispatch and review cycle. The four review stages run as equal columns with vertical separators. Archive comparisons place the image beside scene context, and the dated image-history section preserves each reviewed comparison. The comparison frame keeps a 774:576 aspect ratio.
 
 At 880px and below, page width becomes min(viewport width minus 48px, 720px); dispatch columns adjust to minmax(0, 1fr) and minmax(280px, 0.7fr) with a 30px gap. At 640px and below, the page uses 16px gutters, the header may wrap, the dispatch and archive stack, cycle steps become two columns, the footer becomes two columns, the wordmark caption disappears, and the Frame Archive link is hidden. The Latest Dispatch link remains until the 400px breakpoint, where it is also hidden and the navigation tightens. The comparison modal also narrows for mobile height. The page supports a 320px minimum viewport width.
 
@@ -174,5 +174,6 @@ The theme preference follows an explicit saved choice when present, otherwise th
 - **Don't** use official Bleach logos or promotional art as interface branding; keep series frames to small, clearly labelled research crops.
 - **Don't** let the red review signal become a broad decorative fill.
 - **Don't** treat a measured score as a visual grade or separate a before/after image from its provenance.
+
 
 

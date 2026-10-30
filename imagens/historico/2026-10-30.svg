@@ -1,20 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title description">
   <title id="title">BringBackBleach image journal, 30 October 2026</title>
-  <desc id="description">Stage two of four is in progress. The DVD07 test improved a fine-detail measure but missed its structural target and was not promoted.</desc>
-  <rect width="1200" height="380" fill="#11111a"/>
-  <path d="M56 51h44M110 51h14M132 51h20" stroke="#a4a8dc" stroke-width="3"/>
-  <path d="M152 51h15" stroke="#e25355" stroke-width="3"/>
-  <text x="56" y="91" fill="#a4a8dc" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">BRINGBACKBLEACH · IMAGE JOURNAL</text>
-  <text x="1144" y="91" fill="#aaa8b5" font-family="Arial,sans-serif" font-size="13" text-anchor="end">30 OCTOBER 2026</text>
-  <text x="56" y="159" fill="#f1efe9" font-family="Georgia,serif" font-size="42">The detail score improved.</text>
-  <text x="56" y="208" fill="#f1efe9" font-family="Georgia,serif" font-size="42">The picture still looked much the same.</text>
-  <text x="56" y="247" fill="#d4d2d8" font-family="Arial,sans-serif" font-size="17">DVD07 was not promoted. DVD05 remains the strongest experimental candidate.</text>
-  <text x="56" y="300" fill="#aaa8b5" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">REVIEW CYCLE</text>
-  <text x="1144" y="300" fill="#f1efe9" font-family="Arial,sans-serif" font-size="16" font-weight="700" text-anchor="end">STAGE 2 / 4</text>
-  <rect x="56" y="316" width="1088" height="5" fill="#383746"/>
-  <rect x="56" y="316" width="270" height="5" fill="#a4a8dc"/>
-  <rect x="326" y="316" width="270" height="5" fill="#e25355"/>
-  <text x="56" y="351" fill="#aaa8b5" font-family="Arial,sans-serif" font-size="12">Find new, well-matched scenes before another limited test.</text>
-  <text x="1144" y="351" fill="#858391" font-family="Arial,sans-serif" font-size="11" text-anchor="end">Metrics describe image regions, not visual improvement.</text>
+  <desc id="description">Stage two of four is in progress. The new test measured better on tiny detail but showed no clear visual gain and was rejected.</desc>
+  <rect width="1200" height="380" fill="#0b0d0e"/>
+  <path d="M56 51h44M110 51h14M132 51h20" stroke="#f4f0e7" stroke-width="3"/>
+  <path d="M152 51h15" stroke="#df4b35" stroke-width="3"/>
+  <text x="56" y="91" fill="#f4f0e7" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">BRINGBACKBLEACH · IMAGE JOURNAL</text>
+  <text x="1144" y="91" fill="#aaa79e" font-family="Arial,sans-serif" font-size="13" text-anchor="end">30 OCTOBER 2026</text>
+  <text x="56" y="159" fill="#f4f0e7" font-family="Georgia,serif" font-size="42">More detail on paper.</text>
+  <text x="56" y="208" fill="#f4f0e7" font-family="Georgia,serif" font-size="42">Almost the same picture.</text>
+  <text x="56" y="247" fill="#d9d5cb" font-family="Arial,sans-serif" font-size="17">The new test was rejected. The previous version remains our reference.</text>
+  <text x="56" y="300" fill="#aaa79e" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">REVIEW CYCLE</text>
+  <text x="1144" y="300" fill="#f4f0e7" font-family="Arial,sans-serif" font-size="16" font-weight="700" text-anchor="end">STAGE 2 / 4</text>
+  <rect x="56" y="316" width="1088" height="5" fill="#383b3b"/>
+  <rect x="56" y="316" width="270" height="5" fill="#f4f0e7"/>
+  <rect x="326" y="316" width="270" height="5" fill="#df4b35"/>
+  <text x="56" y="351" fill="#aaa79e" font-family="Arial,sans-serif" font-size="12">Find new, well-matched scenes before another limited test.</text>
+  <text x="1144" y="351" fill="#878980" font-family="Arial,sans-serif" font-size="11" text-anchor="end">This bar shows one review cycle, not the whole project.</text>
 </svg>
+
 
