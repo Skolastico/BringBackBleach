@@ -67,13 +67,19 @@ async function loadLatestState() {
     document.querySelector("#stage-total").textContent = String(data.stageTotal).padStart(2, "0");
     document.querySelector("#stage-title").textContent = data.stageTitle;
     document.querySelector("#stage-note").textContent = data.stageNote;
+    document.querySelectorAll(".stage-segment").forEach((segment, index) => {
+      const step = index + 1;
+      segment.classList.toggle("is-complete", step < data.stageNumber);
+      segment.classList.toggle("is-current", step === data.stageNumber);
+      segment.hidden = step > data.stageTotal;
+    });
     document.querySelector("#latest-summary").textContent = data.summary;
     document.querySelector("#next-step").textContent = data.nextStep;
     document.querySelector("#fine-value").textContent = formatPercent(data.metrics.fine);
     document.querySelector("#mid-value").textContent = formatPercent(data.metrics.intermediate);
     document.querySelector("#structure-value").textContent = formatPercent(data.metrics.structure);
-    document.querySelector("#fine-bar").style.width = `${Math.min(100, Math.abs(data.metrics.fine) * 2)}%`;
-    document.querySelector("#mid-bar").style.width = `${Math.min(100, Math.abs(data.metrics.intermediate) * 2)}%`;
+    document.querySelector("#fine-bar").style.width = `${Math.min(100, Math.abs(data.metrics.fine))}%`;
+    document.querySelector("#mid-bar").style.width = `${Math.min(100, Math.abs(data.metrics.intermediate))}%`;
     document.querySelector("#metric-note").textContent = data.metricNote;
   } catch {
     // The static copy in the HTML remains readable if the status file is unavailable.
@@ -81,3 +87,4 @@ async function loadLatestState() {
 }
 
 loadLatestState();
+
