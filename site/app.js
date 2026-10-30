@@ -183,8 +183,6 @@ modal.addEventListener("close", () => {
 const themeToggle = document.querySelector("#theme-toggle");
 const themeLabel = document.querySelector("#theme-label");
 const themeColor = document.querySelector('meta[name="theme-color"]');
-const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
-
 function getSavedTheme() {
   try {
     const saved = localStorage.getItem("bringbackbleach-theme");
@@ -211,11 +209,6 @@ applyTheme(getSavedTheme() || "dark");
 themeToggle.addEventListener("click", () => {
   applyTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark", true);
 });
-
-function formatPercent(value) {
-  const formatted = Number(value).toFixed(2);
-  return formatted + "%";
-}
 
 function setText(selector, value) {
   if (typeof value === "string") document.querySelector(selector).textContent = value;
