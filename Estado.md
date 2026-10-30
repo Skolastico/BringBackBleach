@@ -36,4 +36,9 @@ Selecionar e rever algumas regiões adicionais de ação, efeitos e textura inte
 - Não é uma avaliação cega: as regiões de validação já foram consultadas durante o desenvolvimento.
 - Não certifica a ausência de cintilação nem aprova o processamento integral de episódios.
 
-Os gráficos deste diário são desenhados a partir de medidas agregadas. Não publicamos fotogramas, episódios, dados de treino nem pesos do modelo.
+Os gráficos deste diário são desenhados a partir de medidas agregadas. O site inclui só três fotogramas de exemplo, emparelhados com as respetivas saídas; não contém episódios completos, dados de treino nem pesos do modelo.
+
+## Comparações visuais
+
+O [site do projeto](https://skolastico.github.io/BringBackBleach/) inclui três exemplos antes/depois de um teste anterior do EP008 com o modelo v7 a 2×. A cortina interativa permite comparar a fonte 576p com a saída ampliada. Estes exemplos já tinham sido vistos durante o desenvolvimento: ajudam a perceber o aspeto, mas não são uma avaliação cega nem uma aprovação do candidato DVD05 atual. Não publicamos episódios completos, conjuntos de treino ou pesos.
+
