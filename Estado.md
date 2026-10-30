@@ -1,44 +1,65 @@
-# Estado do projeto — 30 de outubro de 2026
+# BringBackBleach Image Journal
 
-![Resumo visual do progresso](imagens/progresso.svg)
+*Daily notes on making Bleach frames clearer while keeping the drawing, texture and original timing intact.*
 
-## Em que ponto estamos?
+## 30 October 2026 — The detail score improved. The picture still looked much the same.
 
-O candidato experimental DVD05 conserva mais sinal fino e intermédio nas regiões analisadas. Nas oito regiões de validação já consultadas, o erro médio nessas bandas baixou **47,21%** e **42,40%**, respetivamente, face à base usada na comparação. A estrutura de baixa frequência ficou praticamente igual (**−0,33%**).
+The latest selective DVD07 test lowered measured fine-detail error by **14.40% across nine validation regions**. On one EP007 action-and-effects sample, the error moved from **0.0008194 to 0.0006923** (15.52% lower). Reviewers still saw no clear visual gain in the enlarged comparison. The average masked structural gain was **0.82%**, below the preset **5%** target, so DVD07 was not promoted. DVD05 remains the strongest experimental candidate.
 
-Isto é um resultado de medição, não significa que a imagem pareça 47% melhor. Nas prévias revistas, a diferença visual continua subtil. O candidato ainda não está aprovado para episódios completos.
+### What changed in the image?
 
-## Problemas e resposta atual
+**Before — DVD05:** The same enlarged EP007 action-and-effects crop measured 0.0008194 fine-detail error. The picture was already close to the comparison target in the review board.
 
-| Problema | O que estamos a fazer |
+**After — DVD07:** The same crop measured 0.0006923, a 15.52% reduction in fine-detail error. The board shows DVD05 and DVD07 nearly indistinguishable at this size, with no clear visual gain. This is a measurement change, not a 15.52% visual improvement.
+
+The website now shows small, equal-size crops from this reviewed EP007 frame so readers can move the curtain between DVD05 and DVD07. The three EP008 examples remain clearly marked as archive images from an earlier v7 test; they are not DVD07 results.
+
+### The problem and our response
+
+| What is difficult | What we are doing |
 | --- | --- |
-| A textura fina e intermédia continua pouco visível. | Medir cada escala separadamente e investigar uma correção limitada, sem aumentar o efeito global nem afirmar que todo o sinal é grão verdadeiro. |
-| Os exemplos de ação e efeitos são poucos. | Rever novas regiões narrativas dos DVDs já disponíveis. O conjunto de treino atual tem apenas uma região desse tipo; as regiões de validação atuais não incluem ação. |
-| Alguns candidatos melhoram a imagem estática, mas pioram a consistência entre frames. | Manter a comparação temporal como critério obrigatório. Os candidatos que regrediram ficam experimentais e não substituem a referência atual. |
-| A conversão para vídeo comprimido também altera detalhes. | Os controlos mostraram que a conversão de cor pode contribuir para a perda. Não vamos fazer mais testes de encoder sem uma pergunta concreta. |
+| A better detail score may not make a visible difference. | Keep the image review next to the measurement. Do not promote a candidate on the score alone. |
+| DVD07 changed the picture too little to justify a new version. | The masked structural gain was 0.82%, below the preset 5% minimum. Keep DVD07 for diagnosis and retain DVD05 as the reference. |
+| The next round needs better examples of action and effects. | Find new, well-matched scenes in episodes EP001–EP006. Keep EP007 reserved for validation. |
+| One still cannot tell us whether motion is stable. | Check frame timing and frame-to-frame consistency before making any claim about a full episode or flicker. |
 
-## Barra das etapas
+### This review in plain numbers
 
-**1 de 4 etapas concluída; a segunda está em curso.** A barra mostra apenas as etapas deste ciclo de investigação, não uma percentagem do projeto inteiro.
+- **200** training steps and **800** sample presentations.
+- **13** training targets.
+- Fine-detail error fell **14.40%** across nine validation regions.
+- On the EP007 action/effects sample, fine-detail error moved **0.0008194 → 0.0006923** (15.52% lower than DVD05).
+- Structural gain was **0.82%**, below the **5%** target. DVD07 was rejected.
+- Five training boards were reviewed. The differences were subtle; no new large drawing distortion was observed.
+- Validation scenes had already been seen during development. This was not a blind test, and it did not check continuous playback.
 
-1. Diagnosticar onde se perde detalhe — concluído.
-2. Rever mais exemplos de textura, ação e efeitos — em curso.
-3. Fazer uma experiência limitada, se os dados revistos forem suficientes — por fazer.
-4. Rever a imagem e a consistência entre frames antes de decidir — por fazer.
+### Progress through this review cycle
 
-## Próximo passo
+**Stage 2 of 4 is in progress.** We are finding new scenes that can answer a better question. The stages below describe this review cycle, not a percentage of the whole project.
 
-Selecionar e rever algumas regiões adicionais de ação, efeitos e textura intermédia nos DVDs dos episódios já disponíveis. Depois decidir se a cobertura é suficiente para uma única experiência delimitada. Não está previsto prolongar automaticamente o treino atual.
+1. Identify where image detail is being lost — complete.
+2. Choose fresh scenes for review — in progress.
+3. Run one limited experiment, if the scenes justify it — pending.
+4. Review image and motion before making a decision — pending.
 
-## O que este resultado não demonstra
+### Next dispatch
 
-- Não prova que todo o detalhe fino seja grão original ou que possa ser recuperado com certeza.
-- Não é uma avaliação cega: as regiões de validação já foram consultadas durante o desenvolvimento.
-- Não certifica a ausência de cintilação nem aprova o processamento integral de episódios.
+Locate new narrative scenes with usable matches between the available DVD and upscale material in EP001–EP006. EP007 remains reserved for validation. Only after the images have been reviewed and suitable regions are found will a new, limited experiment be considered.
 
-Os gráficos deste diário são desenhados a partir de medidas agregadas. O site inclui só três fotogramas de exemplo, emparelhados com as respetivas saídas; não contém episódios completos, dados de treino nem pesos do modelo.
+### What this result does not show
 
-## Comparações visuais
+- It does not prove that every fine detail is original film grain or that missing detail can be recovered with certainty.
+- It does not establish a clear visual improvement over DVD05.
+- It does not certify continuous motion, flicker, or complete-episode processing.
+- DVD07 is not promoted and must not be described as the new project model.
 
-O [site do projeto](https://skolastico.github.io/BringBackBleach/) inclui três exemplos antes/depois de um teste anterior do EP008 com o modelo v7 a 2×. A cortina interativa permite comparar a fonte 576p com a saída ampliada. Estes exemplos já tinham sido vistos durante o desenvolvimento: ajudam a perceber o aspeto, mas não são uma avaliação cega nem uma aprovação do candidato DVD05 atual. Não publicamos episódios completos, conjuntos de treino ou pesos.
+## Earlier candidate reference — DVD05
+
+An earlier DVD05 comparison measured 47.21% lower fine-detail error and 42.40% lower mid-size-detail error across 24 regions. Larger structure changed by −0.33%. The validation regions had already been consulted during development. These measurements are not visual grades and do not mean that the picture looks 47% better.
+
+## Archived frame comparisons
+
+The website contains three small, same-frame comparisons from an earlier EP008 test with model v7 at 2×. They are labelled as archive examples. They help readers inspect the curtain interaction and see the kind of detail this journal discusses; they do not demonstrate the result of DVD07 or approve DVD05.
+
+This repository does not publish full episodes, video clips, training data or model weights. Bleach and its frames belong to their respective rights holders. This independent research project is not affiliated with them.
 

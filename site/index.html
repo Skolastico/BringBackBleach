@@ -1,175 +1,268 @@
 <!doctype html>
-<html lang="pt-PT">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f3f1ec">
-    <meta name="description" content="Diário visual de um projeto independente para melhorar o upscale de Bleach, preservando desenho, textura e cadência.">
-    <title>BringBackBleach — diário visual</title>
+    <meta name="theme-color" content="#11111a">
+    <meta name="description" content="A daily visual journal following the image restoration work on Bleach, with plain-English notes and carefully labelled frame comparisons.">
+    <title>BringBackBleach — Image Journal</title>
     <script>
       try {
         const savedTheme = localStorage.getItem("bringbackbleach-theme");
         if (savedTheme === "light" || savedTheme === "dark") document.documentElement.dataset.theme = savedTheme;
       } catch {}
     </script>
-    <link rel="stylesheet" href="./styles.css?v=2026-10-30-2">
-    <script src="./app.js?v=2026-10-30-3" defer></script>
+    <link rel="stylesheet" href="./styles.css?v=2026-10-30-5">
+    <script src="./app.js?v=2026-10-30-5" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to journal</a>
+
     <header class="site-header">
-      <a class="wordmark" href="#inicio" aria-label="BringBackBleach, início">BB<span>—</span></a>
-      <nav aria-label="Navegação principal">
-        <a href="#comparacao">Comparação</a>
-        <a href="#progresso">Progresso</a>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Ativar modo escuro">
-          <span class="theme-icon" aria-hidden="true">☾</span>
-          <span id="theme-label">Modo escuro</span>
+      <a class="wordmark" href="#top" aria-label="BringBackBleach Image Journal home">
+        <span class="wordmark-mark">B<span>B</span></span>
+        <span class="wordmark-caption">Image journal</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#latest">Latest dispatch</a>
+        <a href="#frame-archive">Frame archive</a>
+        <a href="#method">How we review</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to light theme">
+          <span class="theme-indicator" aria-hidden="true"></span>
+          <span id="theme-label">Light</span>
         </button>
-        <a class="github-link" href="https://github.com/Skolastico/BringBackBleach">Abrir no GitHub <span aria-hidden="true">↗</span></a>
+        <a class="github-link" href="https://github.com/Skolastico/BringBackBleach">GitHub <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero" id="inicio">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Projeto independente · diário visual</p>
-          <h1>Melhorar a imagem.<br><em>Preservar o movimento.</em></h1>
-          <p class="hero-lede">Um projeto experimental de upscale e restauro para fontes DVD/480p e Blu-rays problemáticos de <i>Bleach</i>.</p>
-          <a class="text-link" href="#comparacao">Explorar uma comparação <span aria-hidden="true">↓</span></a>
-        </div>
-        <aside class="hero-status" aria-label="Etapa atual do projeto">
-          <div class="status-head">
-            <p class="eyebrow">Ciclo atual</p>
-            <p class="status-index"><span id="stage-index">02</span> <span>/ </span><span id="stage-total">04</span></p>
+    <main id="main">
+      <section class="dispatch-section" id="top" aria-labelledby="dispatch-title">
+        <article class="dispatch-story" id="latest">
+          <div class="story-rule" aria-hidden="true"><span></span><span></span><span></span></div>
+          <h1 id="dispatch-title">The detail score improved. The picture still looked much the same.</h1>
+          <p class="story-meta">
+            <span class="edition-mark" aria-hidden="true"></span>
+            <span>Daily image journal</span>
+            <span class="meta-separator" aria-hidden="true">/</span>
+            <time id="dispatch-date" datetime="2026-10-30">30 October 2026</time>
+            <span class="meta-separator" aria-hidden="true">/</span>
+            <span id="dispatch-label">DVD07 · review complete</span>
+          </p>
+          <p class="story-lede" id="dispatch-summary">A selective test lowered the fine-detail error score, but reviewers could not see a clear gain in the action frame. Its structural result missed the preset target, so DVD07 was not promoted.</p>
+
+          <div class="story-copy">
+            <p id="dispatch-problem">The project is trying to recover useful image detail without changing the larger drawing. In this round, the fine-detail measure moved, but the structural gain was too small to pass the agreed review gate.</p>
+            <p id="dispatch-response">DVD05 remains the strongest candidate. The next step is to find new, well-matched scenes before considering another limited experiment.</p>
           </div>
-          <p class="status-title" id="stage-title">Rever exemplos de ação e textura</p>
-          <div class="stage-track" aria-hidden="true">
+
+          <div class="image-reading" aria-labelledby="image-reading-title">
+            <h2 id="image-reading-title">The image, before and after</h2>
+            <dl class="before-after-notes">
+              <div>
+                <dt>Before · DVD05 candidate</dt>
+                <dd id="before-detail">DVD05 entered the review as the strongest candidate. In the same EP007 action-and-effects crop, fine-detail error was 0.0008194. The enlarged frame already looked close to the comparison target.</dd>
+              </div>
+              <div>
+                <dt>After · DVD07 test</dt>
+                <dd id="after-detail">DVD07 lowered the score to 0.0006923, a 15.52% change. The enlarged review still showed no clear visible gain; the masked structure result improved just 0.82%, below the 5% gate.</dd>
+              </div>
+            </dl>
+            <p class="detail-method" id="detail-method">This is a static action-and-effects validation crop already seen during development. Fine-detail error measures a small-scale mismatch against a historical proxy target; it is not a viewer score or proof of authentic film grain.</p>
+          </div>
+
+          <p class="evidence-note" id="image-note">The image pair is a small, same-frame crop from the reviewed EP007 action-and-effects validation scene. The gallery below contains separate EP008 archive examples from an earlier v7 test.</p>
+          <a class="story-link" href="https://github.com/Skolastico/BringBackBleach/blob/main/Estado.md">Read the full progress diary <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <aside class="dispatch-register" aria-labelledby="cycle-title">
+          <div class="register-topline">
+            <span>Field report</span>
+            <span id="register-date">30 · X · 2026</span>
+          </div>
+          <section class="current-image-section" id="current-image-section" aria-label="Latest reviewed frame comparison">
+            <div class="current-image-copy">
+              <p class="section-index">Latest reviewed frame</p>
+              <p id="current-image-detail">DVD05 and the rejected DVD07 candidate are shown at the same size from the same EP007 validation crop. No clear visible gain was found.</p>
+            </div>
+            <figure class="comparison-figure current-comparison">
+              <div class="comparison-frame" id="current-frame" data-preview="current" style="--split: 50%" role="group" tabindex="0" aria-label="Before and after image comparison. Press Enter to open a larger view.">
+                <img class="comparison-image" id="current-before-image" src="./assets/diario/2026-10-30-dvd05-before.png" alt="EP007 action-and-effects validation crop processed by the DVD05 candidate">
+                <div class="after-window">
+                  <img class="comparison-image" id="current-after-image" src="./assets/diario/2026-10-30-dvd07-after.png" alt="The same EP007 validation crop processed by the rejected DVD07 candidate">
+                </div>
+                <span class="image-label image-label-before" id="current-before-label">Before · DVD05</span>
+                <span class="image-label image-label-after" id="current-after-label">After · DVD07 rejected</span>
+                <span class="wipe-line" aria-hidden="true"></span>
+                <button class="wipe-handle" type="button" role="slider" aria-label="Move the comparison curtain" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5 3 12l5 7M16 5l5 7-5 7" /></svg>
+                </button>
+              </div>
+              <figcaption class="comparison-caption"><span id="current-image-caption">EP007 action and effects · same frame and crop · static review</span><span>Drag the line across the image, or open the frame for a closer look.</span></figcaption>
+            </figure>
+          </section>
+          <div class="register-stamp" aria-hidden="true">BB<br><span>REVIEW</span></div>
+          <h2 id="cycle-title">Find new scenes that can answer a better question.</h2>
+          <p class="register-kicker">Current research cycle</p>
+          <div class="cycle-count"><strong id="stage-index">02</strong><span>of</span><span id="stage-total">04</span></div>
+          <div class="stage-track" id="stage-progress" role="progressbar" aria-label="Current research cycle progress" aria-valuemin="0" aria-valuemax="4" aria-valuenow="2">
             <span class="stage-segment is-complete"></span>
             <span class="stage-segment is-current"></span>
             <span class="stage-segment"></span>
             <span class="stage-segment"></span>
           </div>
-          <p class="status-note" id="stage-note">Diagnóstico concluído · nova seleção em curso</p>
+          <p class="register-note" id="stage-note">DVD07 was not promoted. New scene selection is the next step.</p>
+          <p class="cycle-caveat">This marker tracks one review cycle, not the whole project.</p>
         </aside>
       </section>
 
-      <section class="comparison-section" id="comparacao" aria-labelledby="comparison-heading">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Fonte 576p / saída 2×</p>
-            <h2 id="comparison-heading">Desliza a cortina.</h2>
+      <section class="cycle-section" id="method" aria-labelledby="cycle-heading">
+        <div class="section-lead">
+          <h2 id="cycle-heading">A result has to hold up in the frame.</h2>
+        </div>
+        <ol class="cycle-steps">
+          <li class="is-complete"><span class="step-number">01</span><span class="step-name">Identify the image problem</span><span class="step-state">Complete</span></li>
+          <li class="is-current"><span class="step-number">02</span><span class="step-name">Choose fresh review scenes</span><span class="step-state">In progress</span></li>
+          <li><span class="step-number">03</span><span class="step-name">Run one limited test</span><span class="step-state">Next</span></li>
+          <li><span class="step-number">04</span><span class="step-name">Review image and motion</span><span class="step-state">Pending</span></li>
+        </ol>
+        <p class="cycle-caveat">The steps describe this cycle of work. They are not a percentage estimate for the whole project.</p>
+      </section>
+
+      <section class="issue-section" aria-labelledby="issue-title">
+        <div class="section-lead">
+          <h2 id="issue-title">The open questions behind the pictures.</h2>
+        </div>
+        <dl class="issue-ledger">
+          <div class="issue-row">
+            <dt>Fine detail can improve on paper without looking different.</dt>
+            <dd>Keep the visual review alongside the measurement. DVD07 stays experimental because its action sample showed no clear visible gain.</dd>
           </div>
-          <p class="section-intro">Arrasta a linha sobre a imagem para comparar. Clica na imagem para a ampliar.</p>
+          <div class="issue-row">
+            <dt>Small structural changes are not enough to justify a new candidate.</dt>
+            <dd>The structural gate was set at 5%. DVD07 reached 0.82%, so the existing DVD05 candidate remains the reference.</dd>
+          </div>
+          <div class="issue-row">
+            <dt>There are too few well-matched action and effects scenes.</dt>
+            <dd>Look for new paired scenes in EP001–EP006; keep EP007 out of new training and reserved for validation.</dd>
+          </div>
+          <div class="issue-row">
+            <dt>A still image cannot confirm stable motion.</dt>
+            <dd>Review timing and frame-to-frame consistency before making any claim about a full episode or flicker.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="archive-section" id="frame-archive" aria-labelledby="archive-title">
+        <div class="archive-heading">
+          <div>
+            <h2 id="archive-title">A frame archive from the previous v7 test.</h2>
+            <p class="section-index">Earlier visual example · not today's result</p>
+          </div>
+          <p>These EP008 comparisons were reviewed earlier in development. They show how the curtain works; they do not show DVD07.</p>
         </div>
 
-        <div class="comparison-layout">
-          <div class="comparison-main">
-            <div class="scene-tabs" role="group" aria-label="Escolher cena">
-              <button type="button" class="scene-tab is-active" data-scene="dialogo" aria-pressed="true">Diálogo</button>
-              <button type="button" class="scene-tab" data-scene="chuva" aria-pressed="false">Chuva e luz</button>
-              <button type="button" class="scene-tab" data-scene="acao" aria-pressed="false">Ação</button>
+        <div class="archive-layout">
+          <div class="archive-main">
+            <div class="scene-tabs" role="group" aria-label="Choose an archived scene">
+              <button type="button" class="scene-tab is-active" data-scene="dialogue" aria-pressed="true">Dialogue</button>
+              <button type="button" class="scene-tab" data-scene="rain">Rain and light</button>
+              <button type="button" class="scene-tab" data-scene="action">Action</button>
             </div>
 
             <figure class="comparison-figure">
-              <div class="comparison-frame" id="comparison-frame" style="--split: 50%">
-                <img class="comparison-image" id="before-image" src="./assets/ep008-dialogo-fonte-576p.png" alt="Fonte 576p, cena de diálogo ao ar livre">
-                <div class="after-window" id="after-window">
-                  <img class="comparison-image" id="after-image" src="./assets/ep008-dialogo-v7-2x.png" alt="Saída 2× do modelo v7, na mesma cena">
+              <div class="comparison-frame" id="comparison-frame" data-preview="dialogue" style="--split: 50%" role="group" tabindex="0" aria-label="Before and after image comparison. Press Enter to open a larger view.">
+                <img class="comparison-image" id="before-image" src="./assets/ep008-dialogo-fonte-576p.png" alt="EP008 source frame at 576p, showing a conversation outdoors">
+                <div class="after-window">
+                  <img class="comparison-image" id="after-image" src="./assets/ep008-dialogo-v7-2x.png" alt="The same EP008 frame enlarged by the earlier v7 model at 2×">
                 </div>
-                <span class="image-label image-label-before">Antes · fonte 576p</span>
-                <span class="image-label image-label-after">Depois · modelo v7 2×</span>
+                <span class="image-label image-label-before">Before · 576p source</span>
+                <span class="image-label image-label-after">After · earlier v7 · 2×</span>
                 <span class="wipe-line" aria-hidden="true"></span>
-                <button class="wipe-handle" type="button" role="slider" aria-label="Mover cortina de comparação" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-                  <span aria-hidden="true">↔</span>
+                <button class="wipe-handle" type="button" role="slider" aria-label="Move the comparison curtain" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5 3 12l5 7M16 5l5 7-5 7" /></svg>
                 </button>
               </div>
               <figcaption class="comparison-caption">
-                <span id="scene-caption">EP008 · diálogo ao ar livre</span>
-                <span>Arrasta a linha para comparar. Clica na imagem para ampliar. Exemplo de um teste já observado, não de uma avaliação cega.</span>
+                <span id="scene-caption">EP008 · outdoor dialogue</span>
+                <span>Drag the line over the picture to compare. Click the image to open a larger view.</span>
               </figcaption>
             </figure>
           </div>
 
-          <aside class="comparison-aside">
-            <p class="aside-number">2×</p>
-            <p class="aside-title">Mais resolução à saída.</p>
-            <p class="aside-copy">A fonte tem 774 × 576 píxeis. O modelo v7 gera 1548 × 1152. O teste preservou os tempos dos excertos, mas não certifica toda a série nem a ausência de cintilação.</p>
-            <a class="text-link" href="https://github.com/Skolastico/BringBackBleach/blob/main/Estado.md">Ler o estado completo <span aria-hidden="true">↗</span></a>
+          <aside class="archive-aside">
+            <h3>Same frame. Two versions.</h3>
+            <span class="archive-mark">ARCHIVE</span>
+            <p id="archive-description">The source frame is 774 × 576 pixels. The earlier v7 output is 1548 × 1152. The comparison is an already-reviewed example, not a blind test or approval of the current candidate.</p>
+            <a class="story-link" href="https://github.com/Skolastico/BringBackBleach/blob/main/Estado.md">Read the dated reports <span aria-hidden="true">↗</span></a>
           </aside>
         </div>
       </section>
 
-      <section class="progress-section" id="progresso" aria-labelledby="progress-heading">
-        <div class="progress-copy">
-          <p class="eyebrow">A investigação mais recente</p>
-          <h2 id="progress-heading">A textura ainda precisa de contexto.</h2>
-          <p id="latest-summary">O candidato experimental DVD05 melhora medidas de textura fina e intermédia, mas a diferença visual continua subtil.</p>
-          <p class="next-step"><strong>Próximo passo</strong><br><span id="next-step">Rever mais algumas cenas de ação, efeitos e fundos antes de decidir se há dados suficientes para uma experiência limitada.</span></p>
-          <a class="text-link" href="https://github.com/Skolastico/BringBackBleach/blob/main/Estado.md">Ver diário e limitações <span aria-hidden="true">↗</span></a>
+      <section class="previous-results" aria-labelledby="previous-title">
+        <div class="previous-intro">
+          <h2 id="previous-title">The current reference is still experimental.</h2>
+          <p class="section-index">Earlier measurement · DVD05</p>
+          <p>DVD05 remains the strongest candidate from earlier work. These figures describe measured error in regions used during development, not a visual grade. The validation regions were already seen; this was not a blind test.</p>
         </div>
-
-        <div class="metrics" aria-label="Métricas técnicas do candidato residual DVD05">
+        <div class="metrics" aria-label="Earlier measured error changes for candidate DVD05">
           <div class="metrics-heading">
-            <h3>Erro médio nas regiões de validação consultadas</h3>
-            <p>Redução face à base da comparação · não é melhoria visual</p>
+            <h3>Average error change in 24 regions</h3>
+            <p>Lower error against the comparison target · not a percentage of visual improvement</p>
           </div>
           <div class="metric-row">
-            <span class="metric-name">Textura fina</span>
+            <span class="metric-name">Fine detail</span>
             <span class="metric-track"><span class="metric-fill fine-fill" id="fine-bar"></span></span>
-            <strong id="fine-value">47,21%</strong>
+            <strong id="fine-value">47.21%</strong>
           </div>
           <div class="metric-row">
-            <span class="metric-name">Textura intermédia</span>
+            <span class="metric-name">Mid-size detail</span>
             <span class="metric-track"><span class="metric-fill mid-fill" id="mid-bar"></span></span>
-            <strong id="mid-value">42,40%</strong>
+            <strong id="mid-value">42.40%</strong>
           </div>
           <div class="metric-row">
-            <span class="metric-name">Estrutura maior</span>
+            <span class="metric-name">Larger structure</span>
             <span class="metric-track metric-track-neutral"><span class="metric-marker"></span></span>
-            <strong id="structure-value">−0,33%</strong>
+            <strong id="structure-value">−0.33%</strong>
           </div>
-          <p class="metric-note" id="metric-note">24 regiões medidas; validação já consultada durante o desenvolvimento. O sinal fino do DVD pode incluir textura, ruído e compressão.</p>
+          <p class="metric-note" id="metric-note">DVD05 measurements across 24 regions; the eight validation regions had already been consulted during development.</p>
         </div>
-      </section>
-
-      <section class="method-section" aria-label="Etapas do trabalho">
-        <p class="eyebrow">Como avançamos</p>
-        <div class="method-steps">
-          <div class="method-step is-done"><span>01</span><p>Medir os problemas</p></div>
-          <div class="method-step is-current"><span>02</span><p>Rever mais cenas</p></div>
-          <div class="method-step"><span>03</span><p>Testar uma mudança</p></div>
-          <div class="method-step"><span>04</span><p>Rever imagem e movimento</p></div>
-        </div>
-        <p class="method-note">A sequência mostra o ciclo atual, não uma percentagem de conclusão do projeto inteiro.</p>
       </section>
     </main>
 
     <dialog class="comparison-modal" id="comparison-modal" aria-labelledby="modal-scene-caption">
       <div class="modal-shell">
         <div class="modal-header">
-          <p class="modal-scene-caption" id="modal-scene-caption">EP008 · diálogo ao ar livre</p>
-          <button class="modal-close" id="modal-close" type="button" aria-label="Fechar comparação ampliada">×</button>
-        </div>
-        <div class="comparison-frame modal-frame" id="modal-frame" style="--split: 50%">
-          <img class="comparison-image" id="modal-before-image" src="./assets/ep008-dialogo-fonte-576p.png" alt="Fonte original 576p, cena de diálogo ao ar livre">
-          <div class="after-window">
-            <img class="comparison-image" id="modal-after-image" src="./assets/ep008-dialogo-v7-2x.png" alt="Saída do modelo v7 a 2×, na mesma cena">
+          <div>
+            <p class="modal-overline">Frame comparison</p>
+            <p class="modal-scene-caption" id="modal-scene-caption">EP008 · outdoor dialogue</p>
           </div>
-          <span class="image-label image-label-before">Antes · fonte 576p</span>
-          <span class="image-label image-label-after">Depois · modelo v7 2×</span>
-          <span class="wipe-line" aria-hidden="true"></span>
-          <button class="wipe-handle" type="button" role="slider" aria-label="Mover cortina de comparação" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-            <span aria-hidden="true">↔</span>
+          <button class="modal-close" id="modal-close" type="button" aria-label="Close enlarged comparison">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
           </button>
         </div>
-        <p class="modal-hint">Arrasta a cortina para comparar · Esc para fechar</p>
+        <div class="comparison-frame modal-frame" id="modal-frame" style="--split: 50%" role="group" aria-label="Enlarged before and after comparison">
+          <img class="comparison-image" id="modal-before-image" src="./assets/diario/2026-10-30-dvd05-before.png" alt="EP007 action-and-effects validation crop processed by the DVD05 candidate">
+          <div class="after-window">
+            <img class="comparison-image" id="modal-after-image" src="./assets/diario/2026-10-30-dvd07-after.png" alt="The same EP007 validation crop processed by the rejected DVD07 candidate">
+          </div>
+          <span class="image-label image-label-before">Before · DVD05</span>
+          <span class="image-label image-label-after">After · DVD07 rejected</span>
+          <span class="wipe-line" aria-hidden="true"></span>
+          <button class="wipe-handle" type="button" role="slider" aria-label="Move the comparison curtain" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5 3 12l5 7M16 5l5 7-5 7" /></svg>
+          </button>
+        </div>
+        <p class="modal-hint">Drag the curtain to compare · use the arrow keys for fine adjustments · press Escape to close</p>
       </div>
     </dialog>
 
     <footer class="site-footer">
-      <a class="wordmark" href="#inicio" aria-label="Voltar ao início">BB<span>—</span></a>
-      <p>Projeto independente. <i>Bleach</i> e os fotogramas pertencem aos respetivos titulares; são mostrados aqui como exemplos de análise do progresso.</p>
-      <a href="https://github.com/Skolastico/BringBackBleach">Código e diário no GitHub <span aria-hidden="true">↗</span></a>
+      <a class="wordmark" href="#top" aria-label="Back to the top">
+        <span class="wordmark-mark">B<span>B</span></span>
+        <span class="wordmark-caption">Image journal</span>
+      </a>
+      <p>Independent project. Bleach and its frames belong to their respective rights holders. Images here are presented as small research examples. This project is not affiliated with the rights holders.</p>
+      <a href="https://github.com/Skolastico/BringBackBleach">Diary and source files <span aria-hidden="true">↗</span></a>
     </footer>
   </body>
 </html>

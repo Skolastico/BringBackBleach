@@ -1,15 +1,37 @@
 {
   "updated": "2026-10-30",
+  "date": "2026-10-30",
+  "dispatchLabel": "DVD07 · review complete",
+  "title": "The detail score improved. The picture still looked much the same.",
+  "summary": "DVD07 lowered measured fine-detail error by 14.40% across nine validation regions, including 15.52% on one action-and-effects frame. Reviewers saw no clear visible gain, and the structural result missed its 5% target, so the candidate was not promoted.",
+  "problem": "The project is trying to recover useful image detail without changing the larger drawing. In this round, the fine-detail measure moved, but the structural gain was too small to pass the agreed review gate.",
+  "response": "DVD05 remains the strongest candidate. The next step is to find new, well-matched scenes before considering another limited experiment.",
+  "beforeDetail": "DVD05 entered the review as the strongest candidate. In the same EP007 action-and-effects crop, fine-detail error was 0.0008194. The enlarged frame already looked close to the comparison target.",
+  "afterDetail": "DVD07 lowered the score to 0.0006923, a 15.52% change. The enlarged review still showed no clear visible gain; the masked structure result improved just 0.82%, below the 5% gate.",
+  "imageNote": "The comparison below uses the same reviewed EP007 action-and-effects frame for DVD05 and the rejected DVD07 candidate. Reviewers saw no clear visible gain.",
   "stageNumber": 2,
   "stageTotal": 4,
-  "stageTitle": "Rever exemplos de ação e textura",
-  "stageNote": "Diagnóstico concluído · nova seleção em curso",
-  "summary": "O candidato experimental DVD05 reduziu o erro medido em textura fina e intermédia, mas a diferença visual nas prévias continua subtil.",
-  "nextStep": "Rever mais algumas cenas de ação, efeitos e fundos antes de decidir se há dados suficientes para uma experiência limitada.",
+  "stageTitle": "Find new scenes that can answer a better question.",
+  "stageNote": "DVD07 was not promoted. New scene selection is the next step.",
+  "nextStep": "Find well-matched narrative scenes in EP001–EP006, keeping EP007 reserved for validation.",
   "metrics": {
     "fine": 47.21,
     "intermediate": 42.4,
     "structure": -0.33
   },
-  "metricNote": "24 regiões medidas; as oito regiões de validação já foram consultadas durante o desenvolvimento. O sinal fino do DVD pode incluir textura, ruído e compressão."
+  "metricNote": "DVD05 measurements across 24 regions; the eight validation regions had already been consulted during development. These are error changes, not visual improvement scores.",
+  "imageDetail": {
+    "available": true,
+    "date": "2026-10-30",
+    "title": "EP007 action and effects · DVD05 vs DVD07",
+    "detail": "The curtain compares the same reviewed validation crop. We are checking fine image detail while keeping the larger drawing steady. DVD07 is rejected: the static review showed no clear visible gain, and this still cannot confirm motion stability.",
+    "before": "./assets/diario/2026-10-30-dvd05-before.png",
+    "after": "./assets/diario/2026-10-30-dvd07-after.png",
+    "beforeAlt": "EP007 action-and-effects validation crop processed by the DVD05 candidate",
+    "afterAlt": "The same EP007 validation crop processed by the rejected DVD07 candidate",
+    "beforeLabel": "Before · DVD05",
+    "afterLabel": "After · DVD07 rejected",
+    "caption": "EP007 action and effects · same frame and crop · static review"
+  }
 }
+

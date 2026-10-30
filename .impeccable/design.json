@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-30T18:39:37Z",
+  "title": "Design System: BringBackBleach Image Journal",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Ink Archive",
+        "tonalRamp": [
+          "#0a0a13",
+          "#20212a",
+          "#393944",
+          "#54545f",
+          "#70707c",
+          "#8d8e9a",
+          "#bcbcc9",
+          "#ededfb"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Raised Ink",
+        "tonalRamp": [
+          "#0a0a14",
+          "#20202c",
+          "#393946",
+          "#545461",
+          "#70707e",
+          "#8d8e9c",
+          "#bcbccc",
+          "#ecedfd"
+        ]
+      },
+      "surface-raised": {
+        "role": "neutral",
+        "displayName": "High Ink Surface",
+        "tonalRamp": [
+          "#0a0a15",
+          "#20202d",
+          "#393947",
+          "#535463",
+          "#707080",
+          "#8d8d9e",
+          "#bbbccd",
+          "#ecedff"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Archive White",
+        "tonalRamp": [
+          "#0c0b07",
+          "#23221d",
+          "#3c3a36",
+          "#575550",
+          "#73716c",
+          "#918f8a",
+          "#bfbeb8",
+          "#f0eee8"
+        ]
+      },
+      "soft-ink": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "tonalRamp": [
+          "#0c0a0e",
+          "#222125",
+          "#3b3a3e",
+          "#565459",
+          "#727076",
+          "#908e94",
+          "#bebcc2",
+          "#efedf3"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Slate",
+        "tonalRamp": [
+          "#0b0a12",
+          "#22202a",
+          "#3b3944",
+          "#55545f",
+          "#72707c",
+          "#8f8d9a",
+          "#bebcc9",
+          "#efecfa"
+        ]
+      },
+      "quiet": {
+        "role": "neutral",
+        "displayName": "Quiet Slate",
+        "tonalRamp": [
+          "#0b0913",
+          "#22202b",
+          "#3b3945",
+          "#555360",
+          "#72707d",
+          "#8f8d9b",
+          "#bebcca",
+          "#eeecfc"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Register Rule",
+        "tonalRamp": [
+          "#0b0915",
+          "#21202e",
+          "#3a3948",
+          "#545363",
+          "#706f80",
+          "#8e8d9f",
+          "#bcbbce",
+          "#edecff"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Strong Register Rule",
+        "tonalRamp": [
+          "#0b0818",
+          "#211f30",
+          "#3a384b",
+          "#555366",
+          "#716f84",
+          "#8e8ca2",
+          "#bdbbd2",
+          "#edebff"
+        ]
+      },
+      "indigo": {
+        "role": "primary",
+        "displayName": "Frame Indigo",
+        "tonalRamp": [
+          "#090329",
+          "#1c1b44",
+          "#343560",
+          "#4e507e",
+          "#6a6c9d",
+          "#878abc",
+          "#b5b9ee",
+          "#e5eaff"
+        ]
+      },
+      "indigo-deep": {
+        "role": "primary",
+        "displayName": "Deep Indigo",
+        "tonalRamp": [
+          "#090032",
+          "#1b184e",
+          "#32326b",
+          "#4b4e89",
+          "#666ba9",
+          "#8389c9",
+          "#b1b7fb",
+          "#e1e8ff"
+        ]
+      },
+      "red": {
+        "role": "secondary",
+        "displayName": "Inspection Red",
+        "tonalRamp": [
+          "#3a0000",
+          "#5c0000",
+          "#7f0000",
+          "#a10620",
+          "#c4363d",
+          "#e8585a",
+          "#ff8986",
+          "#ffbbb6"
+        ]
+      },
+      "red-dark": {
+        "role": "secondary",
+        "displayName": "Deep Inspection Red",
+        "tonalRamp": [
+          "#360000",
+          "#580000",
+          "#790015",
+          "#9b1b2f",
+          "#bd3f4b",
+          "#e05f67",
+          "#ff8f94",
+          "#ffc0c3"
+        ]
+      },
+      "paper-light": {
+        "role": "neutral",
+        "displayName": "Cool Paper",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#212224",
+          "#3a3a3d",
+          "#545558",
+          "#717174",
+          "#8e8f92",
+          "#bdbdc0",
+          "#edeef1"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Pure White",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#222222",
+          "#3a3a3a",
+          "#555555",
+          "#717171",
+          "#8f8f8f",
+          "#bebebe",
+          "#eeeeee"
+        ]
+      },
+      "control-border": {
+        "role": "neutral",
+        "displayName": "Control Border",
+        "tonalRamp": [
+          "#0b0818",
+          "#211f30",
+          "#3a384b",
+          "#555366",
+          "#716f84",
+          "#8e8ca2",
+          "#bdbbd2",
+          "#edebff"
+        ]
+      },
+      "metric-track": {
+        "role": "neutral",
+        "displayName": "Metric Track",
+        "tonalRamp": [
+          "#0a0916",
+          "#20202e",
+          "#393948",
+          "#535364",
+          "#6f7081",
+          "#8d8d9f",
+          "#bbbccf",
+          "#ececff"
+        ]
+      },
+      "metric-mid": {
+        "role": "primary",
+        "displayName": "Metric Indigo",
+        "tonalRamp": [
+          "#090329",
+          "#1c1b44",
+          "#343560",
+          "#4e507e",
+          "#6a6c9d",
+          "#878abc",
+          "#b5b9ee",
+          "#e5eaff"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Dispatch Display",
+        "purpose": "The daily report headline."
+      },
+      "headline": {
+        "displayName": "Section Headline",
+        "purpose": "Journal sections and archive chapters."
+      },
+      "body": {
+        "displayName": "Report Copy",
+        "purpose": "Plain English explanations and notes."
+      },
+      "label": {
+        "displayName": "Inspection Label",
+        "purpose": "Dates, stage labels, image labels, and metadata."
+      }
+    },
+    "shadows": [
+      {
+        "name": "curtain-edge",
+        "value": "0 0 0 1px rgb(0 0 0 / 28%)",
+        "purpose": "Keeps the one-pixel white divider legible over light and dark image regions."
+      },
+      {
+        "name": "comparison-modal",
+        "value": "0 20px 55px rgb(0 0 0 / 50%)",
+        "purpose": "Separates the enlarged native dialog from the page."
+      }
+    ],
+    "motion": [
+      {
+        "name": "navigation-color",
+        "value": "color 160ms ease",
+        "purpose": "Link hover color transition."
+      },
+      {
+        "name": "story-link-color",
+        "value": "color 150ms ease",
+        "purpose": "Editorial action link hover transition."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition-duration .01ms",
+        "purpose": "Applied under prefers-reduced-motion; smooth scrolling is disabled."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-tablet-max",
+        "value": "880px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "640px"
+      },
+      {
+        "name": "small-mobile-max",
+        "value": "400px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Theme Switch",
+      "kind": "button",
+      "refersTo": "theme-toggle",
+      "description": "Toggles the page between dark and light palettes.",
+      "html": "<button class='ds-theme-toggle' type='button' aria-pressed='false'><span class='ds-theme-indicator' aria-hidden='true'></span><span>Light</span></button>",
+      "css": ".ds-theme-toggle { display: inline-flex; align-items: center; gap: 9px; border: 1px solid var(--control-border); padding: 8px 11px; background: transparent; color: var(--ink); cursor: pointer; font: inherit; font-size: 12px; } .ds-theme-toggle:hover { border-color: var(--red); } .ds-theme-toggle:focus-visible { outline: 2px solid var(--red); outline-offset: 4px; } .ds-theme-indicator { width: 7px; height: 7px; background: var(--red); }"
+    },
+    {
+      "name": "Site Navigation",
+      "kind": "nav",
+      "description": "The compact journal header with direct links, theme control, and repository link.",
+      "html": "<header class='ds-site-header'><a class='ds-wordmark' href='#top' aria-label='BringBackBleach Image Journal home'><span class='ds-wordmark-mark'>B<span>B</span></span><span class='ds-wordmark-caption'>Image journal</span></a><nav class='ds-nav' aria-label='Main navigation'><a href='#latest'>Latest dispatch</a><a href='#frame-archive'>Frame archive</a><a href='#method'>How we review</a><button class='ds-theme-toggle' type='button' aria-pressed='false'><span class='ds-theme-indicator' aria-hidden='true'></span><span>Light</span></button><a class='ds-github-link' href='#github'>GitHub <span aria-hidden='true'>↗</span></a></nav></header>",
+      "css": ".ds-site-header { width: min(1220px, calc(100% - 72px)); min-height: 88px; margin-inline: auto; display: flex; justify-content: space-between; align-items: center; gap: 28px; border-bottom: 1px solid var(--line-strong); } .ds-wordmark { display: inline-flex; align-items: center; gap: 13px; flex: 0 0 auto; color: var(--ink); text-decoration: none; } .ds-wordmark-mark { position: relative; font-family: Georgia, Times New Roman, serif; font-size: 27px; line-height: 1; font-weight: 700; letter-spacing: -.09em; } .ds-wordmark-mark span { color: var(--red); } .ds-wordmark-mark:after { position: absolute; top: -2px; right: -8px; width: 1px; height: 29px; transform: skewX(-20deg); background: var(--indigo); content: ''; } .ds-wordmark-caption { max-width: 8ch; padding-left: 11px; border-left: 1px solid var(--line-strong); color: var(--muted); font: 12px/1.2 Segoe UI, Arial, sans-serif; letter-spacing: .1em; text-transform: uppercase; } .ds-nav { display: flex; align-items: center; gap: clamp(14px, 2.4vw, 31px); font: 12px Segoe UI, Arial, sans-serif; } .ds-nav a { color: var(--ink); text-decoration: none; transition: color 160ms ease; } .ds-nav a:hover { color: var(--indigo); } .ds-nav a:focus-visible { outline: 2px solid var(--red); outline-offset: 4px; } .ds-github-link { font-weight: 700; } .ds-theme-toggle { display: inline-flex; align-items: center; gap: 9px; border: 1px solid var(--control-border); padding: 8px 11px; background: transparent; color: var(--ink); cursor: pointer; font: 12px Segoe UI, Arial, sans-serif; } .ds-theme-toggle:hover { border-color: var(--red); } .ds-theme-toggle:focus-visible { outline: 2px solid var(--red); outline-offset: 4px; } .ds-theme-indicator { width: 7px; height: 7px; background: var(--red); } @media (max-width: 880px) { .ds-site-header { width: min(calc(100% - 48px), 720px); } .ds-nav { gap: 14px; font-size: 12px; } } @media (max-width: 640px) { .ds-site-header { width: calc(100% - 32px); min-height: 74px; gap: 14px; flex-wrap: wrap; padding-block: 13px; } .ds-wordmark-caption { display: none; } .ds-nav { flex: 1 1 260px; justify-content: flex-end; gap: 10px; font-size: 12px; } .ds-nav a[href='#frame-archive'] { display: none; } .ds-theme-toggle { padding: 8px; } } @media (max-width: 400px) { .ds-nav a[href='#latest'] { display: none; } .ds-nav { flex-basis: 235px; gap: 8px; } .ds-github-link { white-space: nowrap; } }"
+    },
+    {
+      "name": "Archive Scene Tabs",
+      "kind": "chip",
+      "description": "Unfilled text selectors with a red underline for the active comparison scene.",
+      "html": "<div class='ds-scene-tabs' aria-label='Archive scenes'><button class='ds-scene-tab ds-active' type='button' aria-pressed='true'>Dialogue</button><button class='ds-scene-tab' type='button' aria-pressed='false'>Rain</button><button class='ds-scene-tab' type='button' aria-pressed='false'>Action</button></div>",
+      "css": ".ds-scene-tabs { display: flex; gap: 22px; margin-bottom: 12px; } .ds-scene-tab { appearance: none; border: 0; border-bottom: 1px solid transparent; padding: 8px 0; background: transparent; color: var(--muted); cursor: pointer; font: 12px Segoe UI, Arial, sans-serif; } .ds-scene-tab:hover { color: var(--ink); } .ds-scene-tab.ds-active { border-color: var(--red); color: var(--ink); } .ds-scene-tab:focus-visible { outline: 2px solid var(--red); outline-offset: 4px; } @media (max-width: 640px) { .ds-scene-tabs { gap: 17px; } }"
+    },
+    {
+      "name": "Research Progress Register",
+      "kind": "custom",
+      "description": "A field-report side rail whose accessible stage count and segment states update from the current cycle data.",
+      "html": "<aside class='ds-register'><div class='ds-register-topline'><span>Field report</span><span>30 · 10 · 2026</span></div><div class='ds-stamp' aria-hidden='true'>BB<br><span>REVIEW</span></div><p class='ds-kicker'>Current research cycle</p><h2>Choose fresh review scenes.</h2><div class='ds-count'><strong>02</strong><span>of</span><span>04</span></div><div class='ds-stage-track' role='progressbar' aria-label='Current research cycle progress' aria-valuemin='0' aria-valuemax='4' aria-valuenow='2'><span class='ds-stage ds-complete'></span><span class='ds-stage ds-current'></span><span class='ds-stage'></span><span class='ds-stage'></span></div><p class='ds-note'>One limited test follows scene review.</p><p class='ds-caveat'>This marker tracks one review cycle.</p></aside>",
+      "css": ".ds-register { position: relative; margin-top: 14px; padding: 17px 0 0 21px; border-top: 1px solid var(--line-strong); color: var(--ink); font-family: Segoe UI, Arial, sans-serif; } .ds-register:before { position: absolute; top: 0; bottom: 0; left: 0; width: 1px; background: var(--indigo-deep); content: ''; } .ds-register-topline { display: flex; justify-content: space-between; gap: 10px; color: var(--muted); font-size: 12px; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; } .ds-stamp { display: grid; width: 66px; height: 66px; padding: 8px; align-content: center; justify-items: center; margin-block: 32px 24px; border: 1px solid var(--red); color: var(--red); font: 23px/.8 Georgia, Times New Roman, serif; transform: rotate(-7deg); } .ds-stamp span { margin-top: 5px; font: 800 12px Segoe UI, Arial, sans-serif; letter-spacing: .11em; } .ds-kicker { margin: 0 0 10px; color: var(--indigo); font-size: 12px; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; } .ds-register h2 { max-width: 20ch; margin: 0 0 21px; font: 500 24px/1.15 Georgia, Times New Roman, serif; } .ds-count { display: flex; align-items: baseline; gap: 7px; margin-bottom: 11px; color: var(--muted); font-size: 12px; } .ds-count strong { color: var(--ink); font: 500 34px Georgia, Times New Roman, serif; } .ds-count span:last-child { color: var(--ink); font-weight: 700; } .ds-stage-track { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin-bottom: 10px; } .ds-stage { height: 4px; background: var(--line-strong); } .ds-stage.ds-complete { background: var(--indigo); } .ds-stage.ds-current { background: var(--red); } .ds-note { margin: 0 0 14px; color: var(--soft-ink); font-size: 12px; line-height: 1.5; } .ds-caveat { margin: 0; color: var(--quiet); font-size: 12px; line-height: 1.5; } @media (max-width: 880px) { .ds-register { padding-left: 16px; } .ds-stamp { margin-block: 24px 17px; } } @media (max-width: 640px) { .ds-register { max-width: 430px; margin-top: 0; } .ds-stamp { position: static; width: 48px; height: 48px; margin-block: 16px 14px; font-size: 19px; } .ds-register h2 { max-width: 24ch; padding-right: 42px; } }"
+    },
+    {
+      "name": "Frame Comparison Curtain",
+      "kind": "custom",
+      "refersTo": "comparison-grip",
+      "description": "A same-frame before/after comparison with a draggable vertical curtain; abstract inline SVGs are neutral sample imagery for this self-contained preview.",
+      "html": "<div class='ds-comparison' style='--split: 50%' role='group' aria-label='Before and after frame comparison'><svg class='ds-image' viewBox='0 0 774 576' aria-hidden='true'><rect width='774' height='576' fill='#20202d'/><path d='M0 400 180 265 340 360 520 170 774 320V576H0Z' fill='#383746'/><path d='M90 430 235 287 365 370 522 210 690 330' fill='none' stroke='#a4a8dc' stroke-width='12'/><path d='M0 476H774' stroke='#f1efe9' stroke-width='5' opacity='.55'/></svg><div class='ds-after-window' aria-hidden='true'><svg class='ds-image' viewBox='0 0 774 576'><rect width='774' height='576' fill='#20202d'/><path d='M0 402 180 263 340 362 520 168 774 322V576H0Z' fill='#383746'/><path d='M90 432 235 285 365 372 522 208 690 332' fill='none' stroke='#a4a8dc' stroke-width='8'/><path d='M0 476H774' stroke='#f1efe9' stroke-width='5' opacity='.55'/></svg></div><span class='ds-image-label ds-before-label'>Before · source</span><span class='ds-image-label ds-after-label'>After · output</span><span class='ds-wipe-line' aria-hidden='true'></span><button class='ds-handle' type='button' role='slider' aria-label='Move the comparison curtain' aria-orientation='horizontal' aria-valuemin='0' aria-valuemax='100' aria-valuenow='50'><svg viewBox='0 0 24 24' aria-hidden='true'><path d='M8 5 3 12l5 7M16 5l5 7-5 7'/></svg></button></div>",
+      "css": ".ds-comparison { position: relative; overflow: hidden; aspect-ratio: 774 / 576; isolation: isolate; background: #20202d; cursor: zoom-in; user-select: none; touch-action: pan-y; } .ds-comparison:focus-visible { outline: 2px solid var(--red); outline-offset: 4px; } .ds-image { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; } .ds-after-window { position: absolute; inset: 0; overflow: hidden; clip-path: inset(0 0 0 var(--split)); } .ds-image-label { position: absolute; z-index: 2; top: 12px; padding: 7px 9px; background: rgb(17 17 26 / 88%); color: #fff; font: 750 12px Segoe UI, Arial, sans-serif; letter-spacing: .04em; } .ds-before-label { left: 12px; } .ds-after-label { right: 12px; } .ds-wipe-line { position: absolute; z-index: 3; top: 0; bottom: 0; left: var(--split); width: 1px; background: white; box-shadow: 0 0 0 1px rgb(0 0 0 / 28%); pointer-events: none; } .ds-handle { position: absolute; z-index: 4; top: 0; bottom: 0; left: var(--split); display: grid; width: 56px; padding: 0; place-items: center; appearance: none; border: 0; background: transparent; color: white; transform: translateX(-50%); cursor: ew-resize; touch-action: none; user-select: none; } .ds-handle svg { display: block; width: 38px; height: 38px; padding: 8px; overflow: visible; border: 1px solid rgb(255 255 255 / 88%); border-radius: 50%; background: var(--red); pointer-events: none; } .ds-handle path { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; } .ds-handle:focus-visible { outline: none; } .ds-handle:focus-visible svg { outline: 2px solid var(--red); outline-offset: 5px; } @media (max-width: 640px) { .ds-image-label { top: 8px; padding: 6px 7px; } .ds-before-label { left: 8px; } .ds-after-label { right: 8px; } }"
+    },
+    {
+      "name": "Enlarged Comparison Modal",
+      "kind": "custom",
+      "refersTo": "modal-close",
+      "description": "The native dialog shell that enlarges the same labeled curtain comparison.",
+      "html": "<dialog class='ds-modal' open aria-label='Enlarged frame comparison'><div class='ds-modal-shell'><div class='ds-modal-header'><div><p class='ds-modal-overline'>Frame comparison</p><p class='ds-modal-caption'>EP008 · outdoor dialogue</p></div><button class='ds-modal-close' type='button' aria-label='Close enlarged comparison'><svg viewBox='0 0 24 24' aria-hidden='true'><path d='m6 6 12 12M18 6 6 18'/></svg></button></div><div class='ds-modal-frame' role='img' aria-label='Enlarged same-frame comparison, supplied by the page media'><span>Before · source</span><span>After · earlier v7 · 2×</span></div><p class='ds-modal-hint'>Drag the curtain · use arrow keys for fine adjustments · press Escape to close</p></div></dialog>",
+      "css": ".ds-modal { max-width: calc(100vw - 24px); max-height: calc(100dvh - 24px); overflow: auto; padding: 0; border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); box-shadow: 0 20px 55px rgb(0 0 0 / 50%); } .ds-modal::backdrop { background: rgb(4 4 12 / 84%); } .ds-modal-shell { padding: clamp(12px, 2vw, 25px); } .ds-modal-header { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-bottom: 12px; } .ds-modal-overline { margin: 0 0 4px; color: var(--indigo); font: 750 12px Segoe UI, Arial, sans-serif; letter-spacing: .13em; text-transform: uppercase; } .ds-modal-caption { margin: 0; color: var(--ink); font: 700 12px Segoe UI, Arial, sans-serif; } .ds-modal-close { display: grid; width: 40px; height: 40px; flex: 0 0 auto; place-items: center; border: 1px solid var(--control-border); background: transparent; color: var(--ink); cursor: pointer; } .ds-modal-close:hover { border-color: var(--red); color: var(--red); } .ds-modal-close:focus-visible { outline: 2px solid var(--red); outline-offset: 4px; } .ds-modal-close svg { width: 18px; height: 18px; } .ds-modal-frame { position: relative; overflow: hidden; width: min(calc(100vw - 72px), calc(74dvh * 1.34375), 1500px); aspect-ratio: 774 / 576; background: var(--surface-raised); } .ds-modal-frame span { position: absolute; top: 12px; padding: 7px 9px; background: rgb(17 17 26 / 88%); color: #fff; font: 750 12px Segoe UI, Arial, sans-serif; } .ds-modal-frame span:first-child { left: 12px; } .ds-modal-frame span:nth-child(2) { right: 12px; } .ds-modal-hint { margin: 11px 0 0; color: var(--muted); font: 12px Segoe UI, Arial, sans-serif; } @media (max-width: 640px) { .ds-modal-frame { width: min(calc(100vw - 40px), calc(70dvh * 1.34375)); } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Frame Inspection Field Report.",
+    "overview": "The site is an independent image-review desk: a current dated report leads with the decision, then places image notes and their limits beside the visual evidence. The interface borrows from original anime frame annotations and monochrome reproduction marks, using cold ink-and-paper contrast, spiritual indigo, and one restrained red review signal. The interface design is original and uses no official logos or promotional art. Small, clearly labelled crops of series frames appear only as research comparisons.\n\nThe movable divider is the signature. A compact field register and numbered review cycle carry the same inspection language through the rest of the journal, while the short English dispatches keep the work legible to general readers.",
+    "keyCharacteristics": [
+      "Daily news-style reports lead with the result and its limits.",
+      "Cold ink, paper, indigo, and a restrained red review mark define the palette.",
+      "Straight rules, frame labels, and numbered stages make evidence provenance easy to scan.",
+      "The image curtain and enlarged comparison keep the reviewed frame at the centre."
+    ],
+    "rules": [
+      {
+        "name": "The One Active Mark Rule",
+        "body": "Red marks current review, selection, focus, and the curtain grip; keep it out of broad decorative fills.",
+        "section": "colors"
+      },
+      {
+        "name": "The Evidence Label Rule",
+        "body": "Keep source/output labels and archive status attached to the comparison they describe.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do lead with a dated result and keep its measurement limits near the image evidence.",
+      "Do label source, output, and archive status directly on each comparison.",
+      "Do use indigo for completed stages and red for the current stage or interaction.",
+      "Do preserve the dark and light themes and the existing keyboard and reduced-motion behavior."
+    ],
+    "donts": [
+      "Don't use official Bleach logos or promotional art as interface branding; keep series frames to small, clearly labelled research crops.",
+      "Don't let the red review signal become a broad decorative fill.",
+      "Don't treat a measured score as a visual grade or separate a before/after image from its provenance."
+    ]
+  }
+}

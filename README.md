@@ -1,35 +1,32 @@
-# BringBackBleach — diário de progresso
+# BringBackBleach — image progress journal
 
-Este diário acompanha um projeto experimental para melhorar a imagem de episódios de *Bleach* a partir de fontes DVD/480p e de Blu-rays com problemas. O objetivo é preservar os tempos originais do vídeo e melhorar a imagem sem inventar traços nem apagar textura.
+A small public diary about an independent project exploring how to improve the image in Bleach DVD/480p sources and problematic Blu-ray releases while preserving the original frame timing.
 
-**Site visual:** [abrir as comparações antes/depois](https://skolastico.github.io/BringBackBleach/). Inclui três fotogramas selecionados de um teste anterior do modelo v7 a 2×. Arrasta a cortina para comparar cada imagem.
+**Read the latest dispatch:** [Estado.md](Estado.md)  
+**Open the visual journal:** [GitHub Pages](https://skolastico.github.io/BringBackBleach/)  
+**Browse the dated progress graphic:** [Progress image](imagens/progresso.svg)
 
-![Fase atual e resultados medidos](imagens/progresso.svg)
+The diary is written in English for readers who do not need specialist image-processing knowledge. Each update explains what changed, what problem is still open, how it is being addressed, and what the next review will check.
 
-## Estado atual
+## Latest result — 30 October 2026
 
-Estamos a rever exemplos de imagem para que a próxima experiência represente melhor cenas de ação, efeitos e texturas intermédias. O candidato atual melhora medidas de textura, mas a diferença ainda é subtil nas prévias revistas. Por isso, continua experimental.
+The selective DVD07 test lowered measured fine-detail error by 14.40% across nine validation regions, including 15.52% on one EP007 action/effects sample. Reviewers saw no clear visible gain over DVD05. DVD07 reached only 0.82% structural gain, below the preset 5% target, so it was not promoted. DVD05 remains the strongest experimental candidate.
 
-O resumo completo está em [Estado.md](Estado.md).
+The current cycle is at **stage 2 of 4**: choosing new, better-matched scenes. The progress bar tracks those review steps; it is not a percentage of the whole project.
 
-## Como ler o gráfico
+## About the image comparisons
 
-- A barra mostra as etapas do ciclo de trabalho: diagnóstico concluído, escolha de mais exemplos em curso, nova experiência e revisão final por fazer.
-- As outras barras mostram a redução média de erro medida em diferentes escalas de detalhe. São medidas técnicas nas regiões analisadas, não percentagens de melhoria visual nem da conclusão do projeto.
-- A validação apresentada já foi consultada durante o desenvolvimento; não é um teste cego.
+The latest dispatch uses a reviewed same-frame comparison between DVD05 and the rejected DVD07 candidate on an EP007 action/effects sample. Drag the curtain directly across the image or open it for a larger view. Three additional EP008/v7 pairs remain clearly labelled as archive examples. A new pair is published only after the same frame and crop have been reviewed.
 
-Em termos simples: nas zonas medidas, a correção aproxima o detalhe pequeno e médio da referência usada; quase não altera as formas maiores. «Erro» é uma diferença calculada entre imagens, não uma avaliação direta do que as pessoas veem.
+## What the measurements mean
 
-## O que estamos a resolver
+Error measurements describe differences between selected image regions and a comparison target. They are not a rating of how much better a picture looks. The validation regions in the reports have already been consulted during development, so they are not blind tests.
 
-- **Textura demasiado lisa:** estamos a medir o detalhe fino e intermédio e a testar uma correção limitada, em vez de aumentar a nitidez da imagem toda.
-- **Poucos exemplos de ação e efeitos:** vamos rever algumas regiões narrativas adicionais antes de decidir se há dados suficientes para outro treino.
-- **Melhorias numa imagem podem piorar o movimento:** os candidatos que falharam a comparação temporal ficam de fora; a versão de referência mantém-se.
-- **A exportação também altera a imagem:** os controlos indicam que a conversão de cor pode retirar detalhe. Vamos voltar a este tema quando houver uma hipótese específica para testar.
+A still-image review cannot certify frame-to-frame stability or flicker. Results are experimental and do not approve processing the entire series.
 
-## Limites deste diário
+## Scope
 
-O site mostra três fotogramas de exemplo do EP008, retirados de um teste já observado do modelo v7; não são um teste cego nem uma aprovação do candidato DVD05 atual. O repositório não contém episódios completos, conjuntos de dados ou pesos do modelo. Os resultados são experimentais e não certificam toda a série nem a ausência de cintilação.
+This public diary contains short written reports, progress graphics and selected image crops. It does not contain complete episodes, clips, training data, model weights, logs, credentials or source project code.
 
-*Projeto de investigação independente, sem ligação oficial à obra ou aos seus titulares.*
+*Bleach and its images belong to their respective rights holders. This is an independent project and is not affiliated with them.*
 
