@@ -2,6 +2,18 @@
 
 *Daily notes on improving Bleach's older picture while keeping its original drawing and timing.*
 
+## 30 October 2026 · Nightly dispatch — No clearer drawing yet
+
+The new test left the picture almost unchanged in the reviewed still image and failed the preset check for improving the main drawing. The previous version remains our reference. Better tiny-detail measurements did not establish a visible improvement.
+
+The latest completed audit reviewed fourteen still images from episodes 9–12, including teeth and diagonal hat lines. None showed a clear drawing correction beyond the previous version. An enlarged image is useful as a guide only when it actually reveals a better line or shape. This was a sample review, not a whole-episode or motion check.
+
+The team decided against repeating the rejected experiment with the same examples. Next, we plan to review a few unused scenes in episodes 1–6, 9, 10 and 12. Another experiment must wait for a visible drawing correction. Episodes 7 and 11 remain for evaluation; episode 8 remains diagnostic.
+
+No new image pair has been cleared for publication tonight. The featured episode 7 comparison dated 30 October shows an earlier rejected test, not the latest experiment. It and the separate episode 8 examples remain in the archive.
+
+The marker remains at step 2 of the four-step review cycle: finding better examples. It is not overall project completion. This nightly update involved documentation only; no training, inference or video export was started.
+
 ## 30 October 2026 — More detail on paper. Almost the same picture.
 
 The newest image test did better in a computer measurement of tiny detail. When we put it beside the previous experimental version, reviewers could not see a clear improvement. The newer test also missed a separate target for the larger shapes in the picture. We decided not to use it. The previous version remains our reference while we look for better scenes to study.
@@ -40,4 +52,3 @@ The pictured scenes were already used during development. This was a still-image
 The site's separate episode 8 gallery shows three comparisons from an older enlargement experiment. They are preserved as historical examples and do not show the result described above.
 
 *Bleach and its images belong to their respective rights holders. This independent project is not affiliated with them.*
-

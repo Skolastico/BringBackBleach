@@ -6,8 +6,8 @@
   <path d="M152 51h15" stroke="#df4b35" stroke-width="3"/>
   <text x="56" y="91" fill="#f4f0e7" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">BRINGBACKBLEACH · IMAGE JOURNAL</text>
   <text x="1144" y="91" fill="#aaa79e" font-family="Arial,sans-serif" font-size="13" text-anchor="end">30 OCTOBER 2026</text>
-  <text x="56" y="159" fill="#f4f0e7" font-family="Georgia,serif" font-size="42">More detail on paper.</text>
-  <text x="56" y="208" fill="#f4f0e7" font-family="Georgia,serif" font-size="42">Almost the same picture.</text>
+  <text x="56" y="159" fill="#f4f0e7" font-family="Georgia,serif" font-size="42">More scenes reviewed.</text>
+  <text x="56" y="208" fill="#f4f0e7" font-family="Georgia,serif" font-size="42">No clearer drawing yet.</text>
   <text x="56" y="247" fill="#d9d5cb" font-family="Arial,sans-serif" font-size="17">The new test was rejected. The previous version remains our reference.</text>
   <text x="56" y="300" fill="#aaa79e" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">REVIEW CYCLE</text>
   <text x="1144" y="300" fill="#f4f0e7" font-family="Arial,sans-serif" font-size="16" font-weight="700" text-anchor="end">STAGE 2 / 4</text>
@@ -17,5 +17,3 @@
   <text x="56" y="351" fill="#aaa79e" font-family="Arial,sans-serif" font-size="12">Find new, well-matched scenes before another limited test.</text>
   <text x="1144" y="351" fill="#878980" font-family="Arial,sans-serif" font-size="11" text-anchor="end">This bar shows one review cycle, not the whole project.</text>
 </svg>
-
-

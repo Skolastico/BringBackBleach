@@ -1,19 +1,19 @@
 {
   "updated": "2026-10-30",
   "date": "2026-10-30",
-  "dispatchLabel": "A test we decided not to use",
-  "title": "More detail on paper. Almost the same picture.",
-  "summary": "Our latest attempt recovered more tiny detail in a test image, but side-by-side review found no clear visual improvement. It also missed our preset target for improving the larger shapes, so we are keeping the previous version for now.",
+  "dispatchLabel": "Nightly dispatch · 30 October 2026",
+  "title": "More scenes reviewed. No clearer drawing yet.",
+  "summary": "The new test left the reviewed picture almost unchanged and was rejected. Fourteen sampled still images from episodes 9–12 offered no clearer drawing to learn from. The previous version remains our reference.",
   "problem": "The original DVD picture can look soft. Restoring texture is useful only if faces, outlines and motion still look right. A score can improve even when a person cannot see a worthwhile change.",
   "response": "We compared two versions of the same action frame and rejected the newer attempt. We are now looking for better matched scenes before another small experiment.",
   "beforeDetail": "Before: the previous experimental version. It already keeps this action frame close to the version used for review. Look at the character's clothing, outlines and the effect behind him.",
   "afterDetail": "After: the newer test. The computer measured less tiny-detail mismatch, but reviewers could not identify a clear improvement in this enlarged frame. The change to the main drawing was too small to meet our preset target.",
-  "imageNote": "These are two versions of the same frame and crop. The newer test was rejected. Move the curtain yourself; the subtle difference is exactly why a score alone did not decide the result.",
+  "imageNote": "Archive comparison dated 30 October 2026: episode 7 shows an earlier rejected test. No new public pair is approved tonight. These images do not show the latest experiment.",
   "stageNumber": 2,
   "stageTotal": 4,
   "stageTitle": "Finding better scenes for the next comparison.",
   "stageNote": "The latest test was rejected. We are choosing new scenes before trying again.",
-  "nextStep": "Find well-matched scenes from episodes 1–6 and keep episode 7 for an independent check.",
+  "nextStep": "Review a few unused scenes in episodes 1–6, 9, 10 and 12; keep episodes 7 and 11 for evaluation and episode 8 for diagnosis.",
   "imageDetail": {
     "available": true,
     "date": "2026-10-30",
@@ -42,4 +42,3 @@
     }
   ]
 }
-
