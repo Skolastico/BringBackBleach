@@ -1,0 +1,15 @@
+{
+  "updated": "2026-10-30",
+  "stageNumber": 2,
+  "stageTotal": 4,
+  "stageTitle": "Rever exemplos de ação e textura",
+  "stageNote": "Diagnóstico concluído · nova seleção em curso",
+  "summary": "O candidato experimental DVD05 reduziu o erro medido em textura fina e intermédia, mas a diferença visual nas prévias continua subtil.",
+  "nextStep": "Rever mais algumas cenas de ação, efeitos e fundos antes de decidir se há dados suficientes para uma experiência limitada.",
+  "metrics": {
+    "fine": 47.21,
+    "intermediate": 42.4,
+    "structure": -0.33
+  },
+  "metricNote": "24 regiões medidas; as oito regiões de validação já foram consultadas durante o desenvolvimento. O sinal fino do DVD pode incluir textura, ruído e compressão."
+}
