@@ -6,8 +6,14 @@
     <meta name="theme-color" content="#f3f1ec">
     <meta name="description" content="Diário visual de um projeto independente para melhorar o upscale de Bleach, preservando desenho, textura e cadência.">
     <title>BringBackBleach — diário visual</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./app.js?v=2026-10-30-2" defer></script>
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("bringbackbleach-theme");
+        if (savedTheme === "light" || savedTheme === "dark") document.documentElement.dataset.theme = savedTheme;
+      } catch {}
+    </script>
+    <link rel="stylesheet" href="./styles.css?v=2026-10-30-2">
+    <script src="./app.js?v=2026-10-30-3" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -15,6 +21,10 @@
       <nav aria-label="Navegação principal">
         <a href="#comparacao">Comparação</a>
         <a href="#progresso">Progresso</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Ativar modo escuro">
+          <span class="theme-icon" aria-hidden="true">☾</span>
+          <span id="theme-label">Modo escuro</span>
+        </button>
         <a class="github-link" href="https://github.com/Skolastico/BringBackBleach">Abrir no GitHub <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
@@ -49,7 +59,7 @@
             <p class="eyebrow">Fonte 576p / saída 2×</p>
             <h2 id="comparison-heading">Desliza a cortina.</h2>
           </div>
-          <p class="section-intro">A mesma imagem, antes e depois do modelo. Move o controlo para revelar cada lado.</p>
+          <p class="section-intro">Arrasta a linha sobre a imagem para comparar. Clica na imagem para a ampliar.</p>
         </div>
 
         <div class="comparison-layout">
@@ -69,16 +79,13 @@
                 <span class="image-label image-label-before">Antes · fonte 576p</span>
                 <span class="image-label image-label-after">Depois · modelo v7 2×</span>
                 <span class="wipe-line" aria-hidden="true"></span>
-                <span class="wipe-handle" aria-hidden="true">↔</span>
-              </div>
-              <div class="wipe-control">
-                <label for="wipe-range">Mover a cortina</label>
-                <input id="wipe-range" type="range" min="0" max="100" value="50" aria-label="Mover a cortina entre a fonte e o upscale">
-                <output id="wipe-value" for="wipe-range">50%</output>
+                <button class="wipe-handle" type="button" role="slider" aria-label="Mover cortina de comparação" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                  <span aria-hidden="true">↔</span>
+                </button>
               </div>
               <figcaption class="comparison-caption">
                 <span id="scene-caption">EP008 · diálogo ao ar livre</span>
-                <span>Exemplo de um teste observado; não é uma avaliação cega nem aprovação do episódio completo.</span>
+                <span>Arrasta a linha para comparar. Clica na imagem para ampliar. Exemplo de um teste já observado, não de uma avaliação cega.</span>
               </figcaption>
             </figure>
           </div>
@@ -136,6 +143,27 @@
         <p class="method-note">A sequência mostra o ciclo atual, não uma percentagem de conclusão do projeto inteiro.</p>
       </section>
     </main>
+
+    <dialog class="comparison-modal" id="comparison-modal" aria-labelledby="modal-scene-caption">
+      <div class="modal-shell">
+        <div class="modal-header">
+          <p class="modal-scene-caption" id="modal-scene-caption">EP008 · diálogo ao ar livre</p>
+          <button class="modal-close" id="modal-close" type="button" aria-label="Fechar comparação ampliada">×</button>
+        </div>
+        <div class="comparison-frame modal-frame" id="modal-frame" style="--split: 50%">
+          <img class="comparison-image" id="modal-before-image" src="./assets/ep008-dialogo-fonte-576p.png" alt="Fonte original 576p, cena de diálogo ao ar livre">
+          <div class="after-window">
+            <img class="comparison-image" id="modal-after-image" src="./assets/ep008-dialogo-v7-2x.png" alt="Saída do modelo v7 a 2×, na mesma cena">
+          </div>
+          <span class="image-label image-label-before">Antes · fonte 576p</span>
+          <span class="image-label image-label-after">Depois · modelo v7 2×</span>
+          <button class="wipe-handle" type="button" role="slider" aria-label="Mover cortina de comparação" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <span aria-hidden="true">↔</span>
+          </button>
+        </div>
+        <p class="modal-hint">Arrasta a cortina para comparar · Esc para fechar</p>
+      </div>
+    </dialog>
 
     <footer class="site-footer">
       <a class="wordmark" href="#inicio" aria-label="Voltar ao início">BB<span>—</span></a>
