@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3f1ec">
+    <meta name="description" content="Diário visual de um projeto independente para melhorar o upscale de Bleach, preservando desenho, textura e cadência.">
+    <title>BringBackBleach — diário visual</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#inicio" aria-label="BringBackBleach, início">BB<span>—</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="#comparacao">Comparação</a>
+        <a href="#progresso">Progresso</a>
+        <a class="github-link" href="https://github.com/Skolastico/BringBackBleach">Abrir no GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Projeto independente · diário visual</p>
+          <h1>Melhorar a imagem.<br><em>Preservar o movimento.</em></h1>
+          <p class="hero-lede">Um projeto experimental de upscale e restauro para fontes DVD/480p e Blu-rays problemáticos de <i>Bleach</i>.</p>
+          <a class="text-link" href="#comparacao">Explorar uma comparação <span aria-hidden="true">↓</span></a>
+        </div>
+        <aside class="hero-status" aria-label="Etapa atual do projeto">
+          <div class="status-head">
+            <p class="eyebrow">Ciclo atual</p>
+            <p class="status-index"><span id="stage-index">02</span> <span>/ </span><span id="stage-total">04</span></p>
+          </div>
+          <p class="status-title" id="stage-title">Rever exemplos de ação e textura</p>
+          <div class="stage-track" aria-hidden="true">
+            <span class="stage-segment is-complete"></span>
+            <span class="stage-segment is-current"></span>
+            <span class="stage-segment"></span>
+            <span class="stage-segment"></span>
+          </div>
+          <p class="status-note" id="stage-note">Diagnóstico concluído · nova seleção em curso</p>
+        </aside>
+      </section>
+
+      <section class="comparison-section" id="comparacao" aria-labelledby="comparison-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Fonte 576p / saída 2×</p>
+            <h2 id="comparison-heading">Desliza a cortina.</h2>
+          </div>
+          <p class="section-intro">A mesma imagem, antes e depois do modelo. Move o controlo para revelar cada lado.</p>
+        </div>
+
+        <div class="comparison-layout">
+          <div class="comparison-main">
+            <div class="scene-tabs" role="group" aria-label="Escolher cena">
+              <button type="button" class="scene-tab is-active" data-scene="dialogo" aria-pressed="true">Diálogo</button>
+              <button type="button" class="scene-tab" data-scene="chuva" aria-pressed="false">Chuva e luz</button>
+              <button type="button" class="scene-tab" data-scene="acao" aria-pressed="false">Ação</button>
+            </div>
+
+            <figure class="comparison-figure">
+              <div class="comparison-frame" id="comparison-frame" style="--split: 50%">
+                <img class="comparison-image" id="before-image" src="./assets/ep008-dialogo-fonte-576p.png" alt="Fonte 576p, cena de diálogo ao ar livre">
+                <div class="after-window" id="after-window">
+                  <img class="comparison-image" id="after-image" src="./assets/ep008-dialogo-v7-2x.png" alt="Saída 2× do modelo v7, na mesma cena">
+                </div>
+                <span class="image-label image-label-before">Antes · fonte 576p</span>
+                <span class="image-label image-label-after">Depois · modelo v7 2×</span>
+                <span class="wipe-line" aria-hidden="true"></span>
+                <span class="wipe-handle" aria-hidden="true">↔</span>
+              </div>
+              <div class="wipe-control">
+                <label for="wipe-range">Mover a cortina</label>
+                <input id="wipe-range" type="range" min="0" max="100" value="50" aria-label="Mover a cortina entre a fonte e o upscale">
+                <output id="wipe-value" for="wipe-range">50%</output>
+              </div>
+              <figcaption class="comparison-caption">
+                <span id="scene-caption">EP008 · diálogo ao ar livre</span>
+                <span>Exemplo de um teste observado; não é uma avaliação cega nem aprovação do episódio completo.</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <aside class="comparison-aside">
+            <p class="aside-number">2×</p>
+            <p class="aside-title">Mais resolução à saída.</p>
+            <p class="aside-copy">A fonte tem 774 × 576 píxeis. O modelo v7 gera 1548 × 1152. O teste preservou os tempos dos excertos, mas não certifica toda a série nem a ausência de cintilação.</p>
+            <a class="text-link" href="https://github.com/Skolastico/BringBackBleach/blob/main/Estado.md">Ler o estado completo <span aria-hidden="true">↗</span></a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="progress-section" id="progresso" aria-labelledby="progress-heading">
+        <div class="progress-copy">
+          <p class="eyebrow">A investigação mais recente</p>
+          <h2 id="progress-heading">A textura ainda precisa de contexto.</h2>
+          <p id="latest-summary">O candidato experimental DVD05 melhora medidas de textura fina e intermédia, mas a diferença visual continua subtil.</p>
+          <p class="next-step"><strong>Próximo passo</strong><br><span id="next-step">Rever mais algumas cenas de ação, efeitos e fundos antes de decidir se há dados suficientes para uma experiência limitada.</span></p>
+          <a class="text-link" href="https://github.com/Skolastico/BringBackBleach/blob/main/Estado.md">Ver diário e limitações <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="metrics" aria-label="Métricas técnicas do candidato residual DVD05">
+          <div class="metrics-heading">
+            <h3>Erro médio nas regiões de validação consultadas</h3>
+            <p>Redução face à base da comparação · não é melhoria visual</p>
+          </div>
+          <div class="metric-row">
+            <span class="metric-name">Textura fina</span>
+            <span class="metric-track"><span class="metric-fill fine-fill" id="fine-bar"></span></span>
+            <strong id="fine-value">47,21%</strong>
+          </div>
+          <div class="metric-row">
+            <span class="metric-name">Textura intermédia</span>
+            <span class="metric-track"><span class="metric-fill mid-fill" id="mid-bar"></span></span>
+            <strong id="mid-value">42,40%</strong>
+          </div>
+          <div class="metric-row">
+            <span class="metric-name">Estrutura maior</span>
+            <span class="metric-track metric-track-neutral"><span class="metric-marker"></span></span>
+            <strong id="structure-value">−0,33%</strong>
+          </div>
+          <p class="metric-note" id="metric-note">24 regiões medidas; validação já consultada durante o desenvolvimento. O sinal fino do DVD pode incluir textura, ruído e compressão.</p>
+        </div>
+      </section>
+
+      <section class="method-section" aria-label="Etapas do trabalho">
+        <p class="eyebrow">Como avançamos</p>
+        <div class="method-steps">
+          <div class="method-step is-done"><span>01</span><p>Medir os problemas</p></div>
+          <div class="method-step is-current"><span>02</span><p>Rever mais cenas</p></div>
+          <div class="method-step"><span>03</span><p>Testar uma mudança</p></div>
+          <div class="method-step"><span>04</span><p>Rever imagem e movimento</p></div>
+        </div>
+        <p class="method-note">A sequência mostra o ciclo atual, não uma percentagem de conclusão do projeto inteiro.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="#inicio" aria-label="Voltar ao início">BB<span>—</span></a>
+      <p>Projeto independente. <i>Bleach</i> e os fotogramas pertencem aos respetivos titulares; são mostrados aqui como exemplos de análise do progresso.</p>
+      <a href="https://github.com/Skolastico/BringBackBleach">Código e diário no GitHub <span aria-hidden="true">↗</span></a>
+    </footer>
+  </body>
+</html>
