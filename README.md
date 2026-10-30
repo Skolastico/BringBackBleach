@@ -2,6 +2,8 @@
 
 Este diário acompanha um projeto experimental para melhorar a imagem de episódios de *Bleach* a partir de fontes DVD/480p e de Blu-rays com problemas. O objetivo é preservar os tempos originais do vídeo e melhorar a imagem sem inventar traços nem apagar textura.
 
+**Site visual:** [abrir as comparações antes/depois](https://skolastico.github.io/BringBackBleach/). Inclui três fotogramas selecionados de um teste anterior do modelo v7 a 2×. Arrasta a cortina para comparar cada imagem.
+
 ![Fase atual e resultados medidos](imagens/progresso.svg)
 
 ## Estado atual
@@ -27,6 +29,7 @@ Em termos simples: nas zonas medidas, a correção aproxima o detalhe pequeno e 
 
 ## Limites deste diário
 
-Este repositório publica apenas resumos e gráficos próprios. Não contém episódios, fotogramas, conjuntos de dados ou pesos do modelo. Os resultados são experimentais e não certificam toda a série nem a ausência de cintilação.
+O site mostra três fotogramas de exemplo do EP008, retirados de um teste já observado do modelo v7; não são um teste cego nem uma aprovação do candidato DVD05 atual. O repositório não contém episódios completos, conjuntos de dados ou pesos do modelo. Os resultados são experimentais e não certificam toda a série nem a ausência de cintilação.
 
 *Projeto de investigação independente, sem ligação oficial à obra ou aos seus titulares.*
+
