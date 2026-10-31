@@ -2,6 +2,16 @@
 
 *Daily notes on improving Bleach's older picture while keeping its original drawing and timing.*
 
+## 31 October 2026 · Nightly dispatch — Subtle changes, longer review pending
+
+The new test keeps the drawing close to the previous version. Fine-detail measurements improved in short scenes from episodes 5 and 8, but visible differences remain subtle. The test stays experimental; episode-length validation is pending.
+
+The original DVD mixes painted detail with compression defects. Matching more of its fine signal does not prove authentic grain or a visible improvement. Comparing the previous version with the new test at the final image size showed very similar pictures and no obvious new distortion in inspected stills. These familiar scenes are diagnostic, not an independent test. Still images cannot certify stable motion.
+
+A full episode 5 pilot using the previous version was completed with original timing verified. Separately, an approved episode 8 evaluation of the new test was started. Completion and final validation remain pending in the latest operational report. Next comes timing verification and image review across that episode before adoption. Training remains closed without better approved examples.
+
+No new pair is cleared for publication tonight. The featured episode 7 pair remains dated 30 October and shows an earlier rejected test. All diary images and the separate episode 8 archive are preserved. The marker is step 3 of a four-step review cycle, not overall project completion. This journal update started no training, inference or video export.
+
 ## 30 October 2026 · Nightly dispatch — No clearer drawing yet
 
 The new test left the picture almost unchanged in the reviewed still image and failed the preset check for improving the main drawing. The previous version remains our reference. Better tiny-detail measurements did not establish a visible improvement.
