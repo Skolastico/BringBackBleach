@@ -10,7 +10,7 @@ The original DVD mixes painted detail with compression defects. Matching more of
 
 A full episode 5 pilot using the previous version was completed with original timing verified. Separately, an approved episode 8 evaluation of the new test was started. Completion and final validation remain pending in the latest operational report. Next comes timing verification and image review across that episode before adoption. Training remains closed without better approved examples.
 
-No new pair is cleared for publication tonight. The featured episode 7 pair remains dated 30 October and shows an earlier rejected test. All diary images and the separate episode 8 archive are preserved. The marker is step 3 of a four-step review cycle, not overall project completion. This journal update started no training, inference or video export.
+Images added to this post: the same crop of Orihime in episode 8, from the completed comparison reviewed today. The previous version is compared with the new experimental test; the cheek, eye and hair outlines remain very similar. Earlier episode 7 and episode 8 examples are preserved in the archive. The marker is step 3 of a four-step review cycle, not overall project completion. This journal update started no training, inference or video export.
 
 ## 30 October 2026 · Nightly dispatch — No clearer drawing yet
 

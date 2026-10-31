@@ -683,3 +683,6 @@ h1 {
 }
 
 
+[hidden] { display: none !important; }
+.past-posts { margin-block: 40px; }
+.past-posts > summary { cursor: pointer; padding-block: 24px; font-size: 20px; border-top: 1px solid var(--muted); }

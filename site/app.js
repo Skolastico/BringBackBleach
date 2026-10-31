@@ -214,9 +214,11 @@ function setText(selector, value) {
   if (typeof value === "string") document.querySelector(selector).textContent = value;
 }
 
-function loadDailyImage(imageDetail) {
+function loadDailyImage(imageDetail, postDate) {
   const section = document.querySelector("#current-image-section");
-  if (!imageDetail || imageDetail.available !== true) return;
+  section.hidden = true;
+  document.querySelector(".image-reading").hidden = true;
+  if (!imageDetail || imageDetail.available !== true || imageDetail.date !== postDate) return;
 
   const safeImagePath = (path) => typeof path === "string" && path.startsWith("./assets/diario/") && !path.includes("..");
   if (!safeImagePath(imageDetail.before) || !safeImagePath(imageDetail.after)) return;
@@ -239,6 +241,7 @@ function loadDailyImage(imageDetail) {
   document.querySelector("#current-before-label").textContent = currentImageRecord.beforeLabel;
   document.querySelector("#current-after-label").textContent = currentImageRecord.afterLabel;
   section.hidden = false;
+  document.querySelector(".image-reading").hidden = false;
 }
 
 function loadImageHistory(entries) {
@@ -319,13 +322,12 @@ async function loadLatestState() {
       segment.hidden = step > data.stageTotal;
     });
 
-    loadDailyImage(data.imageDetail);
-    loadImageHistory(data.imageHistory);
+    loadDailyImage(data.imageDetail, data.date);
+    loadImageHistory((data.imageHistory || []).filter(entry => entry.date !== data.date));
   } catch {
     // Keep the complete static article readable if the status data is unavailable.
   }
 }
 
 loadLatestState();
-
 

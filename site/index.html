@@ -12,8 +12,8 @@
         if (savedTheme === "light" || savedTheme === "dark") document.documentElement.dataset.theme = savedTheme;
       } catch {}
     </script>
-    <link rel="stylesheet" href="./styles.css?v=2026-10-30-6">
-    <script src="./app.js?v=2026-10-30-6" defer></script>
+    <link rel="stylesheet" href="./styles.css?v=2026-10-31-clarity">
+    <script src="./app.js?v=2026-10-31-clarity" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to journal</a>
@@ -26,7 +26,7 @@
       <nav aria-label="Main navigation">
         <a href="#latest">Latest dispatch</a>
         <a href="#frame-archive">Frame archive</a>
-        <a href="#method">How we review</a>
+        <a href="https://github.com/Skolastico/BringBackBleach/blob/main/Estado.md">All posts</a>
         <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to light theme">
           <span class="theme-indicator" aria-hidden="true"></span>
           <span id="theme-label">Light</span>
@@ -39,20 +39,20 @@
       <section class="dispatch-section" id="top" aria-labelledby="dispatch-title">
         <article class="dispatch-story" id="latest">
           <div class="story-rule" aria-hidden="true"><span></span><span></span><span></span></div>
-          <h1 id="dispatch-title">More detail on paper. Almost the same picture.</h1>
+          <h1 id="dispatch-title">Subtle changes. Longer review pending.</h1>
           <p class="story-meta">
             <span class="edition-mark" aria-hidden="true"></span>
             <span>Daily image journal</span>
             <span class="meta-separator" aria-hidden="true">/</span>
-            <time id="dispatch-date" datetime="2026-10-30">30 October 2026</time>
+            <time id="dispatch-date" datetime="2026-10-31">31 October 2026</time>
             <span class="meta-separator" aria-hidden="true">/</span>
-            <span id="dispatch-label">A test we decided not to use</span>
+            <span id="dispatch-label">Nightly dispatch · 31 October 2026</span>
           </p>
-          <p class="story-lede" id="dispatch-summary">Our latest attempt recovered more tiny detail in a test image, but side-by-side review found no clear visual improvement. It also missed our preset target for improving the larger shapes, so we are keeping the previous version for now.</p>
+          <p class="story-lede" id="dispatch-summary">The new test keeps the drawing close to the previous version. Fine-detail measurements improved in short scenes from episodes 5 and 8, but visible differences remain subtle. The test stays experimental; episode-length validation is pending.</p>
 
           <div class="story-copy">
             <p id="dispatch-problem">The original DVD picture can look soft. Restoring texture is useful only if faces, outlines and motion still look right. A score can improve even when a person cannot see a worthwhile change.</p>
-            <p id="dispatch-response">We compared two versions of the same action frame and rejected the newer attempt. We are now looking for better matched scenes before another small experiment.</p>
+            <p id="dispatch-response">The previous version remains our reference. The new test showed no obvious new distortion in reviewed stills, but has not been adopted.</p>
           </div>
 
           <div class="image-reading" aria-labelledby="image-reading-title">
@@ -60,35 +60,35 @@
             <dl class="before-after-notes">
               <div>
                 <dt>Before · previous version</dt>
-                <dd id="before-detail">The previous experimental version already keeps this action frame close to the version used for review. Look at the character's clothing, outlines and the effect behind him.</dd>
+                <dd id="before-detail">Previous version: the reference used before today’s test. This is a crop of Orihime in episode 8, about seven minutes into the episode.</dd>
               </div>
               <div>
                 <dt>After · newer test</dt>
-                <dd id="after-detail">The computer measured less tiny-detail mismatch, but reviewers could not identify a clear improvement in this enlarged frame. The change to the main drawing was too small to meet our preset target.</dd>
+                <dd id="after-detail">New test: the identical moment and crop. Look at the cheek, eye and hair outlines. They remain very similar; better measurements do not establish a visible improvement.</dd>
               </div>
             </dl>
             <p class="detail-method" id="detail-method">Both pictures come from the same frame. This is a still-image review; it cannot tell us whether the result looks stable in motion.</p>
           </div>
 
-          <p class="evidence-note" id="image-note">These are two versions of the same frame and crop. The newer test was rejected. Move the curtain yourself; the subtle difference is exactly why a score alone did not decide the result.</p>
+          <p class="evidence-note" id="image-note">Today’s images come from the completed episode 8 comparison, not the pending full-episode evaluation. Older examples are kept separately in the archive.</p>
           <a class="story-link" href="https://github.com/Skolastico/BringBackBleach/blob/main/Estado.md">Read the full progress diary <span aria-hidden="true">↗</span></a>
         </article>
 
         <aside class="dispatch-register" aria-labelledby="cycle-title">
           <div class="register-topline">
             <span>Field report</span>
-            <span id="register-date">30 · X · 2026</span>
+            <span id="register-date">31 · 10 · 2026</span>
           </div>
-          <section class="current-image-section" id="current-image-section" aria-label="Latest reviewed frame comparison">
+          <section class="current-image-section" id="current-image-section" aria-label="Images from this post comparison">
             <div class="current-image-copy">
-              <p class="section-index">Latest reviewed frame</p>
-              <p id="current-image-detail">The same action frame, treated by the earlier version and the rejected new test. The review found no clear visible gain.</p>
+              <p class="section-index">Images from this post</p>
+              <p id="current-image-detail">Episode 8, about 7 minutes into the episode: a crop of Orihime from the reviewed comparison. Left: previous version (residual01). Right: new test (residual05). Look at the cheek, eye and hair outlines. Differences are subtle; this still does not establish a visible restoration gain or stable motion.</p>
             </div>
             <figure class="comparison-figure current-comparison">
               <div class="comparison-frame" id="current-frame" data-preview="current" style="--split: 50%" role="group" tabindex="0" aria-label="Before and after image comparison. Press Enter to open a larger view.">
-                <img class="comparison-image" id="current-before-image" src="./assets/diario/2026-10-30-dvd05-before.png" alt="Episode 7 action frame treated by the previous experimental version">
+                <img class="comparison-image" id="current-before-image" src="./assets/diario/2026-10-31-ep008-before.jpg" alt="Episode 8 crop of Orihime, cheek and eye, processed with the previous version">
                 <div class="after-window">
-                  <img class="comparison-image" id="current-after-image" src="./assets/diario/2026-10-30-dvd07-after.png" alt="The same Episode 7 action frame treated by the rejected new test">
+                  <img class="comparison-image" id="current-after-image" src="./assets/diario/2026-10-31-ep008-after.jpg" alt="The identical Episode 8 crop processed with the new experimental test">
                 </div>
                 <span class="image-label image-label-before" id="current-before-label">Previous version</span>
                 <span class="image-label image-label-after" id="current-after-label">New test</span>
@@ -97,11 +97,11 @@
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5 3 12l5 7M16 5l5 7-5 7" /></svg>
                 </button>
               </div>
-              <figcaption class="comparison-caption"><span id="current-image-caption">Episode 7 · same frame and crop · newer test rejected</span><span>Drag the line across the image, or open the frame for a closer look.</span></figcaption>
+              <figcaption class="comparison-caption"><span id="current-image-caption">31 October 2026 · Episode 8 · Orihime · same frame and 600 × 600 crop · test not adopted</span><span>Drag the line across the image, or open the frame for a closer look.</span></figcaption>
             </figure>
           </section>
           <div class="register-stamp" aria-hidden="true">BB<br><span>REVIEW</span></div>
-          <h2 id="cycle-title">Finding better scenes for the next comparison.</h2>
+          <h2 id="cycle-title">Comparing pictures before adoption.</h2>
           <p class="register-kicker">Current research cycle</p>
           <div class="cycle-count"><strong id="stage-index">02</strong><span>of</span><span id="stage-total">04</span></div>
           <div class="stage-track" id="stage-progress" role="progressbar" aria-label="Current research cycle progress" aria-valuemin="0" aria-valuemax="4" aria-valuenow="2">
@@ -110,51 +110,16 @@
             <span class="stage-segment"></span>
             <span class="stage-segment"></span>
           </div>
-          <p class="register-note" id="stage-note">The latest test was rejected. We are choosing new scenes before trying again.</p>
+          <p class="register-note" id="stage-note">Step 3 of the four-step review cycle. Short comparisons completed; episode validation pending.</p>
           <p class="cycle-caveat">This marker tracks one review cycle, not the whole project.</p>
         </aside>
       </section>
 
-      <section class="cycle-section" id="method" aria-labelledby="cycle-heading">
-        <div class="section-lead">
-          <h2 id="cycle-heading">A result has to hold up in the frame.</h2>
-        </div>
-        <ol class="cycle-steps">
-          <li class="is-complete"><span class="step-number">01</span><span class="step-name">Identify the image problem</span><span class="step-state">Complete</span></li>
-          <li class="is-current"><span class="step-number">02</span><span class="step-name">Choose fresh review scenes</span><span class="step-state">In progress</span></li>
-          <li><span class="step-number">03</span><span class="step-name">Run one limited test</span><span class="step-state">Next</span></li>
-          <li><span class="step-number">04</span><span class="step-name">Review image and motion</span><span class="step-state">Pending</span></li>
-        </ol>
-        <p class="cycle-caveat">The steps describe this cycle of work. They are not a percentage estimate for the whole project.</p>
-      </section>
-
-      <section class="issue-section" aria-labelledby="issue-title">
-        <div class="section-lead">
-          <h2 id="issue-title">The open questions behind the pictures.</h2>
-        </div>
-        <dl class="issue-ledger">
-          <div class="issue-row">
-            <dt>Fine detail can improve on paper without looking different.</dt>
-            <dd>Compare the pictures at full size before deciding whether a new version is worth keeping. This test showed no clear visual gain.</dd>
-          </div>
-          <div class="issue-row">
-            <dt>The main drawing needs to stay reliable.</dt>
-            <dd>The new test missed our preset target for the larger shapes. We kept the previous experimental version.</dd>
-          </div>
-          <div class="issue-row">
-            <dt>There are too few well-matched action and effects scenes.</dt>
-            <dd>Find fresh pairs from episodes 1–6. Keep episode 7 aside to check future work on a scene the new training has not used.</dd>
-          </div>
-          <div class="issue-row">
-            <dt>A still image cannot confirm stable motion.</dt>
-            <dd>Review the image across consecutive frames before making any claim about stable motion or a complete episode.</dd>
-          </div>
-        </dl>
-      </section>
-
-      <section class="journal-archive" id="frame-archive" aria-labelledby="journal-archive-title">
-        <div class="section-lead"><h2 id="journal-archive-title">Every comparison stays in the journal.</h2></div>
-        <p>When a new reviewed image becomes the featured comparison, earlier pairs remain here. Open any entry to inspect its before and after images at a larger size.</p>
+      <details class="past-posts" id="frame-archive">
+        <summary>Older posts and image comparisons — open archive</summary>
+      <section class="journal-archive" aria-labelledby="journal-archive-title">
+        <div class="section-lead"><h2 id="journal-archive-title">Previous dated comparisons</h2></div>
+        <p>These images belong to their own dated posts. Each entry explains what was compared and the decision. They are not today’s result.</p>
         <div class="journal-history" id="journal-history"></div>
       </section>
 
@@ -203,7 +168,7 @@
           </aside>
         </div>
       </section>
-
+      </details>
 
     </main>
 
@@ -219,9 +184,9 @@
           </button>
         </div>
         <div class="comparison-frame modal-frame" id="modal-frame" style="--split: 50%" role="group" aria-label="Enlarged before and after comparison">
-          <img class="comparison-image" id="modal-before-image" src="./assets/diario/2026-10-30-dvd05-before.png" alt="Episode 7 action frame treated by the previous experimental version">
+          <img class="comparison-image" id="modal-before-image" src="./assets/diario/2026-10-31-ep008-before.jpg" alt="Episode 8 crop of Orihime, cheek and eye, processed with the previous version">
           <div class="after-window">
-            <img class="comparison-image" id="modal-after-image" src="./assets/diario/2026-10-30-dvd07-after.png" alt="The same frame treated by the rejected new test">
+            <img class="comparison-image" id="modal-after-image" src="./assets/diario/2026-10-31-ep008-after.jpg" alt="The same frame treated by the rejected new test">
           </div>
           <span class="image-label image-label-before">Previous version</span>
           <span class="image-label image-label-after">New test</span>
@@ -244,5 +209,4 @@
     </footer>
   </body>
 </html>
-
 
