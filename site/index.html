@@ -12,8 +12,8 @@
         if (savedTheme === "light" || savedTheme === "dark") document.documentElement.dataset.theme = savedTheme;
       } catch {}
     </script>
-    <link rel="stylesheet" href="./styles.css?v=2026-10-31-clarity">
-    <script src="./app.js?v=2026-10-31-clarity" defer></script>
+    <link rel="stylesheet" href="./styles.css?v=2026-11-01-timeline">
+    <script src="./app.js?v=2026-11-01-timeline" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to journal</a>
@@ -115,11 +115,9 @@
         </aside>
       </section>
 
-      <details class="past-posts" id="frame-archive">
-        <summary>Older posts and image comparisons — open archive</summary>
-      <section class="journal-archive" aria-labelledby="journal-archive-title">
-        <div class="section-lead"><h2 id="journal-archive-title">Previous dated comparisons</h2></div>
-        <p>These images belong to their own dated posts. Each entry explains what was compared and the decision. They are not today’s result.</p>
+      <section class="journal-archive" id="frame-archive" aria-labelledby="journal-archive-title">
+        <div class="section-lead"><h2 id="journal-archive-title">The image journal, by date.</h2></div>
+        <p>Browse the latest reviewed frame and earlier comparisons in date order. Each entry keeps its images and the decision that went with them.</p>
         <div class="journal-history" id="journal-history"></div>
       </section>
 
@@ -168,7 +166,6 @@
           </aside>
         </div>
       </section>
-      </details>
 
     </main>
 
@@ -209,4 +206,5 @@
     </footer>
   </body>
 </html>
+
 

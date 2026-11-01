@@ -435,16 +435,23 @@ h1 {
 
 .archive-section { padding-top: 59px; padding-bottom: 70px; }
 .journal-archive > p { max-width: 64ch; color: var(--muted); font-size: 14px; line-height: 1.65; }
-.journal-history { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 360px)); gap: 14px; margin-top: 24px; }
-.history-entry { display: flex; flex-direction: column; gap: 10px; padding: 0 0 18px; border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); text-align: left; cursor: pointer; }
-.history-entry:hover { border-color: var(--red); }
+.journal-history { display: grid; margin-top: 37px; }
+.history-row { display: grid; grid-template-columns: minmax(132px, 180px) 28px minmax(0, 1fr); column-gap: 22px; min-width: 0; }
+.history-date { padding-top: 3px; color: var(--muted); font-size: 12px; font-weight: 650; line-height: 1.5; text-align: right; }
+.history-marker { position: relative; display: block; min-height: 100%; }
+.history-marker::before { position: absolute; z-index: 1; top: 5px; left: 10px; width: 9px; height: 9px; border-radius: 50%; background: var(--ink); content: ""; }
+.history-marker::after { position: absolute; top: 14px; bottom: 0; left: 14px; width: 1px; background: var(--line-strong); content: ""; }
+.history-row:last-child .history-marker::after { bottom: 32px; }
+.history-entry { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; min-width: 0; width: 100%; padding: 0 0 54px; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--ink); text-align: left; cursor: pointer; }
+.history-row + .history-row { padding-top: 38px; }
+.history-entry:hover .history-hint { color: var(--red); }
 .history-entry:focus-visible { outline: 2px solid var(--red); outline-offset: 4px; }
-.history-images { display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; aspect-ratio: 2.4; }
+.history-images { display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; width: min(100%, 660px); aspect-ratio: 2 / 1; margin-top: 8px; border: 1px solid var(--line-strong); }
 .history-images img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.history-date, .history-entry strong, .history-summary { margin-inline: 16px; }
-.history-date { color: var(--indigo-deep); font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
-.history-entry strong { font-family: Georgia, "Times New Roman", serif; font-size: 20px; line-height: 1.18; }
-.history-summary { color: var(--muted); font-size: 12px; line-height: 1.5; }
+.history-tag { display: inline-block; padding: 5px 9px; border: 1px solid var(--line-strong); border-radius: 999px; color: var(--muted); font-size: 11px; font-weight: 700; }
+.history-entry strong { max-width: 31ch; font-family: Georgia, "Times New Roman", serif; font-size: clamp(24px, 2.7vw, 34px); font-weight: 500; line-height: 1.1; }
+.history-summary { max-width: 65ch; color: var(--muted); font-size: 14px; line-height: 1.6; }
+.history-hint { color: var(--ink); font-size: 12px; font-weight: 750; }
 .archive-heading {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(220px, .55fr);
@@ -626,6 +633,12 @@ h1 {
 }
 
 @media (max-width: 640px) {
+  .history-row { grid-template-columns: 22px minmax(0, 1fr); column-gap: 10px; }
+  .history-date { grid-column: 2; grid-row: 1; margin-bottom: 12px; text-align: left; }
+  .history-marker { grid-column: 1; grid-row: 1 / 3; }
+  .history-marker::before { left: 5px; }
+  .history-marker::after { left: 9px; }
+  .history-entry { grid-column: 2; grid-row: 2; padding-bottom: 39px; }
   :root { --page: calc(100% - 32px); }
   .site-header { min-height: 74px; gap: 14px; flex-wrap: wrap; padding-block: 13px; }
   .wordmark-caption { display: none; }
@@ -686,3 +699,4 @@ h1 {
 [hidden] { display: none !important; }
 .past-posts { margin-block: 40px; }
 .past-posts > summary { cursor: pointer; padding-block: 24px; font-size: 20px; border-top: 1px solid var(--muted); }
+

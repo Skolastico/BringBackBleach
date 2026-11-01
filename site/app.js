@@ -249,10 +249,30 @@ function loadImageHistory(entries) {
   if (!Array.isArray(entries)) return;
   const safePath = (path) => typeof path === "string" && path.startsWith("./assets/diario/") && !path.includes("..");
   container.replaceChildren();
-  entries.filter((entry) => safePath(entry.before) && safePath(entry.after) && /^\d{4}-\d{2}-\d{2}$/.test(entry.date)).forEach((entry) => {
+  const unique = new Map();
+  entries.filter((entry) => safePath(entry.before) && safePath(entry.after) && /^\d{4}-\d{2}-\d{2}$/.test(entry.date))
+    .forEach((entry) => unique.set(entry.before + "|" + entry.after, entry));
+  [...unique.values()].sort((a, b) => b.date.localeCompare(a.date)).forEach((entry) => {
+    const row = document.createElement("article");
+    row.className = "history-row";
+    const date = document.createElement("time");
+    date.className = "history-date";
+    date.dateTime = entry.date;
+    date.textContent = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(entry.date + "T12:00:00Z"));
+    const marker = document.createElement("span");
+    marker.className = "history-marker";
+    marker.setAttribute("aria-hidden", "true");
     const button = document.createElement("button");
     button.type = "button";
     button.className = "history-entry";
+    const tag = document.createElement("span");
+    tag.className = "history-tag";
+    tag.textContent = entry.featured ? "Featured comparison" : "Earlier comparison";
+    const title = document.createElement("strong");
+    title.textContent = entry.title || "Reviewed image comparison";
+    const summary = document.createElement("span");
+    summary.className = "history-summary";
+    summary.textContent = entry.summary || "Open the same-frame comparison.";
     const before = document.createElement("img");
     before.src = entry.before;
     before.alt = entry.beforeAlt || "Earlier version of a reviewed frame";
@@ -264,22 +284,18 @@ function loadImageHistory(entries) {
     const images = document.createElement("span");
     images.className = "history-images";
     images.append(before, after);
-    const date = document.createElement("span");
-    date.className = "history-date";
-    date.textContent = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(entry.date + "T12:00:00Z"));
-    const title = document.createElement("strong");
-    title.textContent = entry.title || "Reviewed image comparison";
-    const summary = document.createElement("span");
-    summary.className = "history-summary";
-    summary.textContent = entry.summary || "Open the same-frame comparison.";
-    button.append(images, date, title, summary);
+    const hint = document.createElement("span");
+    hint.className = "history-hint";
+    hint.textContent = "Open before and after ↗";
+    button.append(tag, title, summary, images, hint);
     button.addEventListener("click", () => openModal({
       before: entry.before, after: entry.after,
       beforeAlt: before.alt, afterAlt: after.alt,
       beforeLabel: entry.beforeLabel || "Previous version",
       afterLabel: entry.afterLabel || "New test"
     }, entry.caption || entry.title || "Reviewed comparison", button));
-    container.append(button);
+    row.append(date, marker, button);
+    container.append(row);
   });
 }
 
@@ -323,11 +339,19 @@ async function loadLatestState() {
     });
 
     loadDailyImage(data.imageDetail, data.date);
-    loadImageHistory((data.imageHistory || []).filter(entry => entry.date !== data.date));
+    const history = Array.isArray(data.imageHistory) ? [...data.imageHistory] : [];
+    if (data.imageDetail?.available === true) history.push({
+      ...data.imageDetail,
+      title: data.imageDetail.title || data.title,
+      summary: data.imageDetail.summary || data.summary,
+      featured: true
+    });
+    loadImageHistory(history);
   } catch {
     // Keep the complete static article readable if the status data is unavailable.
   }
 }
 
 loadLatestState();
+
 
