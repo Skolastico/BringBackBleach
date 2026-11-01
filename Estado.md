@@ -2,7 +2,19 @@
 
 *Daily notes on improving Bleach's older picture while keeping its original drawing and timing.*
 
-## 31 October 2026 · Nightly dispatch — Subtle changes, longer review pending
+## 1 November 2026 � Nightly dispatch � Timing verified, texture still under review
+
+Episode 8 passed its timing and file checks, but the new test still looks very close to the previous version. Soft texture remains. The team has not adopted a new version on the strength of better measurements.
+
+The completed episode 8 review checked the original timing throughout the file and sampled pictures across the episode. No obvious new distortion was seen in the narrative samples. Horizontal patterns appeared in the opening and credits, but their cause was not isolated. Short comparisons of faces, backgrounds and action still showed subtle changes rather than a clear improvement. These checks do not certify stable motion throughout an episode.
+
+The problem is that the DVD mixes painted detail and grain with compression defects. Later training and source-detail experiments could match more tiny variation without producing a clearly better picture. They were rejected or kept experimental. The previous version remains the accepted reference; the new test is a basis for further evaluation, not an adopted replacement.
+
+A separate experiment adds a restrained layer of synthetic grain while protecting outlines before compression. It does not recover authentic original grain. Short trials preserved original frame timing and protected edges before compression; a longer episode 19 evaluation was started separately and is not yet validated in the latest report. Once completion is reported, the next step is to check the file and review whether the texture helps in motion before considering wider use.
+
+No new same-frame image pair has been cleared for public use tonight. The featured record remains dated 31 October, and every earlier pair and the separate episode 8 archive remain intact. Those images do not illustrate the new synthetic-grain experiment. The marker is step 3 of the four-step review cycle, not overall project completion. This journal update started no training, inference or video export.
+
+## 31 October 2026 � Nightly dispatch � Subtle changes, longer review pending
 
 The new test keeps the drawing close to the previous version. Fine-detail measurements improved in short scenes from episodes 5 and 8, but visible differences remain subtle. The test stays experimental; episode-length validation is pending.
 
@@ -12,19 +24,19 @@ A full episode 5 pilot using the previous version was completed with original ti
 
 Images added to this post: the same crop of Orihime in episode 8, from the completed comparison reviewed today. The previous version is compared with the new experimental test; the cheek, eye and hair outlines remain very similar. Earlier episode 7 and episode 8 examples are preserved in the archive. The marker is step 3 of a four-step review cycle, not overall project completion. This journal update started no training, inference or video export.
 
-## 30 October 2026 · Nightly dispatch — No clearer drawing yet
+## 30 October 2026 � Nightly dispatch � No clearer drawing yet
 
 The new test left the picture almost unchanged in the reviewed still image and failed the preset check for improving the main drawing. The previous version remains our reference. Better tiny-detail measurements did not establish a visible improvement.
 
-The latest completed audit reviewed fourteen still images from episodes 9–12, including teeth and diagonal hat lines. None showed a clear drawing correction beyond the previous version. An enlarged image is useful as a guide only when it actually reveals a better line or shape. This was a sample review, not a whole-episode or motion check.
+The latest completed audit reviewed fourteen still images from episodes 9�12, including teeth and diagonal hat lines. None showed a clear drawing correction beyond the previous version. An enlarged image is useful as a guide only when it actually reveals a better line or shape. This was a sample review, not a whole-episode or motion check.
 
-The team decided against repeating the rejected experiment with the same examples. Next, we plan to review a few unused scenes in episodes 1–6, 9, 10 and 12. Another experiment must wait for a visible drawing correction. Episodes 7 and 11 remain for evaluation; episode 8 remains diagnostic.
+The team decided against repeating the rejected experiment with the same examples. Next, we plan to review a few unused scenes in episodes 1�6, 9, 10 and 12. Another experiment must wait for a visible drawing correction. Episodes 7 and 11 remain for evaluation; episode 8 remains diagnostic.
 
 No new image pair has been cleared for publication tonight. The featured episode 7 comparison dated 30 October shows an earlier rejected test, not the latest experiment. It and the separate episode 8 examples remain in the archive.
 
 The marker remains at step 2 of the four-step review cycle: finding better examples. It is not overall project completion. This nightly update involved documentation only; no training, inference or video export was started.
 
-## 30 October 2026 — More detail on paper. Almost the same picture.
+## 30 October 2026 � More detail on paper. Almost the same picture.
 
 The newest image test did better in a computer measurement of tiny detail. When we put it beside the previous experimental version, reviewers could not see a clear improvement. The newer test also missed a separate target for the larger shapes in the picture. We decided not to use it. The previous version remains our reference while we look for better scenes to study.
 
@@ -32,9 +44,9 @@ The newest image test did better in a computer measurement of tiny detail. When 
 
 [Open the comparison on the website](https://skolastico.github.io/BringBackBleach/#latest) and drag the line across the frame. Both sides show the **same moment from episode 7, with the same crop**.
 
-**Before — previous version:** Look at the character's clothes, the edges of his body and the effect behind him. This version already looked close to the image used for review.
+**Before � previous version:** Look at the character's clothes, the edges of his body and the effect behind him. This version already looked close to the image used for review.
 
-**After — new test:** A computer found less mismatch in the finest details, but the enlarged pictures look nearly the same. We could not point to a clear visual improvement in this frame.
+**After � new test:** A computer found less mismatch in the finest details, but the enlarged pictures look nearly the same. We could not point to a clear visual improvement in this frame.
 
 The measurement of tiny detail improved by about **14% across nine reviewed areas**. That percentage describes a comparison against an image target; it does **not** mean the picture looks 14% better. For the larger shapes, our target was at least **5%** improvement; this test reached **under 1%**. Those two checks, together with the visual review, explain why we kept the previous version.
 
@@ -44,7 +56,7 @@ The measurement of tiny detail improved by about **14% across nine reviewed area
 | --- | --- |
 | Older DVD footage can look soft, but extra texture is only useful when the picture still looks natural. | Compare enlarged images alongside measurements, rather than choosing by a score alone. |
 | The latest test changed the action frame too little to justify using it. | Keep the previous experimental version and record the rejected test here. |
-| We need more varied, well-matched action and effects scenes. | Search episodes 1–6 for suitable pairs. Keep episode 7 aside to check future work. |
+| We need more varied, well-matched action and effects scenes. | Search episodes 1�6 for suitable pairs. Keep episode 7 aside to check future work. |
 | A still frame cannot reveal unstable motion. | Review consecutive frames before making claims about movement or an entire episode. |
 
 ### Where we are
