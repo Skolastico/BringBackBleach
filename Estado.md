@@ -10,7 +10,7 @@ The problem is small shifting speckles close to drawn lines. Cleaning those area
 
 A separate opening and ending audit found visible comb-like lines in moving images. Matching the original picture fields reduced these lines in inspected opening examples while preserving frame timing. In the ending, additional processing also changed a character’s face or pose in one inspected image. That change needs explanation before approval. Neither sequence has an approved final correction, and continuous motion and flicker remain unverified.
 
-Next comes a distinct approach to the remaining local noise, plus separate review of opening and ending motion. No new pair has been cleared for public release: the featured image remains explicitly dated 31 October, and every earlier image stays in the archive. The marker shows step 3 of a four-step review cycle, not overall project completion. This journal run started no training, inference or video export.
+Next comes a distinct approach to the remaining local noise, plus separate review of opening and ending motion. The image now attached to this entry comes from the already reviewed episode 4 comparison: the same crop of cage bars in Temporal10 and Temporal11. The newer version changes very little and was not adopted. This still cannot show how the remaining noise behaves during a full episode. Earlier image pairs stay in the archive. The marker shows step 3 of a four-step review cycle, not overall project completion. This journal run started no training, inference or video export.
 
 ## 2 November 2026 · Nightly dispatch — Added grain paused; edge noise takes priority
 
@@ -22,7 +22,7 @@ The immediate problem is small, shifting speckles around outlines, often called 
 
 Completed work includes episode 19 timing checks, the rejected compression test and the short filter comparisons. An analysis of 800 short windows is still in progress in the latest report; it has not established a treatment. Next comes comparing the confirmed outlines at matching moments, separating moving noise from the drawing before deciding on another experiment.
 
-No new image pair has been cleared for public use. The featured comparison remains dated 31 October; all earlier pairs and the separate episode 8 examples remain archived. The marker returns to step 2 of the four-step review cycle: identify reliable examples. It does not measure overall project completion. This journal update started no training, inference or video export.
+A reviewed episode 19 image pair is now attached to this entry. It shows the same frame without and with the added-grain treatment. The still gives a close look at the picture, while the viewer's concern came from watching it move; a still does not reproduce that experience. The treatment remains paused. Earlier pairs and the separate episode 8 examples remain archived. The marker returns to step 2 of the four-step review cycle: identify reliable examples. It does not measure overall project completion. This journal update started no training, inference or video export.
 
 ## 1 November 2026 · Nightly dispatch — Timing verified, texture still under review
 
@@ -34,7 +34,7 @@ The problem is that the DVD mixes painted detail and grain with compression defe
 
 A separate experiment adds a restrained layer of synthetic grain while protecting outlines before compression. It does not recover authentic original grain. Short trials preserved original frame timing and protected edges before compression; a longer episode 19 evaluation was started separately and is not yet validated in the latest report. Once completion is reported, the next step is to check the file and review whether the texture helps in motion before considering wider use.
 
-No new same-frame image pair has been cleared for public use tonight. The featured record remains dated 31 October, and every earlier pair and the separate episode 8 archive remain intact. Those images do not illustrate the new synthetic-grain experiment. The marker is step 3 of the four-step review cycle, not overall project completion. This journal update started no training, inference or video export.
+A reviewed action-frame pair from episode 8 is now attached to this entry. The previous version and the new test show the same moment and crop; the difference is small, matching the decision to keep the test experimental. The image does not illustrate the separate synthetic-grain experiment. Every older pair and the separate episode 8 archive remain intact. The marker is step 3 of the four-step review cycle, not overall project completion. This journal update started no training, inference or video export.
 
 ## 31 October 2026 · Nightly dispatch — Subtle changes, longer review pending
 
@@ -96,3 +96,4 @@ The pictured scenes were already used during development. This was a still-image
 The site's separate episode 8 gallery shows three comparisons from an older enlargement experiment. They are preserved as historical examples and do not show the result described above.
 
 *Bleach and its images belong to their respective rights holders. This independent project is not affiliated with them.*
+

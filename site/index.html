@@ -12,8 +12,8 @@
         if (savedTheme === "light" || savedTheme === "dark") document.documentElement.dataset.theme = savedTheme;
       } catch {}
     </script>
-    <link rel="stylesheet" href="./styles.css?v=2026-11-01-timeline">
-    <script src="./app.js?v=2026-11-01-timeline" defer></script>
+    <link rel="stylesheet" href="./styles.css?v=2026-11-03-diary">
+    <script src="./app.js?v=2026-11-03-diary" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to journal</a>
@@ -79,9 +79,9 @@
             <span>Field report</span>
             <span id="register-date">31 · 10 · 2026</span>
           </div>
-          <section class="current-image-section" id="current-image-section" aria-label="Images from this post comparison">
+          <section class="current-image-section" id="current-image-section" aria-label="Latest reviewed comparison">
             <div class="current-image-copy">
-              <p class="section-index">Images from this post</p>
+              <p class="section-index" id="current-image-label">Latest reviewed comparison · 31 October 2026</p>
               <p id="current-image-detail">Episode 8, about 7 minutes into the episode: a crop of Orihime from the reviewed comparison. Left: previous version (residual01). Right: new test (residual05). Look at the cheek, eye and hair outlines. Differences are subtle; this still does not establish a visible restoration gain or stable motion.</p>
             </div>
             <figure class="comparison-figure current-comparison">
@@ -117,7 +117,7 @@
 
       <section class="journal-archive" id="frame-archive" aria-labelledby="journal-archive-title">
         <div class="section-lead"><h2 id="journal-archive-title">The image journal, by date.</h2></div>
-        <p>Browse the latest reviewed frame and earlier comparisons in date order. Each entry keeps its images and the decision that went with them.</p>
+        <p>Read each daily report alongside a reviewed frame. Every comparison names the day its images were made.</p>
         <div class="journal-history" id="journal-history"></div>
       </section>
 
@@ -127,7 +127,7 @@
             <h2 id="archive-title">Earlier experiments.</h2>
             <p class="section-index">Older pictures · separate from today's result</p>
           </div>
-          <p>These episode 8 examples came from an earlier enlargement experiment. They show a different comparison from the current action frame.</p>
+          <p>These episode 8 examples came from an earlier enlargement experiment. They are separate from the dated reports above.</p>
         </div>
 
         <div class="archive-layout">
@@ -161,7 +161,7 @@
           <aside class="archive-aside">
             <h3>Same frame. Two versions.</h3>
             <span class="archive-mark">ARCHIVE</span>
-            <p id="archive-description">The left side is an older source frame. The right side shows how an earlier experimental version enlarged it. This example does not show today's test.</p>
+            <p id="archive-description">The left side is an older source frame. The right side shows how an earlier experimental version enlarged it. This example is separate from the latest report.</p>
             <a class="story-link" href="https://github.com/Skolastico/BringBackBleach/blob/main/Estado.md">Read the dated reports <span aria-hidden="true">↗</span></a>
           </aside>
         </div>

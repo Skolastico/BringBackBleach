@@ -8,10 +8,11 @@ An independent visual diary about improving the picture in older Bleach releases
 
 Viewer review found much cleaner outlines in the current experiment, with a few local traces of noise. Two follow-up tests barely changed the picture and were not adopted. Opening and ending sequences still need separate treatment.
 
-On the website, drag the line directly across the featured image or click it for a larger view. Every reviewed pair is kept in the image diary when a new one takes its place. Older comparisons from a separate experiment have their own archive.
+The website shows each dated report with a reviewed frame comparison. Drag the line directly across the latest image or open any pair for a larger view. The 1–3 November reports now have their own images, and earlier pairs stay in the timeline. If a future report uses an older comparison, its original image date will be shown.
 
 The progress marker shows the current **four-step review cycle**, not a percentage of the entire project. The diary explains the problem, what the pictures show, our response and the next step in plain English.
 
 This public repository contains short reports and selected image crops. It does not publish full episodes, video clips, training material or model files.
 
 *Bleach and its images belong to their respective rights holders. This independent project is not affiliated with them.*
+

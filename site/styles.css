@@ -442,15 +442,18 @@ h1 {
 .history-marker::before { position: absolute; z-index: 1; top: 5px; left: 10px; width: 9px; height: 9px; border-radius: 50%; background: var(--ink); content: ""; }
 .history-marker::after { position: absolute; top: 14px; bottom: 0; left: 14px; width: 1px; background: var(--line-strong); content: ""; }
 .history-row:last-child .history-marker::after { bottom: 32px; }
-.history-entry { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; min-width: 0; width: 100%; padding: 0 0 54px; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--ink); text-align: left; cursor: pointer; }
+.history-entry { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; min-width: 0; width: 100%; padding: 0 0 54px; border-bottom: 1px solid var(--line); color: var(--ink); }
 .history-row + .history-row { padding-top: 38px; }
-.history-entry:hover .history-hint { color: var(--red); }
-.history-entry:focus-visible { outline: 2px solid var(--red); outline-offset: 4px; }
+.history-comparison { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; width: min(100%, 660px); margin-top: 10px; padding: 0; border: 0; background: transparent; color: var(--ink); text-align: left; cursor: zoom-in; }
+.history-comparison:hover .history-hint { color: var(--red); }
+.history-comparison:focus-visible { outline: 2px solid var(--red); outline-offset: 4px; }
 .history-images { display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; width: min(100%, 660px); aspect-ratio: 2 / 1; margin-top: 8px; border: 1px solid var(--line-strong); }
 .history-images img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .history-tag { display: inline-block; padding: 5px 9px; border: 1px solid var(--line-strong); border-radius: 999px; color: var(--muted); font-size: 11px; font-weight: 700; }
 .history-entry strong { max-width: 31ch; font-family: Georgia, "Times New Roman", serif; font-size: clamp(24px, 2.7vw, 34px); font-weight: 500; line-height: 1.1; }
 .history-summary { max-width: 65ch; color: var(--muted); font-size: 14px; line-height: 1.6; }
+.history-decision { max-width: 65ch; color: var(--soft-ink); font-size: 13px; font-weight: 650; line-height: 1.6; }
+.history-image-date { color: var(--quiet); font-size: 12px; font-weight: 700; }
 .history-hint { color: var(--ink); font-size: 12px; font-weight: 750; }
 .archive-heading {
   display: grid;

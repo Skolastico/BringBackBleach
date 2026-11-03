@@ -74,7 +74,7 @@ components:
 
 The site is an independent image-review desk: a current dated report leads with the decision, then places image notes and their limits beside the visual evidence. The interface borrows from original anime frame annotations and monochrome reproduction marks, using cold ink-and-paper contrast, warm white and orange blade marks, and one restrained red review signal. The interface design is original and uses no official logos or promotional art. Small, clearly labelled crops of series frames appear only as research comparisons.
 
-The movable divider is the signature. A compact field register and numbered review cycle carry the same inspection language through the rest of the journal, while the short English dispatches keep the work legible to general readers.
+The movable divider is the signature. A compact field register and numbered review cycle carry the same inspection language through the rest of the journal, while the short English dispatches keep the work legible to general readers. The dated timeline includes every nightly report, its decision and a clearly dated reviewed image comparison. When an older comparison illustrates a later report, the image date stays visible. Frames keep their native aspect ratio in the page and modal.
 
 **Key Characteristics:**
 - Daily news-style reports lead with the result and its limits.

@@ -45,6 +45,16 @@ const modalCaption = document.querySelector("#modal-scene-caption");
 let currentImageRecord = null;
 let modalOpener = null;
 
+function fitModalFrame() {
+  const image = modalImages[0];
+  if (!image.naturalWidth || !image.naturalHeight) return;
+  const availableWidth = Math.max(240, window.innerWidth - 72);
+  const availableHeight = Math.max(240, window.innerHeight - 160);
+  const width = Math.min(availableWidth, availableHeight * image.naturalWidth / image.naturalHeight, 1500);
+  document.querySelector("#modal-frame").style.width = `${Math.floor(width)}px`;
+}
+window.addEventListener("resize", fitModalFrame);
+
 function setWipe(value) {
   const position = Math.max(0, Math.min(100, Number(value)));
   pageFrames.forEach((frame) => frame.style.setProperty("--split", position + "%"));
@@ -111,7 +121,19 @@ function setModalImages(record, caption) {
   const labels = modal.querySelectorAll(".image-label");
   labels[0].textContent = record.beforeLabel;
   labels[1].textContent = record.afterLabel;
+  sizeFrameToImage(document.querySelector("#modal-frame"), modalImages[0], fitModalFrame);
   setWipe(50);
+}
+
+function sizeFrameToImage(frame, image, afterUpdate = () => {}) {
+  const update = () => {
+    if (image.naturalWidth && image.naturalHeight) {
+      frame.style.aspectRatio = `${image.naturalWidth} / ${image.naturalHeight}`;
+      afterUpdate();
+    }
+  };
+  if (image.complete) update();
+  else image.addEventListener("load", update, { once: true });
 }
 
 function openModal(record, caption, opener = document.querySelector("#comparison-frame")) {
@@ -214,11 +236,11 @@ function setText(selector, value) {
   if (typeof value === "string") document.querySelector(selector).textContent = value;
 }
 
-function loadDailyImage(imageDetail, postDate) {
+function loadDailyImage(imageDetail) {
   const section = document.querySelector("#current-image-section");
   section.hidden = true;
   document.querySelector(".image-reading").hidden = true;
-  if (!imageDetail || imageDetail.available !== true || imageDetail.date !== postDate) return;
+  if (!imageDetail || imageDetail.available !== true) return;
 
   const safeImagePath = (path) => typeof path === "string" && path.startsWith("./assets/diario/") && !path.includes("..");
   if (!safeImagePath(imageDetail.before) || !safeImagePath(imageDetail.after)) return;
@@ -236,43 +258,67 @@ function loadDailyImage(imageDetail, postDate) {
   currentImages[0].alt = currentImageRecord.beforeAlt;
   currentImages[1].src = currentImageRecord.after;
   currentImages[1].alt = currentImageRecord.afterAlt;
+  sizeFrameToImage(document.querySelector("#current-frame"), currentImages[0]);
   document.querySelector("#current-image-detail").textContent = imageDetail.detail || "";
   document.querySelector("#current-image-caption").textContent = currentImageRecord.caption;
+  document.querySelector("#current-image-label").textContent = `Latest reviewed comparison · ${formatDate(imageDetail.date)}`;
+  section.setAttribute("aria-label", `Latest reviewed comparison from ${formatDate(imageDetail.date)}`);
   document.querySelector("#current-before-label").textContent = currentImageRecord.beforeLabel;
   document.querySelector("#current-after-label").textContent = currentImageRecord.afterLabel;
   section.hidden = false;
   document.querySelector(".image-reading").hidden = false;
 }
 
-function loadImageHistory(entries) {
+function formatDate(date) {
+  return new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(date + "T12:00:00Z"));
+}
+
+function loadImageHistory(entries, posts, latestDate) {
   const container = document.querySelector("#journal-history");
-  if (!Array.isArray(entries)) return;
+  if (!Array.isArray(entries) || !Array.isArray(posts)) return;
   const safePath = (path) => typeof path === "string" && path.startsWith("./assets/diario/") && !path.includes("..");
   container.replaceChildren();
   const unique = new Map();
   entries.filter((entry) => safePath(entry.before) && safePath(entry.after) && /^\d{4}-\d{2}-\d{2}$/.test(entry.date))
     .forEach((entry) => unique.set(entry.before + "|" + entry.after, entry));
-  [...unique.values()].sort((a, b) => b.date.localeCompare(a.date)).forEach((entry) => {
+  const byDate = new Map([...unique.values()].map((entry) => [entry.date, entry]));
+  posts.filter((post) => /^\d{4}-\d{2}-\d{2}$/.test(post.date))
+    .sort((a, b) => b.date.localeCompare(a.date)).forEach((post) => {
+    const entry = byDate.get(post.imageDate || post.date);
     const row = document.createElement("article");
     row.className = "history-row";
     const date = document.createElement("time");
     date.className = "history-date";
-    date.dateTime = entry.date;
-    date.textContent = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(entry.date + "T12:00:00Z"));
+    date.dateTime = post.date;
+    date.textContent = formatDate(post.date);
     const marker = document.createElement("span");
     marker.className = "history-marker";
     marker.setAttribute("aria-hidden", "true");
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "history-entry";
+    const content = document.createElement("div");
+    content.className = "history-entry";
     const tag = document.createElement("span");
     tag.className = "history-tag";
-    tag.textContent = entry.featured ? "Featured comparison" : "Earlier comparison";
+    tag.textContent = post.date === latestDate ? "Latest report" : "Daily report";
     const title = document.createElement("strong");
-    title.textContent = entry.title || "Reviewed image comparison";
+    title.textContent = post.title || "Image review";
     const summary = document.createElement("span");
     summary.className = "history-summary";
-    summary.textContent = entry.summary || "Open the same-frame comparison.";
+    summary.textContent = post.summary || "Read the full report for details.";
+    content.append(tag, title, summary);
+    if (post.decision) {
+      const decision = document.createElement("span");
+      decision.className = "history-decision";
+      decision.textContent = post.decision;
+      content.append(decision);
+    }
+    if (entry) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "history-comparison";
+    button.setAttribute("aria-label", `Open before and after from ${formatDate(entry.date)}: ${entry.title || post.title}`);
+    const imageDate = document.createElement("span");
+    imageDate.className = "history-image-date";
+    imageDate.textContent = entry.date === post.date ? "Reviewed frame · same moment and crop" : `Reference comparison from ${formatDate(entry.date)}`;
     const before = document.createElement("img");
     before.src = entry.before;
     before.alt = entry.beforeAlt || "Earlier version of a reviewed frame";
@@ -284,17 +330,24 @@ function loadImageHistory(entries) {
     const images = document.createElement("span");
     images.className = "history-images";
     images.append(before, after);
+    const sizeImages = () => {
+      if (before.naturalWidth && before.naturalHeight) images.style.aspectRatio = `${before.naturalWidth * 2} / ${before.naturalHeight}`;
+    };
+    if (before.complete) sizeImages();
+    else before.addEventListener("load", sizeImages, { once: true });
     const hint = document.createElement("span");
     hint.className = "history-hint";
     hint.textContent = "Open before and after ↗";
-    button.append(tag, title, summary, images, hint);
+    button.append(imageDate, images, hint);
     button.addEventListener("click", () => openModal({
       before: entry.before, after: entry.after,
       beforeAlt: before.alt, afterAlt: after.alt,
       beforeLabel: entry.beforeLabel || "Previous version",
       afterLabel: entry.afterLabel || "New test"
     }, entry.caption || entry.title || "Reviewed comparison", button));
-    row.append(date, marker, button);
+    content.append(button);
+    }
+    row.append(date, marker, content);
     container.append(row);
   });
 }
@@ -338,7 +391,7 @@ async function loadLatestState() {
       segment.hidden = step > data.stageTotal;
     });
 
-    loadDailyImage(data.imageDetail, data.date);
+    loadDailyImage(data.imageDetail);
     const history = Array.isArray(data.imageHistory) ? [...data.imageHistory] : [];
     if (data.imageDetail?.available === true) history.push({
       ...data.imageDetail,
@@ -346,7 +399,7 @@ async function loadLatestState() {
       summary: data.imageDetail.summary || data.summary,
       featured: true
     });
-    loadImageHistory(history);
+    loadImageHistory(history, data.dispatchHistory || [], data.date);
   } catch {
     // Keep the complete static article readable if the status data is unavailable.
   }
