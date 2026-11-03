@@ -1,12 +1,12 @@
-# BringBackBleach � image progress journal
+# BringBackBleach — image progress journal
 
 An independent visual diary about improving the picture in older Bleach releases while preserving the drawing and original frame timing.
 
-**[Read the latest diary entry](Estado.md)** � **[Explore the image comparisons](https://skolastico.github.io/BringBackBleach/)** � **[See the review cycle](imagens/progresso.svg)**
+**[Read the latest diary entry](Estado.md)** · **[Explore the image comparisons](https://skolastico.github.io/BringBackBleach/)** · **[See the review cycle](imagens/progresso.svg)**
 
-## Latest update � 1 November 2026
+## Latest update · 3 November 2026
 
-Episode 8 passed its timing and file checks, but the new test still looks very close to the previous version. Soft texture remains. A separate synthetic-grain experiment is awaiting full-episode validation; no new version has been adopted.
+Viewer review found much cleaner outlines in the current experiment, with a few local traces of noise. Two follow-up tests barely changed the picture and were not adopted. Opening and ending sequences still need separate treatment.
 
 On the website, drag the line directly across the featured image or click it for a larger view. Every reviewed pair is kept in the image diary when a new one takes its place. Older comparisons from a separate experiment have their own archive.
 

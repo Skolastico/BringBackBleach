@@ -1,22 +1,22 @@
 {
-  "updated": "2026-11-01",
-  "date": "2026-11-01",
-  "dispatchLabel": "Nightly dispatch � 1 November 2026",
-  "title": "Timing verified. Texture still under review.",
-  "summary": "Episode 8 passed its timing and file checks, but the new test still looks very close to the previous version. Soft texture remains. A separate synthetic-grain experiment is awaiting full-episode validation; no new version has been adopted.",
-  "problem": "Fine texture can disappear as the picture is enlarged and compressed. The DVD also mixes useful detail with compression defects, so copying more of its signal can copy defects too.",
-  "response": "The previous version remains the accepted reference. The new test passed episode 8 file checks, but subtle picture differences do not justify adoption. Later texture variants also remain experimental.",
+  "updated": "2026-11-03",
+  "date": "2026-11-03",
+  "dispatchLabel": "Nightly dispatch · 3 November 2026",
+  "title": "Cleaner outlines retained. Further tests barely change the picture.",
+  "summary": "Viewer review found much cleaner outlines in the current experiment, with a few local traces of noise. Two follow-up tests barely changed the picture and were not adopted. Opening and ending sequences still need separate treatment.",
+  "problem": "Shifting speckles near drawn outlines can remain after cleaning. Removing them must preserve the drawing.",
+  "response": "The previous version, Temporal10, remains the experimental reference after positive viewer feedback. The new test, Temporal11, and its follow-up showed almost no visible extra benefit and were not adopted.",
   "beforeDetail": "Archived comparison, 31 October: the previous version in the episode 8 Orihime close-up.",
   "afterDetail": "Archived comparison, 31 October: the new test at the identical moment and crop. Differences remain subtle.",
-  "imageNote": "1 November dispatch: no newly cleared image pair. The featured record and image diary retain the 31 October comparison and all older examples; these are not new pictures.",
+  "imageNote": "3 November: no newly cleared public pair. The featured image is the archived 31 October comparison, not today’s experiment.",
   "stageNumber": 3,
   "stageTotal": 4,
-  "stageTitle": "Reviewing texture before adoption.",
-  "stageNote": "Step 3 of the four-step review cycle: episode 8 timing verified; visual benefit remains unproven.",
-  "nextStep": "After episode 19 completion is reported, verify its timing and review pictures across the episode. Compare whether synthetic texture helps without disturbing outlines or motion before considering wider use.",
+  "stageTitle": "Comparing the picture before adoption.",
+  "stageNote": "Step 3 of the four-step review cycle: check the result and retain the better-supported version.",
+  "nextStep": "Investigate remaining local outline noise with a distinct hypothesis. Review opening and ending motion separately before approving any correction.",
   "imageDetail": {
     "date": "2026-10-31",
-    "title": "Episode 8 � Orihime close-up",
+    "title": "Episode 8 · Orihime close-up",
     "summary": "Compared today: the previous version and the new test keep the face and hair very similar. The test remains experimental.",
     "detail": "Episode 8, about 7 minutes into the episode: a crop of Orihime from the reviewed comparison. Left: previous version (residual01). Right: new test (residual05). Look at the cheek, eye and hair outlines. Differences are subtle; this still does not establish a visible restoration gain or stable motion.",
     "before": "./assets/diario/2026-10-31-ep008-before.jpg",
@@ -25,7 +25,7 @@
     "afterAlt": "The identical Episode 8 crop processed with the new experimental test",
     "beforeLabel": "Previous version",
     "afterLabel": "New test",
-    "caption": "31 October 2026 � Episode 8 � Orihime � same frame and 600 � 600 crop � test not adopted",
+    "caption": "31 October 2026 · Episode 8 · Orihime · same frame and 600 × 600 crop · test not adopted",
     "available": true
   },
   "imageHistory": [
@@ -39,11 +39,11 @@
       "afterAlt": "The same frame treated by the rejected new test",
       "beforeLabel": "Previous version",
       "afterLabel": "New test",
-      "caption": "Episode 7 � same frame and crop � newer test rejected"
+      "caption": "Episode 7 · same frame and crop · newer test rejected"
     },
     {
       "date": "2026-10-31",
-      "title": "Episode 8 � Orihime close-up",
+      "title": "Episode 8 · Orihime close-up",
       "summary": "Compared today: the previous version and the new test keep the face and hair very similar. The test remains experimental.",
       "detail": "Episode 8, about 7 minutes into the episode: a crop of Orihime from the reviewed comparison. Left: previous version (residual01). Right: new test (residual05). Look at the cheek, eye and hair outlines. Differences are subtle; this still does not establish a visible restoration gain or stable motion.",
       "before": "./assets/diario/2026-10-31-ep008-before.jpg",
@@ -52,7 +52,7 @@
       "afterAlt": "The identical Episode 8 crop processed with the new experimental test",
       "beforeLabel": "Previous version",
       "afterLabel": "New test",
-      "caption": "31 October 2026 � Episode 8 � Orihime � same frame and 600 � 600 crop � test not adopted"
+      "caption": "31 October 2026 · Episode 8 · Orihime · same frame and 600 × 600 crop · test not adopted"
     }
   ]
 }
