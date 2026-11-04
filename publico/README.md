@@ -4,11 +4,11 @@ An independent visual diary about improving the picture in older Bleach releases
 
 **[Read the latest diary entry](Estado.md)** · **[Explore the image comparisons](https://skolastico.github.io/BringBackBleach/)** · **[See the review cycle](imagens/progresso.svg)**
 
-## Latest update · 2 November 2026
+## Latest update · 4 November 2026
 
-Episode 19 preserved original timing, but viewer feedback found excessive grain and distracting defects. Added grain is paused; a new compression test showed no clear improvement on real DVD pictures and was rejected.
+Matching the original picture fields reduces comb-like lines in a reviewed episode 1 action frame. Other flagged scenes mostly show intentional drawing or effects, so broad cleanup remains unapproved.
 
-On the website, drag the line directly across the featured image or click it for a larger view. Every reviewed pair is kept in the image diary when a new one takes its place. Older comparisons from a separate experiment have their own archive.
+The latest reviewed comparison shows an episode 1 action frame before and after field matching. Earlier daily reports and image pairs remain in the timeline.
 
 The progress marker shows the current **four-step review cycle**, not a percentage of the entire project. The diary explains the problem, what the pictures show, our response and the next step in plain English.
 

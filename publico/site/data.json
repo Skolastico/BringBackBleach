@@ -1,33 +1,71 @@
 {
-  "updated": "2026-11-02",
-  "date": "2026-11-02",
-  "dispatchLabel": "Nightly dispatch · 2 November 2026",
-  "title": "Added grain paused. Edge noise takes priority.",
-  "summary": "Episode 19 preserved original timing, but viewer feedback found excessive grain and distracting defects. Added grain is paused; a new compression test showed no clear improvement on real DVD pictures and was rejected.",
-  "problem": "Small shifting speckles around outlines distract from the drawing. Smoothing them may also erase real detail.",
-  "response": "The previous version remains the reference. The new test did not establish a visible improvement. A separate filter softened outlines without clearly removing noise.",
-  "beforeDetail": "Archived comparison, 31 October: the previous version in the episode 8 Orihime close-up.",
-  "afterDetail": "Archived comparison, 31 October: the new test at the identical moment and crop. Differences remain subtle.",
-  "imageNote": "2 November: no newly cleared pair. The featured comparison remains dated 31 October; all archives remain intact.",
-  "stageNumber": 2,
+  "updated": "2026-11-04",
+  "date": "2026-11-04",
+  "dispatchLabel": "Nightly dispatch",
+  "title": "Action lines cleaner; broad cleanup stays on hold.",
+  "summary": "Matching the original picture fields reduces comb-like lines in a reviewed episode 1 action frame. Other flagged scenes mostly show intentional drawing or effects, so broad cleanup remains unapproved.",
+  "problem": "Moving picture fields can leave comb-like stripes. Cleaning every flagged area could erase intentional drawing and light effects.",
+  "response": "Keep field matching as a candidate for action. Do not apply broad smoothing or train on unconfirmed defects.",
+  "beforeDetail": "Untreated DVD action frame: comb-like stripes cross the moving character.",
+  "afterDetail": "The same frame with field matching: stripes are reduced. This is a field-processing test, not a newly trained model.",
+  "imageNote": "4 November: a newly reviewed same-frame comparison. A still cannot establish motion stability.",
+  "stageNumber": 3,
   "stageTotal": 4,
-  "stageTitle": "Identifying reliable noise examples.",
-  "stageNote": "Step 2 of the four-step review cycle: locate the defect before treating it.",
-  "nextStep": "Complete the ongoing short-window analysis and compare viewer-confirmed outlines at matching moments. No treatment has been established.",
+  "stageTitle": "Comparing the picture before adoption.",
+  "stageNote": "Step 3 of the four-step review cycle: check the result and retain the better-supported version.",
+  "nextStep": "Review existing action clips in continuous motion and seek independent confirmed defects. Ending-credit flicker needs separate motion review.",
   "imageDetail": {
-    "date": "2026-10-31",
-    "title": "Episode 8 · Orihime close-up",
-    "summary": "Compared today: the previous version and the new test keep the face and hair very similar. The test remains experimental.",
-    "detail": "Episode 8, about 7 minutes into the episode: a crop of Orihime from the reviewed comparison. Left: previous version (residual01). Right: new test (residual05). Look at the cheek, eye and hair outlines. Differences are subtle; this still does not establish a visible restoration gain or stable motion.",
-    "before": "./assets/diario/2026-10-31-ep008-before.jpg",
-    "after": "./assets/diario/2026-10-31-ep008-after.jpg",
-    "beforeAlt": "Episode 8 crop of Orihime, cheek and eye, processed with the previous version",
-    "afterAlt": "The identical Episode 8 crop processed with the new experimental test",
-    "beforeLabel": "Previous version",
-    "afterLabel": "New test",
-    "caption": "31 October 2026 · Episode 8 · Orihime · same frame and 600 × 600 crop · test not adopted",
+    "date": "2026-11-04",
+    "title": "Episode 1 · action field matching",
+    "summary": "Comb-like lines are reduced in this action frame; motion approval remains pending.",
+    "detail": "Episode 1 at 160.160 seconds. Left: untreated source. Right: field-matching test. Compare the horizontal stripes across the face and arm. This comparison does not prove stable motion or removal of compression noise.",
+    "before": "./assets/diario/2026-11-04-ep001-fields-before.jpg",
+    "after": "./assets/diario/2026-11-04-ep001-fields-after.jpg",
+    "beforeAlt": "Episode 1 action crop with horizontal comb-like lines across a moving character",
+    "afterAlt": "Same episode 1 action crop after field matching, with fewer comb-like lines",
+    "beforeLabel": "Source picture",
+    "afterLabel": "New field-matching test",
+    "caption": "4 November 2026 · Episode 1 · same frame at 160.160 seconds · equal 400 × 400 crops · motion review pending",
     "available": true
   },
+  "dispatchHistory": [
+    {
+      "date": "2026-11-03",
+      "title": "Cleaner outlines retained. Further tests barely change the picture.",
+      "summary": "The current experiment removed much of the distracting noise around outlines in the reviewed scene. Two follow-up tests changed almost nothing visible.",
+      "decision": "Keep the current version; the new test was not adopted."
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Added grain paused after the episode review.",
+      "summary": "A still comparison shows what the added-grain trial looked like. The viewer found the grain and picture defects distracting in motion, so the experiment was paused.",
+      "decision": "Keep the version without added synthetic grain as the reference."
+    },
+    {
+      "date": "2026-11-01",
+      "title": "Episode 8 timing verified; visible gain still uncertain.",
+      "summary": "The full episode kept its original frame timing. In this reviewed action frame, the previous version and new test remain very close.",
+      "decision": "The new test was not adopted on the strength of the measurements."
+    },
+    {
+      "date": "2026-10-31",
+      "title": "Subtle changes. Longer review pending.",
+      "summary": "The episode 8 face comparison showed similar outlines in the previous version and the new test. A full episode review was still pending at this point.",
+      "decision": "Keep the new test experimental."
+    },
+    {
+      "date": "2026-10-30",
+      "title": "A better score, almost the same picture.",
+      "summary": "The newer test barely changed this episode 7 action frame and missed the preset check for the main drawing.",
+      "decision": "The new test was rejected."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Action lines cleaner; broad cleanup stays on hold.",
+      "summary": "Matching the original picture fields reduces comb-like lines in a reviewed episode 1 action frame. Other flagged scenes mostly show intentional drawing or effects, so broad cleanup remains unapproved.",
+      "decision": "Keep field matching as a candidate for action. Do not apply broad smoothing or train on unconfirmed defects."
+    }
+  ],
   "imageHistory": [
     {
       "date": "2026-10-30",
@@ -53,6 +91,55 @@
       "beforeLabel": "Previous version",
       "afterLabel": "New test",
       "caption": "31 October 2026 · Episode 8 · Orihime · same frame and 600 × 600 crop · test not adopted"
+    },
+    {
+      "date": "2026-11-01",
+      "title": "Episode 8 · action frame",
+      "summary": "The previous version and new test look very similar in this reviewed action scene.",
+      "before": "./assets/diario/2026-11-01-ep008-action-before.jpg",
+      "after": "./assets/diario/2026-11-01-ep008-action-after.jpg",
+      "beforeAlt": "Episode 8 action frame from the previous residual01 version",
+      "afterAlt": "The same Episode 8 frame and crop from the residual05 test",
+      "beforeLabel": "Previous version",
+      "afterLabel": "New test",
+      "caption": "1 November 2026 · Episode 8 action · same frame and 1035 × 810 crop · new test not adopted"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Episode 19 · added grain trial",
+      "summary": "The added-grain version was paused after the viewer found it distracting in motion. This still cannot show flicker.",
+      "before": "./assets/diario/2026-11-02-ep019-grain-before.jpg",
+      "after": "./assets/diario/2026-11-02-ep019-grain-after.jpg",
+      "beforeAlt": "Episode 19 frame from the version without added synthetic grain",
+      "afterAlt": "The same Episode 19 frame and crop with added synthetic grain and final encoding",
+      "beforeLabel": "Without added grain",
+      "afterLabel": "With added grain",
+      "caption": "2 November 2026 · Episode 19 · same frame and 1440 × 1080 crop · added grain paused"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Episode 4 · cage bars",
+      "summary": "The new test barely changed the current experimental version in this reviewed crop.",
+      "before": "./assets/diario/2026-11-03-ep004-cage-before.png",
+      "after": "./assets/diario/2026-11-03-ep004-cage-after.png",
+      "beforeAlt": "Episode 4 cage bars from the current Temporal10 experiment",
+      "afterAlt": "The same Episode 4 frame and crop from the Temporal11 test",
+      "beforeLabel": "Current version",
+      "afterLabel": "New test",
+      "caption": "3 November 2026 · Episode 4 · same frame and 256 × 256 crop · new test not adopted"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Episode 1 · action field matching",
+      "summary": "Comb-like lines are reduced in this action frame; motion approval remains pending.",
+      "detail": "Episode 1 at 160.160 seconds. Left: untreated source. Right: field-matching test. Compare the horizontal stripes across the face and arm. This comparison does not prove stable motion or removal of compression noise.",
+      "before": "./assets/diario/2026-11-04-ep001-fields-before.jpg",
+      "after": "./assets/diario/2026-11-04-ep001-fields-after.jpg",
+      "beforeAlt": "Episode 1 action crop with horizontal comb-like lines across a moving character",
+      "afterAlt": "Same episode 1 action crop after field matching, with fewer comb-like lines",
+      "beforeLabel": "Source picture",
+      "afterLabel": "New field-matching test",
+      "caption": "4 November 2026 · Episode 1 · same frame at 160.160 seconds · equal 400 × 400 crops · motion review pending"
     }
   ]
 }

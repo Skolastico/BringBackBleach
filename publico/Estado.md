@@ -2,6 +2,26 @@
 
 *Daily notes on improving Bleach's older picture while keeping its original drawing and timing.*
 
+## 4 November 2026 · Nightly dispatch — Action lines cleaner; broad cleanup stays on hold.
+
+Matching the original picture fields reduces comb-like lines in a reviewed episode 1 action frame. Other flagged scenes mostly show intentional drawing or effects, so broad cleanup remains unapproved.
+
+The team reviewed densely sampled episode 1 pictures and compared the original fields at matching timestamps. Field matching reduces visible stripes in some moving shots. Many other alerts were flashes, fades, comic-style hatching or painted texture. The inspected candidates did not confirm new examples of block-shaped compression damage, tonal banding or shifting outline noise. This does not establish their absence across the episode. Broad smoothing remains unapproved, and these false positives will not become training labels.
+
+Separate ending-credit tests balance steadier thin horizontal strokes against softer lettering. The latest candidate reduces measured variation but has not been approved through continuous viewing. A better measurement is not proof of better-looking motion.
+
+Today's new image pair shows the same action frame before and after field matching. It supports the limited observation about stripes, not a claim that flicker is solved. Next comes continuous motion review and independent confirmed examples. The marker remains step 3 of the four-step review cycle, not overall completion. This journal run started no training, inference or video export.
+
+## 3 November 2026 · Nightly dispatch — Cleaner outlines retained; follow-up tests stay experimental
+
+The picture in the current experiment received positive viewer feedback: much of the distracting noise around outlines had gone, with a few traces still visible near cage bars. The previous version, Temporal10, remains the experimental reference. The new test, Temporal11, and a stronger follow-up barely changed the reviewed picture, so neither replaces it.
+
+The problem is small shifting speckles close to drawn lines. Cleaning those areas can also soften the lines themselves. Two short training experiments revisited a marked scene in episode 4. Both passed the preset preservation checks in evaluation scenes from episodes 7 and 11, but their slightly closer numerical match to an enlarged reference did not establish a visible improvement. The local scene was also used for training, so its scores are not independent evidence. The team will not repeat the same experiment on those crops.
+
+A separate opening and ending audit found visible comb-like lines in moving images. Matching the original picture fields reduced these lines in inspected opening examples while preserving frame timing. In the ending, additional processing also changed a character’s face or pose in one inspected image. That change needs explanation before approval. Neither sequence has an approved final correction, and continuous motion and flicker remain unverified.
+
+Next comes a distinct approach to the remaining local noise, plus separate review of opening and ending motion. The image now attached to this entry comes from the already reviewed episode 4 comparison: the same crop of cage bars in Temporal10 and Temporal11. The newer version changes very little and was not adopted. This still cannot show how the remaining noise behaves during a full episode. Earlier image pairs stay in the archive. The marker shows step 3 of a four-step review cycle, not overall project completion. This journal run started no training, inference or video export.
+
 ## 2 November 2026 · Nightly dispatch — Added grain paused; edge noise takes priority
 
 The episode 19 experiment kept the original frame timing, but the viewer reported excessive grain and distracting picture defects. Added synthetic grain is now paused. The earlier review of fourteen still pictures did not capture the viewing experience in motion.
@@ -12,7 +32,7 @@ The immediate problem is small, shifting speckles around outlines, often called 
 
 Completed work includes episode 19 timing checks, the rejected compression test and the short filter comparisons. An analysis of 800 short windows is still in progress in the latest report; it has not established a treatment. Next comes comparing the confirmed outlines at matching moments, separating moving noise from the drawing before deciding on another experiment.
 
-No new image pair has been cleared for public use. The featured comparison remains dated 31 October; all earlier pairs and the separate episode 8 examples remain archived. The marker returns to step 2 of the four-step review cycle: identify reliable examples. It does not measure overall project completion. This journal update started no training, inference or video export.
+A reviewed episode 19 image pair is now attached to this entry. It shows the same frame without and with the added-grain treatment. The still gives a close look at the picture, while the viewer's concern came from watching it move; a still does not reproduce that experience. The treatment remains paused. Earlier pairs and the separate episode 8 examples remain archived. The marker returns to step 2 of the four-step review cycle: identify reliable examples. It does not measure overall project completion. This journal update started no training, inference or video export.
 
 ## 1 November 2026 · Nightly dispatch — Timing verified, texture still under review
 
@@ -24,7 +44,7 @@ The problem is that the DVD mixes painted detail and grain with compression defe
 
 A separate experiment adds a restrained layer of synthetic grain while protecting outlines before compression. It does not recover authentic original grain. Short trials preserved original frame timing and protected edges before compression; a longer episode 19 evaluation was started separately and is not yet validated in the latest report. Once completion is reported, the next step is to check the file and review whether the texture helps in motion before considering wider use.
 
-No new same-frame image pair has been cleared for public use tonight. The featured record remains dated 31 October, and every earlier pair and the separate episode 8 archive remain intact. Those images do not illustrate the new synthetic-grain experiment. The marker is step 3 of the four-step review cycle, not overall project completion. This journal update started no training, inference or video export.
+A reviewed action-frame pair from episode 8 is now attached to this entry. The previous version and the new test show the same moment and crop; the difference is small, matching the decision to keep the test experimental. The image does not illustrate the separate synthetic-grain experiment. Every older pair and the separate episode 8 archive remain intact. The marker is step 3 of the four-step review cycle, not overall project completion. This journal update started no training, inference or video export.
 
 ## 31 October 2026 · Nightly dispatch — Subtle changes, longer review pending
 
