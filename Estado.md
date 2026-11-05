@@ -2,6 +2,28 @@
 
 *Daily notes on improving Bleach's older picture while keeping its original drawing and timing.*
 
+## 5 November 2026 · Nightly dispatch — Local noise tests stay experimental
+
+New tests change the marked episode 1 picture only slightly. They do not yet separate unwanted outline noise from real drawing, so the current version remains the reference.
+
+The team corrected frame alignment in short comparisons and tried local temporal and spatial filters around outlines. The temporal test reduced measured variation, but the visible change remains subtle. Similar responses in other drawn areas show that a lower score does not establish selective removal of unwanted noise. Broad rectangular regions also mixed legitimate lines into the test and were rejected as evidence for cleanup.
+
+The enlarged reference remains the visual guide, including its own remaining defects. No new filter is approved for the whole episode and these results will not become training targets. Next comes a fine marking of a confirmed unwanted halo beside a line that must survive, followed by independent scenes and motion review.
+
+Separate ending-credit work improved mask coverage and protected the character beside the credits in a short checked preview. Letter stability still needs continuous viewing; the second ending does not yet have a safe mask. Neither result authorizes a full episode treatment.
+
+There is no new verified public image pair today. The latest diagnostic boards mix masks and filter variants and do not establish selective noise removal. The displayed comparison is explicitly dated 4 November: it shows action field matching, not today’s noise tests. All earlier entries and image pairs remain available. The marker stays at step 3 of the four-step review cycle, not overall completion. This journal run started no training, inference or video export.
+
+## 4 November 2026 · Nightly dispatch — Action lines cleaner; broad cleanup stays on hold.
+
+Matching the original picture fields reduces comb-like lines in a reviewed episode 1 action frame. Other flagged scenes mostly show intentional drawing or effects, so broad cleanup remains unapproved.
+
+The team reviewed densely sampled episode 1 pictures and compared the original fields at matching timestamps. Field matching reduces visible stripes in some moving shots. Many other alerts were flashes, fades, comic-style hatching or painted texture. The inspected candidates did not confirm new examples of block-shaped compression damage, tonal banding or shifting outline noise. This does not establish their absence across the episode. Broad smoothing remains unapproved, and these false positives will not become training labels.
+
+Separate ending-credit tests balance steadier thin horizontal strokes against softer lettering. The latest candidate reduces measured variation but has not been approved through continuous viewing. A better measurement is not proof of better-looking motion.
+
+Today's new image pair shows the same action frame before and after field matching. It supports the limited observation about stripes, not a claim that flicker is solved. Next comes continuous motion review and independent confirmed examples. The marker remains step 3 of the four-step review cycle, not overall completion. This journal run started no training, inference or video export.
+
 ## 3 November 2026 · Nightly dispatch — Cleaner outlines retained; follow-up tests stay experimental
 
 The picture in the current experiment received positive viewer feedback: much of the distracting noise around outlines had gone, with a few traces still visible near cage bars. The previous version, Temporal10, remains the experimental reference. The new test, Temporal11, and a stronger follow-up barely changed the reviewed picture, so neither replaces it.
@@ -96,4 +118,3 @@ The pictured scenes were already used during development. This was a still-image
 The site's separate episode 8 gallery shows three comparisons from an older enlargement experiment. They are preserved as historical examples and do not show the result described above.
 
 *Bleach and its images belong to their respective rights holders. This independent project is not affiliated with them.*
-

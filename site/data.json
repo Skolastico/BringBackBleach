@@ -1,31 +1,31 @@
 {
-  "updated": "2026-11-03",
-  "date": "2026-11-03",
+  "updated": "2026-11-05",
+  "date": "2026-11-05",
   "dispatchLabel": "Nightly dispatch",
-  "title": "Cleaner outlines retained. Further tests barely change the picture.",
-  "summary": "Viewer review found much cleaner outlines in the current experiment, with a few local traces of noise. Two follow-up tests barely changed the picture and were not adopted. Opening and ending sequences still need separate treatment.",
-  "problem": "Shifting speckles near drawn outlines can remain after cleaning. Removing them must preserve the drawing.",
-  "response": "The version the viewer preferred remains our current experiment. Two follow-up tests added almost no visible benefit and were rejected.",
-  "beforeDetail": "Current version around the cage bars in episode 4. The viewer found most of the distracting edge noise gone, with small traces left near these lines.",
-  "afterDetail": "New test at the exact same moment and crop. It barely changes the bars or nearby colour, so it was not adopted.",
-  "imageNote": "3 November: this reviewed still shows the local comparison behind today's decision. It does not establish how the noise behaves across a whole episode.",
+  "title": "Local noise tests remain subtle; broad cleanup stays on hold.",
+  "summary": "New tests change the marked episode 1 picture only slightly. They do not yet separate unwanted outline noise from real drawing, so the current version remains the reference.",
+  "problem": "Small shifting speckles near outlines can resemble legitimate fine detail. Broad cleanup risks softening the drawing.",
+  "response": "Keep the new tests local and experimental. Require a confirmed noise halo and a nearby line to preserve before preparing training examples.",
+  "beforeDetail": "Untreated DVD action frame: comb-like stripes cross the moving character.",
+  "afterDetail": "The same frame with field matching: stripes are reduced. This is a field-processing test, not a newly trained model.",
+  "imageNote": "Reference image from 4 November, not today’s noise test. No new pair was verified for publication: the latest boards mix diagnostic masks and different tests, and do not establish selective noise removal.",
   "stageNumber": 3,
   "stageTotal": 4,
   "stageTitle": "Comparing the picture before adoption.",
   "stageNote": "Step 3 of the four-step review cycle: check the result and retain the better-supported version.",
-  "nextStep": "Investigate remaining local outline noise with a distinct hypothesis. Review opening and ending motion separately before approving any correction.",
+  "nextStep": "Review fine noise and preservation markings, then test independent scenes in motion. Ending-credit flicker also remains under review.",
   "imageDetail": {
-    "date": "2026-11-03",
-    "title": "Episode 4 · cage bars",
-    "summary": "The current version already cleaned most edge noise in the reviewed scene. The new test barely changed the picture and was not adopted.",
-    "detail": "Episode 4, a close look at cage bars in the reviewed seven-frame sequence. Left: the current experimental reference. Right: the new test. Compare the dark bars and the pale area beside them; the change is very small.",
-    "before": "./assets/diario/2026-11-03-ep004-cage-before.png",
-    "after": "./assets/diario/2026-11-03-ep004-cage-after.png",
-    "beforeAlt": "Episode 4 cage bars from the current Temporal10 experiment",
-    "afterAlt": "The same Episode 4 frame and crop from the Temporal11 test",
-    "beforeLabel": "Current version",
-    "afterLabel": "New test",
-    "caption": "3 November 2026 · Episode 4 · same frame and 256 × 256 crop · new test not adopted",
+    "date": "2026-11-04",
+    "title": "Episode 1 · action field matching",
+    "summary": "Comb-like lines are reduced in this action frame; motion approval remains pending.",
+    "detail": "Episode 1 at 160.160 seconds. Left: untreated source. Right: field-matching test. Compare the horizontal stripes across the face and arm. This comparison does not prove stable motion or removal of compression noise.",
+    "before": "./assets/diario/2026-11-04-ep001-fields-before.jpg",
+    "after": "./assets/diario/2026-11-04-ep001-fields-after.jpg",
+    "beforeAlt": "Episode 1 action crop with horizontal comb-like lines across a moving character",
+    "afterAlt": "Same episode 1 action crop after field matching, with fewer comb-like lines",
+    "beforeLabel": "Source picture",
+    "afterLabel": "New field-matching test",
+    "caption": "4 November 2026 · Episode 1 · same frame at 160.160 seconds · equal 400 × 400 crops · motion review pending",
     "available": true
   },
   "dispatchHistory": [
@@ -58,6 +58,19 @@
       "title": "A better score, almost the same picture.",
       "summary": "The newer test barely changed this episode 7 action frame and missed the preset check for the main drawing.",
       "decision": "The new test was rejected."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Action lines cleaner; broad cleanup stays on hold.",
+      "summary": "Matching the original picture fields reduces comb-like lines in a reviewed episode 1 action frame. Other flagged scenes mostly show intentional drawing or effects, so broad cleanup remains unapproved.",
+      "decision": "Keep field matching as a candidate for action. Do not apply broad smoothing or train on unconfirmed defects."
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Local noise tests remain subtle; broad cleanup stays on hold.",
+      "summary": "New tests change the marked episode 1 picture only slightly. They do not yet separate unwanted outline noise from real drawing, so the current version remains the reference.",
+      "decision": "Keep the new tests local and experimental. Require a confirmed noise halo and a nearby line to preserve before preparing training examples.",
+      "imageDate": "2026-11-04"
     }
   ],
   "imageHistory": [
@@ -121,7 +134,19 @@
       "beforeLabel": "Current version",
       "afterLabel": "New test",
       "caption": "3 November 2026 · Episode 4 · same frame and 256 × 256 crop · new test not adopted"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Episode 1 · action field matching",
+      "summary": "Comb-like lines are reduced in this action frame; motion approval remains pending.",
+      "detail": "Episode 1 at 160.160 seconds. Left: untreated source. Right: field-matching test. Compare the horizontal stripes across the face and arm. This comparison does not prove stable motion or removal of compression noise.",
+      "before": "./assets/diario/2026-11-04-ep001-fields-before.jpg",
+      "after": "./assets/diario/2026-11-04-ep001-fields-after.jpg",
+      "beforeAlt": "Episode 1 action crop with horizontal comb-like lines across a moving character",
+      "afterAlt": "Same episode 1 action crop after field matching, with fewer comb-like lines",
+      "beforeLabel": "Source picture",
+      "afterLabel": "New field-matching test",
+      "caption": "4 November 2026 · Episode 1 · same frame at 160.160 seconds · equal 400 × 400 crops · motion review pending"
     }
   ]
 }
-
