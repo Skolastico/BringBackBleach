@@ -2,6 +2,16 @@
 
 *Daily notes on improving Bleach's older picture while keeping its original drawing and timing.*
 
+## 6 November 2026 · Nightly dispatch — Timing verified; lettering repair remains local
+
+The current version of episode 1 passed technical checks at 1440 × 1080 while keeping its original frame timing. Seven sampled stills showed no gross new deformation. This is not approval of texture, noise removal or motion: continuous viewing comes next.
+
+Ending-credit work exposed a different problem. A completed test reduced measured variation but visibly darkened stationary lettering near the end. The team rejected it. Weak tracking had fallen back to an assumed scrolling speed even though the logo was still. A new local test keeps stationary text in place; the reviewed sequence shows the lettering staying clear. This fixes a visible local defect, not the entire ending.
+
+Today's equal crops show the same frame from the rejected ending test and the new local correction. The full revised ending is still pending completion and independent checks in the latest report. Episode 1 review and ending review remain separate; neither result authorizes processing the series.
+
+Next: watch episode 1 continuously for texture, lines and motion, then validate the full ending result and its transitions. The marker remains step 3 of the four-step review cycle. This journal run started no training, inference or video export.
+
 ## 5 November 2026 · Nightly dispatch — Local noise tests stay experimental
 
 New tests change the marked episode 1 picture only slightly. They do not yet separate unwanted outline noise from real drawing, so the current version remains the reference.

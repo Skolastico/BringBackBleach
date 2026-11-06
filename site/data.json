@@ -1,31 +1,31 @@
 {
-  "updated": "2026-11-05",
-  "date": "2026-11-05",
+  "updated": "2026-11-06",
+  "date": "2026-11-06",
   "dispatchLabel": "Nightly dispatch",
-  "title": "Local noise tests remain subtle; broad cleanup stays on hold.",
-  "summary": "New tests change the marked episode 1 picture only slightly. They do not yet separate unwanted outline noise from real drawing, so the current version remains the reference.",
-  "problem": "Small shifting speckles near outlines can resemble legitimate fine detail. Broad cleanup risks softening the drawing.",
-  "response": "Keep the new tests local and experimental. Require a confirmed noise halo and a nearby line to preserve before preparing training examples.",
-  "beforeDetail": "Untreated DVD action frame: comb-like stripes cross the moving character.",
-  "afterDetail": "The same frame with field matching: stripes are reduced. This is a field-processing test, not a newly trained model.",
-  "imageNote": "Reference image from 4 November, not today’s noise test. No new pair was verified for publication: the latest boards mix diagnostic masks and different tests, and do not establish selective noise removal.",
+  "title": "Episode 1 timing verified; credit repair stays experimental.",
+  "summary": "The current version of episode 1 preserves the original timing and drawing in sampled stills. A new ending-credit test fixes darkened lettering locally, but full motion review remains pending.",
+  "problem": "Cleanup can damage real lettering when stationary credits are mistaken for moving text.",
+  "response": "Reject the damaged ending test. Keep the current episode version and review the new local correction before adoption.",
+  "beforeDetail": "Stationary white ending lettering darkened by the rejected test",
+  "afterDetail": "The same frame and crop with brighter lettering in the new local test",
+  "imageNote": "New reviewed comparison from today: rejected ending test versus a local correction, not the episode 1 render.",
   "stageNumber": 3,
   "stageTotal": 4,
   "stageTitle": "Comparing the picture before adoption.",
   "stageNote": "Step 3 of the four-step review cycle: check the result and retain the better-supported version.",
-  "nextStep": "Review fine noise and preservation markings, then test independent scenes in motion. Ending-credit flicker also remains under review.",
+  "nextStep": "Watch episode 1 continuously for texture, lines and motion. Validate the pending full ending test separately.",
   "imageDetail": {
-    "date": "2026-11-04",
-    "title": "Episode 1 · action field matching",
-    "summary": "Comb-like lines are reduced in this action frame; motion approval remains pending.",
-    "detail": "Episode 1 at 160.160 seconds. Left: untreated source. Right: field-matching test. Compare the horizontal stripes across the face and arm. This comparison does not prove stable motion or removal of compression noise.",
-    "before": "./assets/diario/2026-11-04-ep001-fields-before.jpg",
-    "after": "./assets/diario/2026-11-04-ep001-fields-after.jpg",
-    "beforeAlt": "Episode 1 action crop with horizontal comb-like lines across a moving character",
-    "afterAlt": "Same episode 1 action crop after field matching, with fewer comb-like lines",
-    "beforeLabel": "Source picture",
-    "afterLabel": "New field-matching test",
-    "caption": "4 November 2026 · Episode 1 · same frame at 160.160 seconds · equal 400 × 400 crops · motion review pending",
+    "date": "2026-11-06",
+    "title": "Ending 1 · stationary lettering",
+    "summary": "The rejected test darkened stationary letters; the new local test keeps them clear.",
+    "detail": "Episode 6 ending, frame 1699. Left: rejected ending test. Right: new motion-aware local test. The same stationary lettering stays brighter when it is no longer treated as scrolling text. This still does not establish flicker-free playback.",
+    "before": "./assets/diario/2026-11-06-ed1-letters-before.jpg",
+    "after": "./assets/diario/2026-11-06-ed1-letters-after.jpg",
+    "beforeAlt": "Stationary white ending lettering darkened by the rejected test",
+    "afterAlt": "The same frame and crop with brighter lettering in the new local test",
+    "beforeLabel": "Rejected test",
+    "afterLabel": "New local test",
+    "caption": "6 November 2026 · Ending 1 · frame 1699 · equal 190 × 180 crops · full motion review pending",
     "available": true
   },
   "dispatchHistory": [
@@ -71,6 +71,13 @@
       "summary": "New tests change the marked episode 1 picture only slightly. They do not yet separate unwanted outline noise from real drawing, so the current version remains the reference.",
       "decision": "Keep the new tests local and experimental. Require a confirmed noise halo and a nearby line to preserve before preparing training examples.",
       "imageDate": "2026-11-04"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Episode 1 timing verified; credit repair stays experimental.",
+      "summary": "The current version of episode 1 preserves the original timing and drawing in sampled stills. A new ending-credit test fixes darkened lettering locally, but full motion review remains pending.",
+      "decision": "Episode 1 needs continuous review; the new ending test remains experimental.",
+      "imageDate": "2026-11-06"
     }
   ],
   "imageHistory": [
@@ -147,6 +154,19 @@
       "beforeLabel": "Source picture",
       "afterLabel": "New field-matching test",
       "caption": "4 November 2026 · Episode 1 · same frame at 160.160 seconds · equal 400 × 400 crops · motion review pending"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Ending 1 · stationary lettering",
+      "summary": "The rejected test darkened stationary letters; the new local test keeps them clear.",
+      "detail": "Episode 6 ending, frame 1699. Left: rejected ending test. Right: new motion-aware local test. The same stationary lettering stays brighter when it is no longer treated as scrolling text. This still does not establish flicker-free playback.",
+      "before": "./assets/diario/2026-11-06-ed1-letters-before.jpg",
+      "after": "./assets/diario/2026-11-06-ed1-letters-after.jpg",
+      "beforeAlt": "Stationary white ending lettering darkened by the rejected test",
+      "afterAlt": "The same frame and crop with brighter lettering in the new local test",
+      "beforeLabel": "Rejected test",
+      "afterLabel": "New local test",
+      "caption": "6 November 2026 · Ending 1 · frame 1699 · equal 190 × 180 crops · full motion review pending"
     }
   ]
 }
