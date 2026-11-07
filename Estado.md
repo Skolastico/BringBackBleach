@@ -2,6 +2,16 @@
 
 *Daily notes on improving Bleach's older picture while keeping its original drawing and timing.*
 
+## 7 November 2026 · Nightly dispatch — Cleaner action frame, but episode-wide repair stays on hold
+
+A new test removed thin horizontal stripes from a fast-moving face in episode 1, leaving the drawing a little softer. The team held off on using it across the episode after finding that the same kind of cleanup can darken a transition and that the filters tried on two reported examples did not visibly remove the lines.
+
+The team compared short sequences using different ways of rebuilding the picture from the DVD's alternating rows. At one cut, a stronger test turned a frame that still showed the title card almost black. In the two reported examples, the lines were already visible in the DVD stills. Their cause remains uncertain.
+
+Today's comparison shows the same action frame and crop from the current version and the new test. The stripes across the face and neck are clearer on the left, while the right is softer. The short test kept the original frame timing. It still needs review in motion. Separately, a new ending-credit test is ready for further review of letter flicker and edge detail.
+
+The next step is to mark a clear moving edge in one of the reported scenes and check whether a local repair preserves the drawing and the cut. Another full episode version is on hold. The marker stays at step 3 of the four-step review cycle.
+
 ## 6 November 2026 · Nightly dispatch — Timing verified; lettering repair remains local
 
 The current version of episode 1 passed technical checks at 1440 × 1080 while keeping its original frame timing. Seven sampled stills showed no gross new deformation. This is not approval of texture, noise removal or motion: continuous viewing comes next.

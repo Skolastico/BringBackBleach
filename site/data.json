@@ -1,31 +1,31 @@
 {
-  "updated": "2026-11-06",
-  "date": "2026-11-06",
+  "updated": "2026-11-07",
+  "date": "2026-11-07",
   "dispatchLabel": "Nightly dispatch",
-  "title": "Episode 1 timing verified; credit repair stays experimental.",
-  "summary": "The current version of episode 1 preserves the original timing and drawing in sampled stills. A new ending-credit test fixes darkened lettering locally, but full motion review remains pending.",
-  "problem": "Cleanup can damage real lettering when stationary credits are mistaken for moving text.",
-  "response": "Reject the damaged ending test. Keep the current episode version and review the new local correction before adoption.",
-  "beforeDetail": "Stationary white ending lettering darkened by the rejected test",
-  "afterDetail": "The same frame and crop with brighter lettering in the new local test",
-  "imageNote": "New reviewed comparison from today: rejected ending test versus a local correction, not the episode 1 render.",
+  "title": "Cleaner action frame, but episode-wide repair stays on hold.",
+  "summary": "A new test removes comb-like lines from one episode 1 action frame and softens its edges. The filters tested left two reported examples visibly unchanged, so no episode-wide repair was approved.",
+  "problem": "Fast motion can leave comb-like stripes. Similar lines in other scenes can have a different cause, and stronger cleanup can damage cuts.",
+  "response": "Keep the current version as a reference. Find a clear example in motion before choosing a filter or making another full episode version.",
+  "beforeDetail": "Horizontal stripes across the moving face and neck in the current version",
+  "afterDetail": "The same face and neck with the thin stripes removed and softer edges",
+  "imageNote": "Today's comparison shows one action frame. The two reported examples still need a diagnosis.",
   "stageNumber": 3,
   "stageTotal": 4,
-  "stageTitle": "Comparing the picture before adoption.",
-  "stageNote": "Step 3 of the four-step review cycle: check the result and retain the better-supported version.",
-  "nextStep": "Watch episode 1 continuously for texture, lines and motion. Validate the pending full ending test separately.",
+  "stageTitle": "Comparing local results before adoption.",
+  "stageNote": "Step 3 of the four-step review cycle. Compare the picture and look for damage around cuts.",
+  "nextStep": "Mark a clear moving edge in a reported scene and check a local repair in motion.",
   "imageDetail": {
-    "date": "2026-11-06",
-    "title": "Ending 1 · stationary lettering",
-    "summary": "The rejected test darkened stationary letters; the new local test keeps them clear.",
-    "detail": "Episode 6 ending, frame 1699. Left: rejected ending test. Right: new motion-aware local test. The same stationary lettering stays brighter when it is no longer treated as scrolling text. This still does not establish flicker-free playback.",
-    "before": "./assets/diario/2026-11-06-ed1-letters-before.jpg",
-    "after": "./assets/diario/2026-11-06-ed1-letters-after.jpg",
-    "beforeAlt": "Stationary white ending lettering darkened by the rejected test",
-    "afterAlt": "The same frame and crop with brighter lettering in the new local test",
-    "beforeLabel": "Rejected test",
-    "afterLabel": "New local test",
-    "caption": "6 November 2026 · Ending 1 · frame 1699 · equal 190 × 180 crops · full motion review pending",
+    "date": "2026-11-07",
+    "title": "Episode 1 · stripes on a moving face",
+    "summary": "The new test clears the comb-like stripes in this action frame and softens the drawing.",
+    "detail": "In the current version, thin horizontal stripes cross the face and neck. The new test rebuilds the frame from the DVD's alternating rows, removing those stripes and softening the edges. This is one reviewed still from a short test. Motion review is pending.",
+    "before": "./assets/diario/2026-11-07-ep001-action-before.jpg",
+    "after": "./assets/diario/2026-11-07-ep001-action-after.jpg",
+    "beforeAlt": "Horizontal stripes across the moving face and neck in the current version",
+    "afterAlt": "The same face and neck with the thin stripes removed and softer edges",
+    "beforeLabel": "Current version",
+    "afterLabel": "New test",
+    "caption": "7 November 2026 · Episode 1 action · same frame and crop · motion review pending",
     "available": true
   },
   "dispatchHistory": [
@@ -78,6 +78,13 @@
       "summary": "The current version of episode 1 preserves the original timing and drawing in sampled stills. A new ending-credit test fixes darkened lettering locally, but full motion review remains pending.",
       "decision": "Episode 1 needs continuous review; the new ending test remains experimental.",
       "imageDate": "2026-11-06"
+    },
+    {
+      "date": "2026-11-07",
+      "title": "Cleaner action frame, but episode-wide repair stays on hold.",
+      "summary": "A new test removes comb-like lines from one episode 1 action frame and softens its edges. The filters tested left two reported examples visibly unchanged, so no episode-wide repair was approved.",
+      "decision": "Keep the current version as a reference. Find a clear example in motion before choosing a filter or making another full episode version.",
+      "imageDate": "2026-11-07"
     }
   ],
   "imageHistory": [
@@ -167,6 +174,20 @@
       "beforeLabel": "Rejected test",
       "afterLabel": "New local test",
       "caption": "6 November 2026 · Ending 1 · frame 1699 · equal 190 × 180 crops · full motion review pending"
+    },
+    {
+      "date": "2026-11-07",
+      "title": "Episode 1 · stripes on a moving face",
+      "summary": "The new test clears the comb-like stripes in this action frame and softens the drawing.",
+      "detail": "In the current version, thin horizontal stripes cross the face and neck. The new test rebuilds the frame from the DVD's alternating rows, removing those stripes and softening the edges. This is one reviewed still from a short test. Motion review is pending.",
+      "before": "./assets/diario/2026-11-07-ep001-action-before.jpg",
+      "after": "./assets/diario/2026-11-07-ep001-action-after.jpg",
+      "beforeAlt": "Horizontal stripes across the moving face and neck in the current version",
+      "afterAlt": "The same face and neck with the thin stripes removed and softer edges",
+      "beforeLabel": "Current version",
+      "afterLabel": "New test",
+      "caption": "7 November 2026 · Episode 1 action · same frame and crop · motion review pending",
+      "available": true
     }
   ]
 }

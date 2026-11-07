@@ -4,11 +4,11 @@ An independent visual diary about improving the picture in older Bleach releases
 
 **[Read the latest diary entry](Estado.md)** · **[Explore the image comparisons](https://skolastico.github.io/BringBackBleach/)** · **[See the review cycle](imagens/progresso.svg)**
 
-## Latest update · 6 November 2026
+## Latest update · 7 November 2026
 
-The current version of episode 1 preserves the original timing and drawing in sampled stills. A new ending-credit test fixes darkened lettering locally, but full motion review remains pending.
+A new test removes comb-like lines from one episode 1 action frame and softens its edges. The filters tested left two reported examples visibly unchanged, so no episode-wide repair was approved.
 
-Today’s comparison shows stationary ending lettering in a rejected test and a new local correction. Every earlier report and pair remains in the timeline.
+Today's equal crops show the stripes and the softer edges in the same action frame. Every earlier report and comparison remains in the timeline.
 
 The progress marker shows the current **four-step review cycle**, not a percentage of the entire project. The diary explains the problem, what the pictures show, our response and the next step in plain English.
 
