@@ -2,6 +2,18 @@
 
 *Daily notes on improving Bleach's older picture while keeping its original drawing and timing.*
 
+## 8 November 2026 · Nightly dispatch — A cut keeps its title card when cleanup pauses
+
+A new episode 1 test keeps a title card visible at a cut where the same cleanup without cut protection leaves the frame almost black. The team kept the safeguard for local testing.
+
+The team tested two ways to rebuild the DVD’s alternating picture rows. Both reduced the stripes in one fast action frame and softened its edges. The second method offered no clear advantage in detail. Around a nearby cut, both methods without protection darkened a frame that should still show a title card. Pausing cleanup around the cut preserved the card and left the action cleanup active between cuts.
+
+Today’s crops show the same title-card frame with and without that safeguard. The action and transition tests kept the original frame timing. A separate review brought together ten scenes with confirmed comb-like stripes and identified places to check next. The two viewer-reported examples still need a diagnosis.
+
+In the first ending credits, short tests changed how each row of lettering is sampled and measured less variation in horizontal strokes. The sampled stills showed no obvious loss of readability. Whether the letters flicker less in motion remains open. The team prepared a full-length candidate for later testing.
+
+Check the safeguard in more action shots and transitions, and review the first ending credits in motion. Episode-wide cleanup remains on hold. The marker stays at step 3 of the four-step review cycle.
+
 ## 7 November 2026 · Nightly dispatch — Cleaner action frame, but episode-wide repair stays on hold
 
 A new test removed thin horizontal stripes from a fast-moving face in episode 1, leaving the drawing a little softer. The team held off on using it across the episode after finding that the same kind of cleanup can darken a transition and that the filters tried on two reported examples did not visibly remove the lines.
