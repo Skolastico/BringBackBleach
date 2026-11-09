@@ -1,19 +1,19 @@
 {
-  "updated": "2026-11-08",
-  "date": "2026-11-08",
+  "updated": "2026-11-09",
+  "date": "2026-11-09",
   "dispatchLabel": "Nightly dispatch",
-  "title": "A cut keeps its title card when cleanup pauses",
-  "summary": "A new episode 1 test keeps a title card visible at a cut where the same cleanup without cut protection leaves the frame almost black. The team kept the safeguard for local testing.",
-  "problem": "Fast movement can leave comb-like stripes when the DVD’s alternating picture rows do not line up. At a cut, rebuilding from the wrong rows can lose part of the original picture.",
-  "response": "Pause cleanup around cuts and test it only where the stripes are confirmed. Check more action shots, clean edges and transitions before using it across the episode.",
+  "title": "Ending credits remain on trial",
+  "summary": "The sampled lettering stayed readable in the latest stills. The new test remains experimental until the first ending credits can be checked in motion.",
+  "problem": "Thin horizontal strokes in the scrolling credits can flicker. Smoothing them can also soften the letters, so the review checks both motion and readability.",
+  "response": "Keep the current version as the reference. Review the full ending in motion before adopting the new test, including where the credits cross the character and fade into the final card.",
   "beforeDetail": "Almost black crop where the title card fades out under cleanup without cut protection",
   "afterDetail": "The same crop with the character and title-card artwork visible when cleanup pauses at the cut",
-  "imageNote": "The comparison shows the same title-card frame with cleanup active and paused. It comes from the episode 1 test.",
+  "imageNote": "No new comparison today. A still cannot show whether the credits flicker less, and there is no new reviewed frame pair. The episode 1 title-card comparison is from 8 November.",
   "stageNumber": 3,
   "stageTotal": 4,
-  "stageTitle": "Checking local repairs and cuts",
-  "stageNote": "Step 3 of the four-step review cycle. Compare the picture and check the transition into the next shot.",
-  "nextStep": "Check the safeguard in more action shots and transitions, and review the first ending credits in motion.",
+  "stageTitle": "Checking credits and local repairs",
+  "stageNote": "Step 3 of the four-step review cycle. Check letter edges and motion before adopting the new test.",
+  "nextStep": "Watch the first ending credits in motion and check more episode 1 action shots and cuts before expanding cleanup.",
   "imageDetail": {
     "date": "2026-11-08",
     "title": "Episode 1 · a title card at the cut",
@@ -91,6 +91,13 @@
       "title": "A cut keeps its title card when cleanup pauses",
       "summary": "A new episode 1 test keeps a title card visible at a cut where the same cleanup without cut protection leaves the frame almost black. The team kept the safeguard for local testing.",
       "decision": "Pause cleanup around cuts and test it only where the stripes are confirmed. Check more action shots, clean edges and transitions before using it across the episode.",
+      "imageDate": "2026-11-08"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Ending credits remain on trial",
+      "summary": "The sampled lettering stayed readable in the latest stills. The new test remains experimental until the first ending credits can be checked in motion.",
+      "decision": "Keep the current version as the reference. Review the full ending in motion before adopting the new test, including where the credits cross the character and fade into the final card.",
       "imageDate": "2026-11-08"
     }
   ],

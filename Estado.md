@@ -2,6 +2,16 @@
 
 *Daily notes on improving Bleach's older picture while keeping its original drawing and timing.*
 
+## 9 November 2026 · Nightly dispatch — Ending credits remain on trial
+
+The sampled lettering stayed readable in the latest stills. The new test remains experimental until the first ending credits can be checked in motion.
+
+The last completed credit tests changed how the picture samples each row of lettering and applied light smoothing. Measurements showed less frame-to-frame variation in the horizontal strokes across five short sections. The stills showed no obvious loss of readability, but those checks cannot establish whether the change looks steadier at normal speed. The full ending test was prepared and still needs to be made and reviewed.
+
+No new comparison today. A still cannot show whether the credits flicker less, and there is no new reviewed frame pair. The episode 1 title-card comparison is from 8 November.
+
+Episode 1 remains on the current version while the team checks confirmed stripes in moving edges and protects cuts from unwanted changes. The next steps are to watch the first ending credits through the scroll and fades, and compare local cleanup on more episode 1 action shots and cuts. The marker stays at step 3 of the four-step review cycle.
+
 ## 8 November 2026 · Nightly dispatch — A cut keeps its title card when cleanup pauses
 
 A new episode 1 test keeps a title card visible at a cut where the same cleanup without cut protection leaves the frame almost black. The team kept the safeguard for local testing.

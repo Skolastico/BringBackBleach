@@ -4,11 +4,11 @@ An independent visual diary about improving the picture in older Bleach releases
 
 **[Read the latest diary entry](Estado.md)** · **[Explore the image comparisons](https://skolastico.github.io/BringBackBleach/)** · **[See the review cycle](imagens/progresso.svg)**
 
-## Latest update · 8 November 2026
+## Latest update · 9 November 2026
 
-A new episode 1 test keeps a title card visible at a cut where the same cleanup without cut protection leaves the frame almost black. The team kept the safeguard for local testing.
+The sampled lettering stayed readable in the latest stills. The new test remains experimental until the first ending credits can be checked in motion.
 
-Today’s equal crops show what happens to the same title card with and without the safeguard. Every earlier report and comparison remains in the timeline.
+The latest reviewed image is the 8 November episode 1 title card. There is no new comparison today.
 
 The progress marker shows the current **four-step review cycle**, not a percentage of the entire project. The diary explains the problem, what the pictures show, our response and the next step in plain English.
 
