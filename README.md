@@ -4,9 +4,9 @@ An independent visual diary about improving the picture in older Bleach releases
 
 **[Read the latest diary entry](Estado.md)** · **[Explore the image comparisons](https://skolastico.github.io/BringBackBleach/)** · **[See the review cycle](imagens/progresso.svg)**
 
-## Latest update · 9 November 2026
+## Latest update · 10 November 2026
 
-The sampled lettering stayed readable in the latest stills. The new test remains experimental until the first ending credits can be checked in motion.
+No new completed picture test is documented today. The current version remains the reference; credit stability and local action cleanup still need motion review.
 
 The latest reviewed image is the 8 November episode 1 title card. There is no new comparison today.
 

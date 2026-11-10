@@ -1,14 +1,14 @@
 {
-  "updated": "2026-11-09",
-  "date": "2026-11-09",
+  "updated": "2026-11-10",
+  "date": "2026-11-10",
   "dispatchLabel": "Nightly dispatch",
-  "title": "Ending credits remain on trial",
-  "summary": "The sampled lettering stayed readable in the latest stills. The new test remains experimental until the first ending credits can be checked in motion.",
+  "title": "Picture decisions await motion review",
+  "summary": "No new completed picture test is documented today. The current version remains the reference; credit stability and local action cleanup still need motion review.",
   "problem": "Thin horizontal strokes in the scrolling credits can flicker. Smoothing them can also soften the letters, so the review checks both motion and readability.",
   "response": "Keep the current version as the reference. Review the full ending in motion before adopting the new test, including where the credits cross the character and fade into the final card.",
   "beforeDetail": "Almost black crop where the title card fades out under cleanup without cut protection",
   "afterDetail": "The same crop with the character and title-card artwork visible when cleanup pauses at the cut",
-  "imageNote": "No new comparison today. A still cannot show whether the credits flicker less, and there is no new reviewed frame pair. The episode 1 title-card comparison is from 8 November.",
+  "imageNote": "No new reviewed same-frame pair is available in the completed reports. The title-card comparison shown here is from 8 November, not a new test today.",
   "stageNumber": 3,
   "stageTotal": 4,
   "stageTitle": "Checking credits and local repairs",
@@ -97,6 +97,13 @@
       "date": "2026-11-09",
       "title": "Ending credits remain on trial",
       "summary": "The sampled lettering stayed readable in the latest stills. The new test remains experimental until the first ending credits can be checked in motion.",
+      "decision": "Keep the current version as the reference. Review the full ending in motion before adopting the new test, including where the credits cross the character and fade into the final card.",
+      "imageDate": "2026-11-08"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Picture decisions await motion review",
+      "summary": "No new completed picture test is documented today. The current version remains the reference; credit stability and local action cleanup still need motion review.",
       "decision": "Keep the current version as the reference. Review the full ending in motion before adopting the new test, including where the credits cross the character and fade into the final card.",
       "imageDate": "2026-11-08"
     }

@@ -2,6 +2,18 @@
 
 *Daily notes on improving Bleach's older picture while keeping its original drawing and timing.*
 
+## 10 November 2026 · Nightly dispatch — Picture decisions await motion review
+
+No new completed picture test is documented today. The current version remains the reference; credit stability and local action cleanup still need motion review.
+
+The last completed tests sampled the scrolling letters differently and applied light smoothing. Sampled stills kept the lettering readable, and measurements recorded less variation. That does not establish visibly steadier credits at normal speed. The full candidate was prepared, with completion and continuous review still pending in the latest report.
+
+In episode 1, local cleanup reduced stripes in a moving face but softened edges. Pausing cleanup at a cut kept a title card visible. Those local observations do not approve cleanup across the episode.
+
+No new reviewed same-frame pair is available in the completed reports. The title-card comparison shown here is from 8 November, not a new test today. Earlier reports and comparison images remain available.
+
+Next, review the ending through its scroll and fades, then check more confirmed action shots and cuts. The marker remains at step 3 of the four-step review cycle.
+
 ## 9 November 2026 · Nightly dispatch — Ending credits remain on trial
 
 The sampled lettering stayed readable in the latest stills. The new test remains experimental until the first ending credits can be checked in motion.
