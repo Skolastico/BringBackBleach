@@ -4,11 +4,11 @@ An independent visual diary about improving the picture in older Bleach releases
 
 **[Read the latest diary entry](Estado.md)** · **[Explore the image comparisons](https://skolastico.github.io/BringBackBleach/)** · **[See the review cycle](imagens/progresso.svg)**
 
-## Latest update · 10 November 2026
+## Latest update · 11 November 2026
 
-No new completed picture test is documented today. The current version remains the reference; credit stability and local action cleanup still need motion review.
+The current version and the enlarged reference look very close in episode 1 stills. A new Blu-ray detail test shows no clear texture recovery and remains experimental.
 
-The latest reviewed image is the 8 November episode 1 title card. There is no new comparison today.
+The new sign comparison shows the current version beside the enlarged reference. No new detail treatment was adopted.
 
 The progress marker shows the current **four-step review cycle**, not a percentage of the entire project. The diary explains the problem, what the pictures show, our response and the next step in plain English.
 

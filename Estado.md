@@ -2,6 +2,18 @@
 
 *Daily notes on improving Bleach's older picture while keeping its original drawing and timing.*
 
+## 11 November 2026 · Nightly dispatch — Source comparison finds no clear detail gain
+
+The current version and the enlarged reference look very close in episode 1 stills. A new Blu-ray detail test shows no clear texture recovery and remains experimental.
+
+Eighteen matched stills compared the DVD, Blu-ray, current version and enlarged reference. The DVD enlargement looks softer; the Blu-ray has cleaner outlines in some inspected areas. The current version and reference remain close, with no consistent overall winner. These pictures do not show that noise or moving stripes are solved.
+
+A separate three-frame test tried sharpening the Blu-ray and borrowing fine variation from the enlarged reference. Changes were subtle, with no demonstrated texture recovery. Precise spatial alignment and colour matching were not established, so the team declined to adopt the test. One earlier short preview also needs recapture after decoding warnings; motion approval remains pending.
+
+Today’s pair compares the current version with the enlarged reference at the same source moment. The small difference does not establish a global winner or illustrate the separate Blu-ray transfer test.
+
+Keep the current version as a comparison reference, without approving its reported motion defects. Do not adopt the new detail test or train on these stills. Check source geometry and colour, then compare short matching sequences in motion before attempting detail transfer. The ending-credit motion review also remains open. The marker shows step 3 of one four-step review cycle.
+
 ## 10 November 2026 · Nightly dispatch — Picture decisions await motion review
 
 No new completed picture test is documented today. The current version remains the reference; credit stability and local action cleanup still need motion review.
