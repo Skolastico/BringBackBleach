@@ -2,6 +2,96 @@
 
 *Daily notes on improving Bleach's older picture while keeping its original drawing and timing.*
 
+## 12 November 2026 · Nightly dispatch — Sharper lines do not prove cleaner pictures
+
+Four reviewed episode 1 candidates showed no clear outline noise. Differences between the Blu-ray and enlarged reference can also come from reconstructed lines, so training stays on hold.
+
+A difference map can highlight real drawing as well as unwanted noise around edges. The team reviewed four candidate close-ups and declined to label them as compression noise. The enlarged reference may rebuild lines, while the Blu-ray may render them more softly. Comparing the two therefore cannot identify the defect by itself.
+
+A separate check used consecutive Blu-ray frames without the enlarged reference. Its measurements overlapped between marked areas and candidate control lines; the regions were not measured on equal terms, and the controls still need review. This check did not validate an automatic detector.
+
+Today’s pair shows the Blu-ray and aligned enlarged reference, not a before-and-after repair. The reviewer did not confirm outline noise here; sharper or smoother lines alone do not establish restoration.
+
+Keep the current version as a comparison reference. Reject the four candidates as confirmed noise examples and do not treat the enlarged reference as a clean target. Confirm noise in consecutive Blu-ray frames, review nearby lines to preserve, and find independent scenes before preparing training targets. The marker remains at step 3 of one four-step review cycle.
+
+## 11 November 2026 · Nightly dispatch — Source comparison finds no clear detail gain
+
+The current version and the enlarged reference look very close in episode 1 stills. A new Blu-ray detail test shows no clear texture recovery and remains experimental.
+
+Eighteen matched stills compared the DVD, Blu-ray, current version and enlarged reference. The DVD enlargement looks softer; the Blu-ray has cleaner outlines in some inspected areas. The current version and reference remain close, with no consistent overall winner. These pictures do not show that noise or moving stripes are solved.
+
+A separate three-frame test tried sharpening the Blu-ray and borrowing fine variation from the enlarged reference. Changes were subtle, with no demonstrated texture recovery. Precise spatial alignment and colour matching were not established, so the team declined to adopt the test. One earlier short preview also needs recapture after decoding warnings; motion approval remains pending.
+
+Today’s pair compares the current version with the enlarged reference at the same source moment. The small difference does not establish a global winner or illustrate the separate Blu-ray transfer test.
+
+Keep the current version as a comparison reference, without approving its reported motion defects. Do not adopt the new detail test or train on these stills. Check source geometry and colour, then compare short matching sequences in motion before attempting detail transfer. The ending-credit motion review also remains open. The marker shows step 3 of one four-step review cycle.
+
+## 10 November 2026 · Nightly dispatch — Picture decisions await motion review
+
+No new completed picture test is documented today. The current version remains the reference; credit stability and local action cleanup still need motion review.
+
+The last completed tests sampled the scrolling letters differently and applied light smoothing. Sampled stills kept the lettering readable, and measurements recorded less variation. That does not establish visibly steadier credits at normal speed. The full candidate was prepared, with completion and continuous review still pending in the latest report.
+
+In episode 1, local cleanup reduced stripes in a moving face but softened edges. Pausing cleanup at a cut kept a title card visible. Those local observations do not approve cleanup across the episode.
+
+No new reviewed same-frame pair is available in the completed reports. The title-card comparison shown here is from 8 November, not a new test today. Earlier reports and comparison images remain available.
+
+Next, review the ending through its scroll and fades, then check more confirmed action shots and cuts. The marker remains at step 3 of the four-step review cycle.
+
+## 9 November 2026 · Nightly dispatch — Ending credits remain on trial
+
+The sampled lettering stayed readable in the latest stills. The new test remains experimental until the first ending credits can be checked in motion.
+
+The last completed credit tests changed how the picture samples each row of lettering and applied light smoothing. Measurements showed less frame-to-frame variation in the horizontal strokes across five short sections. The stills showed no obvious loss of readability, but those checks cannot establish whether the change looks steadier at normal speed. The full ending test was prepared and still needs to be made and reviewed.
+
+No new comparison today. A still cannot show whether the credits flicker less, and there is no new reviewed frame pair. The episode 1 title-card comparison is from 8 November.
+
+Episode 1 remains on the current version while the team checks confirmed stripes in moving edges and protects cuts from unwanted changes. The next steps are to watch the first ending credits through the scroll and fades, and compare local cleanup on more episode 1 action shots and cuts. The marker stays at step 3 of the four-step review cycle.
+
+## 8 November 2026 · Nightly dispatch — A cut keeps its title card when cleanup pauses
+
+A new episode 1 test keeps a title card visible at a cut where the same cleanup without cut protection leaves the frame almost black. The team kept the safeguard for local testing.
+
+The team tested two ways to rebuild the DVD’s alternating picture rows. Both reduced the stripes in one fast action frame and softened its edges. The second method offered no clear advantage in detail. Around a nearby cut, both methods without protection darkened a frame that should still show a title card. Pausing cleanup around the cut preserved the card and left the action cleanup active between cuts.
+
+Today’s crops show the same title-card frame with and without that safeguard. The action and transition tests kept the original frame timing. A separate review brought together ten scenes with confirmed comb-like stripes and identified places to check next. The two viewer-reported examples still need a diagnosis.
+
+In the first ending credits, short tests changed how each row of lettering is sampled and measured less variation in horizontal strokes. The sampled stills showed no obvious loss of readability. Whether the letters flicker less in motion remains open. The team prepared a full-length candidate for later testing.
+
+Check the safeguard in more action shots and transitions, and review the first ending credits in motion. Episode-wide cleanup remains on hold. The marker stays at step 3 of the four-step review cycle.
+
+## 7 November 2026 · Nightly dispatch — Cleaner action frame, but episode-wide repair stays on hold
+
+A new test removed thin horizontal stripes from a fast-moving face in episode 1, leaving the drawing a little softer. The team held off on using it across the episode after finding that the same kind of cleanup can darken a transition and that the filters tried on two reported examples did not visibly remove the lines.
+
+The team compared short sequences using different ways of rebuilding the picture from the DVD's alternating rows. At one cut, a stronger test turned a frame that still showed the title card almost black. In the two reported examples, the lines were already visible in the DVD stills. Their cause remains uncertain.
+
+Today's comparison shows the same action frame and crop from the current version and the new test. The stripes across the face and neck are clearer on the left, while the right is softer. The short test kept the original frame timing. It still needs review in motion. Separately, a new ending-credit test is ready for further review of letter flicker and edge detail.
+
+The next step is to mark a clear moving edge in one of the reported scenes and check whether a local repair preserves the drawing and the cut. Another full episode version is on hold. The marker stays at step 3 of the four-step review cycle.
+
+## 6 November 2026 · Nightly dispatch — Timing verified; lettering repair remains local
+
+The current version of episode 1 passed technical checks at 1440 × 1080 while keeping its original frame timing. Seven sampled stills showed no gross new deformation. This is not approval of texture, noise removal or motion: continuous viewing comes next.
+
+Ending-credit work exposed a different problem. A completed test reduced measured variation but visibly darkened stationary lettering near the end. The team rejected it. Weak tracking had fallen back to an assumed scrolling speed even though the logo was still. A new local test keeps stationary text in place; the reviewed sequence shows the lettering staying clear. This fixes a visible local defect, not the entire ending.
+
+Today's equal crops show the same frame from the rejected ending test and the new local correction. The full revised ending is still pending completion and independent checks in the latest report. Episode 1 review and ending review remain separate; neither result authorizes processing the series.
+
+Next: watch episode 1 continuously for texture, lines and motion, then validate the full ending result and its transitions. The marker remains step 3 of the four-step review cycle. This journal run started no training, inference or video export.
+
+## 5 November 2026 · Nightly dispatch — Local noise tests stay experimental
+
+New tests change the marked episode 1 picture only slightly. They do not yet separate unwanted outline noise from real drawing, so the current version remains the reference.
+
+The team corrected frame alignment in short comparisons and tried local temporal and spatial filters around outlines. The temporal test reduced measured variation, but the visible change remains subtle. Similar responses in other drawn areas show that a lower score does not establish selective removal of unwanted noise. Broad rectangular regions also mixed legitimate lines into the test and were rejected as evidence for cleanup.
+
+The enlarged reference remains the visual guide, including its own remaining defects. No new filter is approved for the whole episode and these results will not become training targets. Next comes a fine marking of a confirmed unwanted halo beside a line that must survive, followed by independent scenes and motion review.
+
+Separate ending-credit work improved mask coverage and protected the character beside the credits in a short checked preview. Letter stability still needs continuous viewing; the second ending does not yet have a safe mask. Neither result authorizes a full episode treatment.
+
+There is no new verified public image pair today. The latest diagnostic boards mix masks and filter variants and do not establish selective noise removal. The displayed comparison is explicitly dated 4 November: it shows action field matching, not today’s noise tests. All earlier entries and image pairs remain available. The marker stays at step 3 of the four-step review cycle, not overall completion. This journal run started no training, inference or video export.
+
 ## 4 November 2026 · Nightly dispatch — Action lines cleaner; broad cleanup stays on hold.
 
 Matching the original picture fields reduces comb-like lines in a reviewed episode 1 action frame. Other flagged scenes mostly show intentional drawing or effects, so broad cleanup remains unapproved.

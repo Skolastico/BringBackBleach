@@ -1,31 +1,31 @@
 {
-  "updated": "2026-11-04",
-  "date": "2026-11-04",
+  "updated": "2026-11-12",
+  "date": "2026-11-12",
   "dispatchLabel": "Nightly dispatch",
-  "title": "Action lines cleaner; broad cleanup stays on hold.",
-  "summary": "Matching the original picture fields reduces comb-like lines in a reviewed episode 1 action frame. Other flagged scenes mostly show intentional drawing or effects, so broad cleanup remains unapproved.",
-  "problem": "Moving picture fields can leave comb-like stripes. Cleaning every flagged area could erase intentional drawing and light effects.",
-  "response": "Keep field matching as a candidate for action. Do not apply broad smoothing or train on unconfirmed defects.",
-  "beforeDetail": "Untreated DVD action frame: comb-like stripes cross the moving character.",
-  "afterDetail": "The same frame with field matching: stripes are reduced. This is a field-processing test, not a newly trained model.",
-  "imageNote": "4 November: a newly reviewed same-frame comparison. A still cannot establish motion stability.",
+  "title": "Sharper lines do not prove cleaner pictures",
+  "summary": "Four reviewed episode 1 candidates showed no clear outline noise. Differences between the Blu-ray and enlarged reference can also come from reconstructed lines, so training stays on hold.",
+  "problem": "A difference map can highlight real drawing as well as unwanted noise around edges.",
+  "response": "Keep the current version as a comparison reference. Reject the four candidates as confirmed noise examples and do not treat the enlarged reference as a clean target.",
+  "beforeDetail": "Blu-ray close-up of a character’s nose and jaw outline",
+  "afterDetail": "Matching aligned enlarged-reference close-up of the same nose and jaw outline",
+  "imageNote": "Today’s pair shows the Blu-ray and aligned enlarged reference, not a before-and-after repair. The reviewer did not confirm outline noise here; sharper or smoother lines alone do not establish restoration.",
   "stageNumber": 3,
   "stageTotal": 4,
-  "stageTitle": "Comparing the picture before adoption.",
-  "stageNote": "Step 3 of the four-step review cycle: check the result and retain the better-supported version.",
-  "nextStep": "Review existing action clips in continuous motion and seek independent confirmed defects. Ending-credit flicker needs separate motion review.",
+  "stageTitle": "Checking noise against real drawing",
+  "stageNote": "Step 3 of the four-step review cycle: verify the defect before choosing a treatment.",
+  "nextStep": "Confirm noise in consecutive Blu-ray frames, review nearby lines to preserve, and find independent scenes before preparing training targets.",
   "imageDetail": {
-    "date": "2026-11-04",
-    "title": "Episode 1 · action field matching",
-    "summary": "Comb-like lines are reduced in this action frame; motion approval remains pending.",
-    "detail": "Episode 1 at 160.160 seconds. Left: untreated source. Right: field-matching test. Compare the horizontal stripes across the face and arm. This comparison does not prove stable motion or removal of compression noise.",
-    "before": "./assets/diario/2026-11-04-ep001-fields-before.jpg",
-    "after": "./assets/diario/2026-11-04-ep001-fields-after.jpg",
-    "beforeAlt": "Episode 1 action crop with horizontal comb-like lines across a moving character",
-    "afterAlt": "Same episode 1 action crop after field matching, with fewer comb-like lines",
-    "beforeLabel": "Source picture",
-    "afterLabel": "New field-matching test",
-    "caption": "4 November 2026 · Episode 1 · same frame at 160.160 seconds · equal 400 × 400 crops · motion review pending",
+    "date": "2026-11-12",
+    "title": "Episode 1 · drawing versus suspected noise",
+    "summary": "These differences were not accepted as confirmed noise.",
+    "detail": "At 304 seconds, the Blu-ray and aligned enlarged reference show different edge rendering. The reviewer found no clear compression noise in this candidate. Neither image is an approved clean training target. This still cannot establish motion stability.",
+    "before": "./assets/diario/2026-11-12-ep001-lines-before.png",
+    "after": "./assets/diario/2026-11-12-ep001-lines-after.png",
+    "beforeAlt": "Blu-ray close-up of a character’s nose and jaw outline",
+    "afterAlt": "Matching aligned enlarged-reference close-up of the same nose and jaw outline",
+    "beforeLabel": "Blu-ray source",
+    "afterLabel": "Enlarged reference",
+    "caption": "12 November 2026 · Episode 1 at 304 seconds · same frame and crop · noise not confirmed",
     "available": true
   },
   "dispatchHistory": [
@@ -64,6 +64,62 @@
       "title": "Action lines cleaner; broad cleanup stays on hold.",
       "summary": "Matching the original picture fields reduces comb-like lines in a reviewed episode 1 action frame. Other flagged scenes mostly show intentional drawing or effects, so broad cleanup remains unapproved.",
       "decision": "Keep field matching as a candidate for action. Do not apply broad smoothing or train on unconfirmed defects."
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Local noise tests remain subtle; broad cleanup stays on hold.",
+      "summary": "New tests change the marked episode 1 picture only slightly. They do not yet separate unwanted outline noise from real drawing, so the current version remains the reference.",
+      "decision": "Keep the new tests local and experimental. Require a confirmed noise halo and a nearby line to preserve before preparing training examples.",
+      "imageDate": "2026-11-04"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Episode 1 timing verified; credit repair stays experimental.",
+      "summary": "The current version of episode 1 preserves the original timing and drawing in sampled stills. A new ending-credit test fixes darkened lettering locally, but full motion review remains pending.",
+      "decision": "Episode 1 needs continuous review; the new ending test remains experimental.",
+      "imageDate": "2026-11-06"
+    },
+    {
+      "date": "2026-11-07",
+      "title": "Cleaner action frame, but episode-wide repair stays on hold.",
+      "summary": "A new test removes comb-like lines from one episode 1 action frame and softens its edges. The filters tested left two reported examples visibly unchanged, so no episode-wide repair was approved.",
+      "decision": "Keep the current version as a reference. Find a clear example in motion before choosing a filter or making another full episode version.",
+      "imageDate": "2026-11-07"
+    },
+    {
+      "date": "2026-11-08",
+      "title": "A cut keeps its title card when cleanup pauses",
+      "summary": "A new episode 1 test keeps a title card visible at a cut where the same cleanup without cut protection leaves the frame almost black. The team kept the safeguard for local testing.",
+      "decision": "Pause cleanup around cuts and test it only where the stripes are confirmed. Check more action shots, clean edges and transitions before using it across the episode.",
+      "imageDate": "2026-11-08"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Ending credits remain on trial",
+      "summary": "The sampled lettering stayed readable in the latest stills. The new test remains experimental until the first ending credits can be checked in motion.",
+      "decision": "Keep the current version as the reference. Review the full ending in motion before adopting the new test, including where the credits cross the character and fade into the final card.",
+      "imageDate": "2026-11-08"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Picture decisions await motion review",
+      "summary": "No new completed picture test is documented today. The current version remains the reference; credit stability and local action cleanup still need motion review.",
+      "decision": "Keep the current version as the reference. Review the full ending in motion before adopting the new test, including where the credits cross the character and fade into the final card.",
+      "imageDate": "2026-11-08"
+    },
+    {
+      "date": "2026-11-11",
+      "title": "Source comparison finds no clear detail gain",
+      "summary": "The current version and the enlarged reference look very close in episode 1 stills. A new Blu-ray detail test shows no clear texture recovery and remains experimental.",
+      "decision": "Keep the current version as a comparison reference, without approving its reported motion defects. Do not adopt the new detail test or train on these stills.",
+      "imageDate": "2026-11-11"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "Sharper lines do not prove cleaner pictures",
+      "summary": "Four reviewed episode 1 candidates showed no clear outline noise. Differences between the Blu-ray and enlarged reference can also come from reconstructed lines, so training stays on hold.",
+      "decision": "Keep the current version as a comparison reference. Reject the four candidates as confirmed noise examples and do not treat the enlarged reference as a clean target.",
+      "imageDate": "2026-11-12"
     }
   ],
   "imageHistory": [
@@ -140,6 +196,75 @@
       "beforeLabel": "Source picture",
       "afterLabel": "New field-matching test",
       "caption": "4 November 2026 · Episode 1 · same frame at 160.160 seconds · equal 400 × 400 crops · motion review pending"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Ending 1 · stationary lettering",
+      "summary": "The rejected test darkened stationary letters; the new local test keeps them clear.",
+      "detail": "Episode 6 ending, frame 1699. Left: rejected ending test. Right: new motion-aware local test. The same stationary lettering stays brighter when it is no longer treated as scrolling text. This still does not establish flicker-free playback.",
+      "before": "./assets/diario/2026-11-06-ed1-letters-before.jpg",
+      "after": "./assets/diario/2026-11-06-ed1-letters-after.jpg",
+      "beforeAlt": "Stationary white ending lettering darkened by the rejected test",
+      "afterAlt": "The same frame and crop with brighter lettering in the new local test",
+      "beforeLabel": "Rejected test",
+      "afterLabel": "New local test",
+      "caption": "6 November 2026 · Ending 1 · frame 1699 · equal 190 × 180 crops · full motion review pending"
+    },
+    {
+      "date": "2026-11-07",
+      "title": "Episode 1 · stripes on a moving face",
+      "summary": "The new test clears the comb-like stripes in this action frame and softens the drawing.",
+      "detail": "In the current version, thin horizontal stripes cross the face and neck. The new test rebuilds the frame from the DVD's alternating rows, removing those stripes and softening the edges. This is one reviewed still from a short test. Motion review is pending.",
+      "before": "./assets/diario/2026-11-07-ep001-action-before.jpg",
+      "after": "./assets/diario/2026-11-07-ep001-action-after.jpg",
+      "beforeAlt": "Horizontal stripes across the moving face and neck in the current version",
+      "afterAlt": "The same face and neck with the thin stripes removed and softer edges",
+      "beforeLabel": "Current version",
+      "afterLabel": "New test",
+      "caption": "7 November 2026 · Episode 1 action · same frame and crop · motion review pending",
+      "available": true
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Episode 1 · a title card at the cut",
+      "summary": "Pausing cleanup around the cut keeps the title card visible.",
+      "detail": "The left crop shows the new cleanup without cut protection. The right crop shows the same frame with cleanup paused around the cut. The test preserved the original frame timing. The visible change is local to this frame.",
+      "before": "./assets/diario/2026-11-08-ep001-cut-before.png",
+      "after": "./assets/diario/2026-11-08-ep001-cut-after.png",
+      "beforeAlt": "Almost black crop where the title card fades out under cleanup without cut protection",
+      "afterAlt": "The same crop with the character and title-card artwork visible when cleanup pauses at the cut",
+      "beforeLabel": "New test without cut protection",
+      "afterLabel": "New test with cut protection",
+      "caption": "8 November 2026 · Episode 1 title card · same frame and crop",
+      "available": true
+    },
+    {
+      "date": "2026-11-11",
+      "title": "Episode 1 · fine lettering on a sign",
+      "summary": "The current version and enlarged reference remain close.",
+      "detail": "The same sign at the same source moment, around four minutes into episode 1. Small edge differences do not prove recovered texture. Colour was not used to rank these sources; stills cannot establish stable motion.",
+      "before": "./assets/diario/2026-11-11-ep001-sign-before.png",
+      "after": "./assets/diario/2026-11-11-ep001-sign-after.png",
+      "beforeAlt": "Fine lettering on a blue hospital sign in the current experimental version",
+      "afterAlt": "The matching hospital sign crop in the enlarged reference, with similar lettering and outlines",
+      "beforeLabel": "Current version",
+      "afterLabel": "Enlarged reference",
+      "caption": "11 November 2026 · Episode 1 sign · matching source moment and crop",
+      "available": true
+    },
+    {
+      "date": "2026-11-12",
+      "title": "Episode 1 · drawing versus suspected noise",
+      "summary": "These differences were not accepted as confirmed noise.",
+      "detail": "At 304 seconds, the Blu-ray and aligned enlarged reference show different edge rendering. The reviewer found no clear compression noise in this candidate. Neither image is an approved clean training target. This still cannot establish motion stability.",
+      "before": "./assets/diario/2026-11-12-ep001-lines-before.png",
+      "after": "./assets/diario/2026-11-12-ep001-lines-after.png",
+      "beforeAlt": "Blu-ray close-up of a character’s nose and jaw outline",
+      "afterAlt": "Matching aligned enlarged-reference close-up of the same nose and jaw outline",
+      "beforeLabel": "Blu-ray source",
+      "afterLabel": "Enlarged reference",
+      "caption": "12 November 2026 · Episode 1 at 304 seconds · same frame and crop · noise not confirmed",
+      "available": true
     }
   ]
 }
